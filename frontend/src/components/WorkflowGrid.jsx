@@ -44,7 +44,7 @@ const AppGrid = props => {
 
 	const innerColor = "rgba(255,255,255,0.65)"
 	const borderRadius = 3
-	window.title = "Shuffle | Workflows | Discover your use-case"
+	window.title = "Zebra Axon | Workflows | Discover your use-case"
 
 	const submitContact = (email, message) => {
 		const data = {
@@ -375,7 +375,7 @@ const AppGrid = props => {
 					<Typography variant="body2" color="textSecondary" style={{}}>
 						Search by 
 					</Typography>
-					<a rel="noopener noreferrer" href="https://www.algolia.com/" target="_blank" style={{textDecoration: "none", color: "white"}}>
+					<a rel="noopener noreferrer" href="" target="_blank" style={{textDecoration: "none", color: "white"}}>
 						<img src={"/images/logo-algolia-nebula-blue-full.svg"} alt="Algolia logo" style={{height: 17, marginLeft: 5, marginTop: 3,}} />
 					</a>
 				</span>

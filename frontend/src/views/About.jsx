@@ -14,9 +14,7 @@ const About = () => {
         Endao was started as a project in late 2018 as a free service to analyze
         APK (and soon IPA) files for vulnerabilities. The project was started
         after I,
-        <a href="https://twitter.com/frikkylikeme" style={hrefStyle}>
-          @frikkylikeme
-        </a>
+          frikkylikeme
         , found multiple vulnerabilities in IoT devices based purely on their
         apps. As I wanted to learn more about these kind of vulnerabilities, I
         looked for solutions that work for my purpose, but didn't find any good,
@@ -38,19 +36,14 @@ const About = () => {
       <p>This site currently uses the following projects</p>
       <ul>
         <li>
-          <a style={hrefStyle} href="https://superanalyzer.rocks">
             SUPER Android Analyzer
-          </a>
         </li>
         <li>
-          <a style={hrefStyle} href="https://github.com/linkedin/qark">
             Qark
-          </a>
         </li>
         <li>
-          <a style={hrefStyle} href="https://virustotal.com">
             Virustotal
-          </a>{" "}
+          {" "}
           for malware checks in known APKs
         </li>
         <li>Some selfmade gibberish</li>
@@ -63,9 +56,7 @@ const About = () => {
 
       <h3>Regards</h3>
       <p>
-        <a href="https://twitter.com/frikkylikeme" style={hrefStyle}>
-          @frikkylikeme
-        </a>
+        frikkylikeme
       </p>
     </div>
   );

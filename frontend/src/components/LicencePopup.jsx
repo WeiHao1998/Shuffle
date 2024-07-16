@@ -369,7 +369,7 @@ const LicencePopup = (props) => {
                                         if (feature.includes("Documentation: ")) {
                                             parsedFeature =
                                                 <a
-                                                    href={feature.split("Documentation: ")[1]}
+                                                    href=''
                                                     target="_blank"
                                                     style={{ textDecoration: "none", color: "#f85a3e", }}
                                                 >
@@ -469,7 +469,7 @@ const LicencePopup = (props) => {
                                     action: "bookcall_upgread_popup",
                                     label: "",
                                 })};
-                                window.open("https://drift.me/frikky/meeting", "_blank");
+                                window.open("/", "_blank");
                                 // if (isLoggedIn) {
                                 // isLoggedInHandler()
                                 // } else {
@@ -666,7 +666,7 @@ const LicencePopup = (props) => {
             if (shuffleVariant === 0) {
                 navigate("/register?message=Get started for free")
             } else {
-                window.location.href = "https://github.com/Shuffle/Shuffle/blob/master/.github/install-guide.md"
+                window.location.href = ""
             }
         }}>
             Start building!
@@ -687,7 +687,7 @@ const LicencePopup = (props) => {
             return
         }
 
-        const priceItem = window.location.origin === "https://shuffler.io" ?
+        const priceItem = window.location.origin === "" ?
             shuffleVariant === 0 ? "app_executions" : "cores"
             :
             shuffleVariant === 0 ? "price_1MROFrDzMUgUjxHShcSxgHO1" : "price_1NXjQqDzMUgUjxHSg690R4FP"
@@ -709,10 +709,6 @@ const LicencePopup = (props) => {
             cancelUrl: failUrl,
             clientReferenceId: props.userdata.active_org.id,
         }
-
-		if (stripe === undefined || stripe === null || stripe.redirectToCheckout === undefined) {
-			window.open("https://shuffler.io/admin?admin_tab=billing&payment=stripe_error", "_self")
-		}
 
         stripe.redirectToCheckout(checkoutObject)
             .then(function (result) {
@@ -912,8 +908,6 @@ const LicencePopup = (props) => {
 							})
                         
 							navigate("/pricing")
-						} else {
-							window.open("https://shuffler.io/pricing?tab=onprem", "_blank")
 						}
                         setModalOpen(false)
                     }}

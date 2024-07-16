@@ -27,7 +27,7 @@ const WorkflowSearch = props => {
 
 	const innerColor = "rgba(255,255,255,0.65)"
 	const borderRadius = 3
-	window.title = "Shuffle | Apps | Find and integration any app"
+	window.title = "Zebra Axon | Apps | Find and integration any app"
 
 	const submitContact = (email, message) => {
 		const data = {

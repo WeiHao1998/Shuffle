@@ -54,7 +54,7 @@ const Files = (props) => {
 
   const [field1, setField1] = React.useState("");
   const [field2, setField2] = React.useState("");
-  const [downloadUrl, setDownloadUrl] = React.useState("https://github.com/shuffle/standards")
+  const [downloadUrl, setDownloadUrl] = React.useState("")
   const [downloadBranch, setDownloadBranch] = React.useState("main");
   const [downloadFolder, setDownloadFolder] = React.useState("translation_standards");
 
@@ -259,7 +259,7 @@ const Files = (props) => {
             },
           }}
           onChange={(e) => setDownloadUrl(e.target.value)}
-          placeholder="https://github.com/shuffle/standards"
+          placeholder=""
           fullWidth
         />
         <div style={{ display: "flex" }}>
@@ -623,7 +623,7 @@ const Files = (props) => {
 		>
 			<div style={{position: "relative", width: isSelectedFiles? 1030: null, padding:isSelectedFiles?27:null, height: isSelectedFiles?"auto":null, color: isSelectedFiles?'#ffffff':null, backgroundColor: isSelectedFiles?'#212121':null, borderRadius: isSelectedFiles?'16px':null,}}>
 
-        		<Tooltip color="primary" title={"Import files to Shuffle from Git"} placement="top">
+        		<Tooltip color="primary" title={"Import files to Zebra Axon from Git"} placement="top">
 				  <IconButton
         		    color="secondary"
         		    style={{position: "absolute", right: 0, top: isSelectedFiles?null:0, left: isSelectedFiles? 990:null }}
@@ -640,14 +640,6 @@ const Files = (props) => {
 					<h2 style={{ display: isSelectedFiles ? null : "inline", marginTop: isSelectedFiles?0:null, marginBottom: isSelectedFiles?8:null }}>Files</h2>
 					<span style={{ marginLeft: isSelectedFiles ? null : 25, color:isSelectedFiles?"#9E9E9E":null}}>
 						Files from Workflows are a way to store as well as edit files.{" "}
-						<a
-							target="_blank"
-							rel="noopener noreferrer"
-							href="https://shuffler.io/docs/organizations#files"
-							style={{ textDecoration: isSelectedFiles ? null:"none", color: isSelectedFiles? "#FF8444": "#f85a3e" }}
-						>
-							Learn more
-						</a>
 					</span>
 				</div>
 

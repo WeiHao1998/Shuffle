@@ -91,7 +91,7 @@ const PaymentField = (props) => {
 							<ListItem button onClick={() => {}} style={listItemStyle}>	
 								<ListItemText primary={"Hybrid integration"} />
 							</ListItem> 
-							<ListItem button onClick={() => {"https://discord.gg/B2CBzUm"}} style={listItemStyle}>	
+							<ListItem button onClick={() => {""}} style={listItemStyle}>	
 								<ListItemText primary={"Open Source community"} />
 							</ListItem> 
 						</List>
@@ -101,7 +101,7 @@ const PaymentField = (props) => {
 							Accessibility first 
 						</Typography>	
 						<Typography variant="body1" style={{marginTop: 20,}}>
-							Shuffle was built by and for security professionals. We aim to bring our unique toolbox to every operations center globally, enabling information sharing and collaboration at scale, whether in the cloud, or on-premises.  
+							Zebra Axon was built by and for security professionals. We aim to bring our unique toolbox to every operations center globally, enabling information sharing and collaboration at scale, whether in the cloud, or on-premises.  
 						</Typography>	
 					</div>
 				</Paper>
@@ -147,7 +147,7 @@ const PaymentField = (props) => {
 							Support and Maintenance	
 						</Typography>	
 						<Typography variant="body1" color="textSecondary" style={{marginTop: 20,}}>
-							We recognize that support is a vital part of keeping operations stable and secure. That's why we're offering support of both the cloud platform and usage, as well as for the open source version of Shuffle.
+							We recognize that support is a vital part of keeping operations stable and secure. That's why we're offering support of both the cloud platform and usage, as well as for the open source version of Zebra Axon.
 						</Typography>	
 					</div>
 				</Paper>
@@ -157,7 +157,7 @@ const PaymentField = (props) => {
 							Training 
 						</Typography>	
 						<Typography variant="body1" style={{marginTop: 20,}}>
-							We teach you how to become a poweruser of Shuffle. It involves how to maintain, create, share and use it Shuffle, whether in a small operations center or as an MSSP. 
+							We teach you how to become a poweruser of Zebra Axon. It involves how to maintain, create, share and use it Zebra Axon, whether in a small operations center or as an MSSP. 
 						</Typography>	
 					</div>
 					<div style={{flex: 3, borderLeft: "1px solid rgba(255,255,255,0.2)"}}>

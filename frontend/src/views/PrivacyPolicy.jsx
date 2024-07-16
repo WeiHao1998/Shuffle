@@ -91,7 +91,7 @@ const PrivacyPolicy = () => {
 
       <h2>Use of Data</h2>
 
-      <p>Shuffler uses the collected data for various purposes:</p>
+      <p>Zebra Axonr uses the collected data for various purposes:</p>
       <ul>
         <li>To provide and maintain the service</li>
         <li>To notify you about changes to our service</li>
@@ -125,7 +125,7 @@ const PrivacyPolicy = () => {
         information represents your agreement to that transfer.
       </p>
       <p>
-        Shuffler will take all steps reasonably necessary to ensure that your
+        Zebra Axon will take all steps reasonably necessary to ensure that your
         data is treated securely and in accordance with this Privacy Policy and
         no transfer of your Personal Data will take place to an organization or
         a country unless there are adequate controls in place including the
@@ -136,12 +136,12 @@ const PrivacyPolicy = () => {
 
       <h3>Legal Requirements</h3>
       <p>
-        Shuffler may disclose your Personal Data in the good faith belief that
+        Zebra Axon may disclose your Personal Data in the good faith belief that
         such action is necessary to:
       </p>
       <ul>
         <li>To comply with a legal obligation</li>
-        <li>To protect and defend the rights or property of Shuffler</li>
+        <li>To protect and defend the rights or property of Zebra Axon</li>
         <li>
           To prevent or investigate possible wrongdoing in connection with the
           service
@@ -202,9 +202,6 @@ const PrivacyPolicy = () => {
           <p>
             For more information on the privacy practices of Google, please
             visit the Google Privacy & Terms web page:{" "}
-            <a href="https://policies.google.com/privacy?hl=en">
-              https://policies.google.com/privacy?hl=en
-            </a>
           </p>
         </li>
       </ul>

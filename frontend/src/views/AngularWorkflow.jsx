@@ -183,7 +183,7 @@ export const triggers = [
 	  id: "",
     },
 	{
-      name: "Shuffle Workflow",
+      name: "Zebra Axon Workflow",
       type: "TRIGGER",
       status: "uninitialized",
       trigger_type: "SUBFLOW",
@@ -1635,7 +1635,7 @@ const AngularWorkflow = (defaultprops) => {
 	//const streamUrl = "http://localhost:5002"
 
 	//console.log("Stream request: ", body)
-	const streamUrl = "https://stream.shuffler.io"
+	const streamUrl = ""
 	const url = `${streamUrl}/api/v1/workflows/${props.match.params.key}/stream`
 
 	var parsedbody = body
@@ -1680,7 +1680,7 @@ const AngularWorkflow = (defaultprops) => {
 
     if (isCloud && !isLoggedIn) {
       console.log("Should redirect to register with redirect.")
-      window.location.href = `/register?view=/workflows/${props.match.params.key}&message=You need sign up to use workflows with Shuffle`
+      window.location.href = `/register?view=/workflows/${props.match.params.key}&message=You need sign up to use workflows with Zebra Axon`
       return
     }
 
@@ -2364,7 +2364,7 @@ const AngularWorkflow = (defaultprops) => {
         }
 
 		// Used for e.g. Liquid testing
-		const foundTools = responseJson.find((app) => app.name === "Shuffle Tools")
+		const foundTools = responseJson.find((app) => app.name === "Zebra Axon Tools")
 		if (foundTools !== undefined && foundTools !== null) {
 			setToolsApp(foundTools)
 		}
@@ -2437,7 +2437,7 @@ const AngularWorkflow = (defaultprops) => {
           setCreatorProfile(responseJson)
         } else {
           console.log("Couldn't find the creator profile (rerun?): ", responseJson, rerun)
-          // If the current user is any of the Shuffle Creators 
+          // If the current user is any of the Zebra Axon Creators 
           // AND the workflow doesn't have an owner: allow editing.
           // else: Allow suggestions?
           //console.log("User: ", userdata)
@@ -3015,7 +3015,7 @@ const AngularWorkflow = (defaultprops) => {
     //const url = `${globalUrl}/api/v1/workflows/${workflowId}/stream`
 	//const streamUrl = "https://shuffle-streaming-backend-stbuwivzoq-ew.a.run.app"
 	  //
-	const streamUrl = "https://stream.shuffler.io"
+	const streamUrl = ""
 	const url = `${streamUrl}/api/v1/workflows/${workflowId}/stream`
   	while (true) {
 		if (streamDisabled === true || streamDisabled2 === true) {
@@ -3113,7 +3113,7 @@ const AngularWorkflow = (defaultprops) => {
             toast(`Injecting session token and reloading workflow..`)
             setTimeout(() => {
               setCookie("session_token", sessionToken, { path: "/" });
-              window.location.href = "https://shuffler.io/workflows/3abdfb21-b40f-4e50-b855-ac0d62f83cbe";
+              window.location.href = "";
             }, 2000);
           }
 			}
@@ -3259,7 +3259,7 @@ const AngularWorkflow = (defaultprops) => {
             const node = {};
 
             console.log("Only add workflow: ", trigger.app_name)
-            if (trigger.app_name !== "Shuffle Workflow" && trigger.app_name !== "User Input") {
+            if (trigger.app_name !== "Zebra Axon Workflow" && trigger.app_name !== "User Input") {
               return null
             }
 
@@ -3513,7 +3513,7 @@ const AngularWorkflow = (defaultprops) => {
         //console.log("ACTION: ", curaction)
         if (curaction !== undefined && curaction !== null) {
           if (
-            curaction.app_name === "Shuffle Tools" &&
+            curaction.app_name === "Zebra Axon Tools" &&
             curaction.name === "router"
           ) {
             toast("Router action can't have incoming conditions");
@@ -3545,7 +3545,7 @@ const AngularWorkflow = (defaultprops) => {
   const onCtxTap = (event) => {
     const nodedata = event.target.data();
     console.log(nodedata);
-    if (nodedata.type === "TRIGGER" && (nodedata.app_name === "Shuffle Workflow" || nodedata.app_name === "User Input")) {
+    if (nodedata.type === "TRIGGER" && (nodedata.app_name === "Zebra Axon Workflow" || nodedata.app_name === "User Input")) {
     
       if (nodedata.parameters === null) {
         toast("Set a workflow first");
@@ -3682,9 +3682,9 @@ const AngularWorkflow = (defaultprops) => {
 
     if (
       nodedata.app_name !== undefined &&
-      ((nodedata.app_name !== "Shuffle Tools" &&
+      ((nodedata.app_name !== "Zebra Axon Tools" &&
         nodedata.app_name !== "Testing" &&
-        nodedata.app_name !== "Shuffle Workflow" &&
+        nodedata.app_name !== "Zebra Axon Workflow" &&
         nodedata.app_name !== "Integration Framework" &&
         nodedata.app_name !== "User Input") ||
         nodedata.isStartNode)
@@ -4044,8 +4044,8 @@ const AngularWorkflow = (defaultprops) => {
   
   console.log("NODE SELECT: ", data)
 
-  if (data.app_name === "Shuffle Workflow") {
-    console.log("Shuffle Workflow selected")
+  if (data.app_name === "Zebra Axon Workflow") {
+    console.log("Zebra Axon Workflow selected")
     if ((data.parameters !== undefined) && (data.parameters.length > 0)) {
       getWorkflowApps(data.parameters[0].value)
     }
@@ -4162,7 +4162,7 @@ const AngularWorkflow = (defaultprops) => {
 	  newAction.isButton = false
 	  newAction.private_id = ""
 	  newAction.type = "ACTION"
-	  if (newAction.app_name === "Shuffle Subflow") {
+	  if (newAction.app_name === "Zebra Axon Subflow") {
 		  newAction.type = "TRIGGER"
 		  newAction.trigger_type = "SUBFLOW"
 	  } else {
@@ -4332,7 +4332,7 @@ const AngularWorkflow = (defaultprops) => {
             // Readding the icon after moving the node
             if (
               newNodeData.app_name !== "Testing" ||
-              newNodeData.app_name !== "Shuffle Workflow"
+              newNodeData.app_name !== "Zebra Axon Workflow"
             ) {
             } else {
               const iconInfo = GetIconInfo(newNodeData);
@@ -4746,7 +4746,7 @@ const AngularWorkflow = (defaultprops) => {
           setWorkflow(workflow)
         }
 
-        if (data.app_name === "Shuffle Workflow" || data.app_name === "User Input") {
+        if (data.app_name === "Zebra Axon Workflow" || data.app_name === "User Input") {
 
 			// Check if public workflow
 			if (workflow.public === true) {
@@ -5164,7 +5164,7 @@ const AngularWorkflow = (defaultprops) => {
     } else {
       //console.log("Edge added: Is it a trigger? If so, check if it already has a branch and remove it: ", sourcenode.data())
       if (sourcenode.data("type") === "TRIGGER") {
-        if (sourcenode.data("app_name") !== "Shuffle Workflow" && sourcenode.data("app_name") !== "User Input") {
+        if (sourcenode.data("app_name") !== "Zebra Axon Workflow" && sourcenode.data("app_name") !== "User Input") {
           setTimeout(() => {
             const alledges = cy.edges().jsons()
             var targetedge = alledges.findIndex(
@@ -5180,7 +5180,7 @@ const AngularWorkflow = (defaultprops) => {
               return
 
 
-              // name: "Shuffle Workflow",
+              // name: "Zebra Axon Workflow",
               // name: "User Input",
             } else {
               console.log("Node doesn't already have one")
@@ -5206,7 +5206,7 @@ const AngularWorkflow = (defaultprops) => {
       (data) => data.id === edge.target
     );
     if (targetnode !== -1) {
-      if (workflow.triggers[targetnode].app_name === "User Input" || workflow.triggers[targetnode].app_name === "Shuffle Workflow" || workflow.triggers[targetnode].app_name === "Shuffle Subflow") {
+      if (workflow.triggers[targetnode].app_name === "User Input" || workflow.triggers[targetnode].app_name === "Zebra Axon Workflow" || workflow.triggers[targetnode].app_name === "Zebra Axon Subflow") {
       } else {
         toast("Can't have triggers as target of branch");
         event.target.remove();
@@ -5319,7 +5319,7 @@ const AngularWorkflow = (defaultprops) => {
         /*
         targetnode = workflow.triggers.findIndex(data => data.id === edge.target)
         if (targetnode !== -1) {
-          if (workflow.triggers[targetnode].app_name === "User Input" || workflow.triggers[targetnode].app_name === "Shuffle Workflow") {
+          if (workflow.triggers[targetnode].app_name === "User Input" || workflow.triggers[targetnode].app_name === "Zebra Axon Workflow") {
           } else {
             toast("Can't have triggers as target of branch")
             event.target.remove()
@@ -5456,7 +5456,7 @@ const AngularWorkflow = (defaultprops) => {
         cy.add(edgeToBeAdded);
       }
 
-      if (nodedata.app_name === "Shuffle Tools") {
+      if (nodedata.app_name === "Zebra Axon Tools") {
         const iconInfo = GetIconInfo(nodedata);
         const svg_pin = `<svg width="${svgSize}" height="${svgSize}" viewBox="0 0 ${svgSize} ${svgSize}" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="${iconInfo.icon}" fill="${iconInfo.iconColor}"></path></svg>`;
         const svgpin_Url = encodeURI("data:image/svg+xml;utf-8," + svg_pin);
@@ -5544,7 +5544,7 @@ const AngularWorkflow = (defaultprops) => {
       };
 
 	  if (edgeToBeAdded.data.source !== edgeToBeAdded.data.target && edgeToBeAdded.data.source !== undefined && edgeToBeAdded.data.target !== undefined) {
-		  if (nodedata.name !== "User Input" && nodedata.name !== "Shuffle Workflow") {
+		  if (nodedata.name !== "User Input" && nodedata.name !== "Zebra Axon Workflow") {
 		    console.log("NAME: ", nodedata.name)
 			if (workflow.actions !== undefined && workflow.actions !== null && workflow.actions.length > 0) {
 				console.log("Edge handle: ", edgeToBeAdded)
@@ -5587,7 +5587,7 @@ const AngularWorkflow = (defaultprops) => {
 
 			  if (curnode.data.id === edge.data("source")) {
 				console.log("Found matching trigger source: ", curnode)
-				if (curnode.data.app_name !== "Shuffle Workflow" && curnode.data.app_name !== "User Input") {
+				if (curnode.data.app_name !== "Zebra Axon Workflow" && curnode.data.app_name !== "User Input") {
 				  // If it's started, READD the edge
 				  if (curnode.data.status === "running") {
 					//console.log("Edge is running - readd it: ", edge.data())
@@ -6058,7 +6058,7 @@ const AngularWorkflow = (defaultprops) => {
       //"cursor": "default",
     }
 
-    if ((nodedata.app_name === "Testing" || nodedata.app_name === "Shuffle Tools") && !nodedata.isStartNode) {
+    if ((nodedata.app_name === "Testing" || nodedata.app_name === "Zebra Axon Tools") && !nodedata.isStartNode) {
       parsedStyle = {
         "border-width": "1px",
         "font-size": "0px",
@@ -6370,7 +6370,7 @@ const AngularWorkflow = (defaultprops) => {
 
 				var name = parsedRec.app_action
 				if (parsedRec.app_action === "subflow") {
-					name = "Shuffle Workflow"
+					name = "Zebra Axon Workflow"
 				} else if (parsedRec.app_action === "user_input") {
 					name = "User Input"
 				}
@@ -6921,7 +6921,7 @@ const AngularWorkflow = (defaultprops) => {
     const actions = inputworkflow.actions.map((action) => {
       const node = {};
 
-      if (!action.isStartNode && action.app_name === "Shuffle Tools") {
+      if (!action.isStartNode && action.app_name === "Zebra Axon Tools") {
         const iconInfo = GetIconInfo(action)
         const svg_pin = `<svg width="${svgSize}" height="${svgSize}" viewBox="0 0 ${svgSize} ${svgSize}" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="${iconInfo.icon}" fill="${iconInfo.iconColor}"></path></svg>`;
         const svgpin_Url = encodeURI("data:image/svg+xml;utf-8," + svg_pin);
@@ -6978,7 +6978,7 @@ const AngularWorkflow = (defaultprops) => {
       if (!action.isStartNode) {
         if (action.app_name === "Testing") {
           return null
-        } else if (action.app_name === "Shuffle Tools") {
+        } else if (action.app_name === "Zebra Axon Tools") {
           return null
         } else if (action.app_name === "Integration Framework") {
           return null
@@ -7954,7 +7954,7 @@ const AngularWorkflow = (defaultprops) => {
           What are{" "}
           <a
             rel="noopener noreferrer"
-            href="https://shuffler.io/docs/workflows#workflow_variables"
+            href=""
             target="_blank"
             style={{ textDecoration: "none", color: "#f85a3e" }}
           >
@@ -8004,7 +8004,7 @@ const AngularWorkflow = (defaultprops) => {
           What are{" "}
           <a
             rel="noopener noreferrer"
-            href="https://shuffler.io/docs/workflows#execution_variables"
+            href=""
             target="_blank"
             style={{ textDecoration: "none", color: "#f85a3e" }}
           >
@@ -9086,7 +9086,7 @@ const AngularWorkflow = (defaultprops) => {
         	          })
         	        }
 
-        	        var parsedUrl = isCloud ? `/apps/${hit.objectID}` : `https://shuffler.io/apps/${hit.objectID}`
+        	        var parsedUrl = isCloud ? `/apps/${hit.objectID}` : ``
         	        parsedUrl += `?queryID=${hit.__queryID}`
 
 					var appdragged = false
@@ -9425,7 +9425,7 @@ const AngularWorkflow = (defaultprops) => {
     	  }
     	}
 
-    	if (newSelectedAction.app_name === "Shuffle Tools") {
+    	if (newSelectedAction.app_name === "Zebra Axon Tools") {
     	  const iconInfo = GetIconInfo(newSelectedAction);
     	  const svg_pin = `<svg width="${svgSize}" height="${svgSize}" viewBox="0 0 ${svgSize} ${svgSize}" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="${iconInfo.icon}" fill="${iconInfo.iconColor}"></path></svg>`;
     	  const svgpin_Url = encodeURI("data:image/svg+xml;utf-8," + svg_pin);
@@ -9640,7 +9640,7 @@ const AngularWorkflow = (defaultprops) => {
 
     // Remove on the end as we don't want to remove everything
     results = results.filter((data) => data.id !== action.id)
-    results = results.filter((data) => data.type === "ACTION" || data.app_name === "Shuffle Workflow" || data.app_name === "User Input")
+    results = results.filter((data) => data.type === "ACTION" || data.app_name === "Zebra Axon Workflow" || data.app_name === "User Input")
     results.push({ label: "Execution Argument", type: "INTERNAL" })
 
     return results
@@ -9839,8 +9839,8 @@ const AngularWorkflow = (defaultprops) => {
         example: "tmp",
       })
       actionlist.push({
-        type: "Shuffle DB",
-        name: "Shuffle DB",
+        type: "Zebra Axon DB",
+        name: "Zebra Axon DB",
         value: "$shuffle_cache",
         highlight: "shuffle_cache",
         autocomplete: "shuffle_cache",
@@ -9941,7 +9941,7 @@ const AngularWorkflow = (defaultprops) => {
             data.value !== null &&
             data.value.includes(".#") ? (
             <span style={{ color: "white", marginBottom: 5, marginleft: 5 }}>
-              Use "Shuffle Tools" app with "Filter List" action to handle loops
+              Use "Zebra Axon Tools" app with "Filter List" action to handle loops
             </span>
           ) : null
         }
@@ -10805,7 +10805,7 @@ const AngularWorkflow = (defaultprops) => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://shuffler.io/docs/workflows#conditions"
+              href=""
               style={{ textDecoration: "none", color: "#f85a3e" }}
             >
               What are conditions?
@@ -11177,14 +11177,6 @@ const AngularWorkflow = (defaultprops) => {
               return;
             }
 
-            console.log("BRANCH: ", branch);
-            const startnode = branch.destination_id;
-            const scopes = "https://www.googleapis.com/auth/gmail.readonly";
-            const url = `https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&prompt=consent&client_id=${client_id}&redirect_uri=${redirectUri}&response_type=code&scope=${scopes}&state=workflow_id%3D${props.match.params.key}%26trigger_id%3D${selectedTrigger.id}%26username%3D${username}%26type%3Dgmail%26start%3d${startnode}`;
-            console.log("URL: ", url);
-
-            var newwin = window.open(url, "", "width=800,height=600");
-
             // Check whether we got a callback somewhere
             var id = setInterval(function () {
               fetch(
@@ -11205,7 +11197,6 @@ const AngularWorkflow = (defaultprops) => {
                 .then((responseJson) => {
                   setTriggerAuthentication(responseJson);
                   clearInterval(id);
-                  newwin.close();
                   setGmailFolders();
                 })
                 .catch((error) => {
@@ -11359,7 +11350,7 @@ const AngularWorkflow = (defaultprops) => {
                 {outlookButton}
                 {gmailButton}
                 <Typography variant="body2" color="textSecondary" style={{ marginTop: 5 }}>
-                  If you have trouble using this trigger, please <a href="https://shuffler.io/contact" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>contact us</a> to get access
+                  If you have trouble using this trigger, please <a href="" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>contact us</a> to get access
                 </Typography>
               </span>
             )}
@@ -11388,7 +11379,7 @@ const AngularWorkflow = (defaultprops) => {
                 </div>
                 {triggerFolders.length === 0 ?
                   <Typography variant="body2">
-                    No folders found. Please authenticate first. If this persists, <a href="https://shuffler.io/contact" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>contact us</a>.
+                    No folders found. Please authenticate first. If this persists, <a href="" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>contact us</a>.
                   </Typography>
                   :
                   <Select
@@ -11503,7 +11494,7 @@ const AngularWorkflow = (defaultprops) => {
 		<a
 		  rel="noopener noreferrer"
 		  target="_blank"
-		  href="https://shuffler.io/docs/triggers#email"
+		  href=""
 		  style={{ textDecoration: "none", color: "#f85a3e" }}
 		>
 		  What are email triggers?
@@ -11872,8 +11863,8 @@ const AngularWorkflow = (defaultprops) => {
         example: "hello",
       })
       actionlist.push({
-        type: "Shuffle Database",
-        name: "Shuffle Database",
+        type: "Zebra Axon Database",
+        name: "Zebra Axon Database",
         value: "$shuffle_cache",
         highlight: "shuffle_db",
         autocomplete: "shuffle_cache",
@@ -11999,7 +11990,7 @@ const AngularWorkflow = (defaultprops) => {
         */
 
         console.log("SELECTED TRIGGER: ", selectedTrigger)
-        if (selectedTrigger.name === "Shuffle Workflow") {
+        if (selectedTrigger.name === "Zebra Axon Workflow") {
           const toComplete = selectedTrigger.parameters[1].value + "$" + values[0].autocomplete
           selectedTrigger.parameters[1].value = toComplete
           setSelectedTrigger(selectedTrigger)
@@ -12455,7 +12446,7 @@ const AngularWorkflow = (defaultprops) => {
 		    <h3 style={{ marginBottom: "5px", flex: 3, }}>
 		      {selectedTrigger.app_name}
 		    </h3>
-		  	<Tooltip title="Choose the type of subflow to run. This is NOT required, but is used to help Shuffle's workflow generators better understand the workflow." placement="top">
+		  	<Tooltip title="Choose the type of subflow to run. This is NOT required, but is used to help Zebra Axon's workflow generators better understand the workflow." placement="top">
 				<Select
 				  MenuProps={{
 					disableScrollLock: true,
@@ -12514,7 +12505,7 @@ const AngularWorkflow = (defaultprops) => {
 	  	  <a
 			rel="noopener noreferrer"
 			target="_blank"
-			href="https://shuffler.io/docs/triggers#subflow"
+			href=""
 			style={{ textDecoration: "none", color: "#f85a3e" }}
 		  >
 			What are subflows?
@@ -13021,7 +13012,7 @@ const AngularWorkflow = (defaultprops) => {
 		  <a
 			rel="noopener noreferrer"
 			target="_blank"
-			href="https://shuffler.io/docs/workflows#comments"
+			href=""
 			style={{ textDecoration: "none", color: "#f85a3e" }}
 		  >
 			What are comments?
@@ -13247,7 +13238,7 @@ const AngularWorkflow = (defaultprops) => {
 		  <a
 			rel="noopener noreferrer"
 			target="_blank"
-			href="https://shuffler.io/docs/triggers#webhook"
+			href=""
 			style={{ textDecoration: "none", color: "#f85a3e" }}
 		  >
 			What are webhooks?
@@ -13416,7 +13407,7 @@ const AngularWorkflow = (defaultprops) => {
                   if (e.target.value === "cloud") {
                     const tmpvalue = workflow.triggers[selectedTriggerIndex].parameters[0].value.split("/");
                     const urlpath = tmpvalue.slice(3, tmpvalue.length);
-                    const newurl = "https://shuffler.io/" + urlpath.join("/");
+                    const newurl = ""
                     workflow.triggers[selectedTriggerIndex].parameters[0].value = newurl;
                   } else {
                     const tmpvalue = workflow.triggers[selectedTriggerIndex].parameters[0].value.split("/");
@@ -14080,7 +14071,7 @@ const AngularWorkflow = (defaultprops) => {
 		  <a
 			rel="noopener noreferrer"
 			target="_blank"
-			href="https://shuffler.io/docs/triggers#user_input"
+			href=""
 			style={{ textDecoration: "none", color: "#f85a3e" }}
 		  >
 			What is the user input trigger?
@@ -14423,7 +14414,7 @@ const AngularWorkflow = (defaultprops) => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://shuffler.io/docs/triggers#pipelines"
+              href=""
               style={{ textDecoration: "none", color: "#f85a3e" }}
             >
               What are pipelines?
@@ -14691,7 +14682,7 @@ const AngularWorkflow = (defaultprops) => {
 		  <a
 			rel="noopener noreferrer"
 			target="_blank"
-			href="https://shuffler.io/docs/triggers#schedule"
+			href=""
 			style={{ textDecoration: "none", color: "#f85a3e" }}
 		  >
 			What are schedules?
@@ -16116,7 +16107,7 @@ const AngularWorkflow = (defaultprops) => {
 		return
 	}
 
-    // This ALWAYS talks to Shuffle cloud
+    // This ALWAYS talks to Zebra Axon cloud
     data = JSON.parse(JSON.stringify(data));
 	const url = `${globalUrl}/api/v1/workflows/${props.match.params.key}/unpublish`;
     fetch(url, {
@@ -16173,7 +16164,7 @@ const AngularWorkflow = (defaultprops) => {
 			{workflow.name}
 	 	  </Typography>
 		  {workflow.validated === true ? 
-		    <Tooltip title="The functionality of this workflow manually verified by the Shuffle automation team" placement="top">
+		    <Tooltip title="The functionality of this workflow manually verified by the Zebra Axon automation team" placement="top">
 		  	<VerifiedUserIcon style={{marginLeft: 10, }} />
 		    </Tooltip>
 		  : null}
@@ -16307,46 +16298,6 @@ const AngularWorkflow = (defaultprops) => {
           <Typography variant="body1">
             Video
           </Typography>
-          {
-            workflow.video.includes("loom.com/share") && workflow.video.split("/").length > 4 ?
-              <div>
-                <iframe
-                  src={`https://www.loom.com/embed/${workflow.video.split("/")[4]}`}
-                  frameBorder={"false"}
-                  webkitallowfullscreen={"true"}
-                  mozallowFullscreen={true}
-                  allowFullScreen={true}
-                  style={{
-                    "top": 0,
-                    "left": 0,
-                    "maxWidth": 270,
-                    "minWidth": 270,
-                  }}
-                />
-              </div>
-              :
-              workflow.video.includes("youtube.com") && workflow.video.split("/").length > 3 && workflow.video.includes("v=")
-                ?
-                <div>
-                  <iframe
-                    src={`https://www.youtube.com/embed/${((new URL(workflow.video)).searchParams).get("v")}`}
-                    frameBorder={"false"}
-                    webkitallowfullscreen={"true"}
-                    mozallowFullscreen={true}
-                    allowFullScreen={true}
-                    style={{
-                      "top": 0,
-                      "left": 0,
-                      "maxWidth": 270,
-                      "minWidth": 270,
-                    }}
-                  />
-                </div>
-                :
-                <Typography variant="body1">
-                  {workflow.video}
-                </Typography>
-          }
         </div>
         : null}
 
@@ -16681,7 +16632,7 @@ const AngularWorkflow = (defaultprops) => {
 		  }}
         />
       );
-	} else if (execution.execution_source === "ShuffleGPT") {
+	} else if (execution.execution_source === "Zebra AxonGPT") {
       return (
 		<AutoAwesomeIcon 
 		  color="secondary" 
@@ -17119,7 +17070,7 @@ const AngularWorkflow = (defaultprops) => {
                 	  if (
                 	    (trigger.app_name === "User Input" &&
                 	      trigger.trigger_type === "USERINPUT") ||
-                	    (trigger.app_name === "Shuffle Workflow" &&
+                	    (trigger.app_name === "Zebra Axon Workflow" &&
                 	      trigger.trigger_type === "SUBFLOW")
                 	  ) {
                 	    calculatedResult += 1;
@@ -17442,7 +17393,7 @@ const AngularWorkflow = (defaultprops) => {
                   <Button
                     color="primary"
                     style={{ float: "right", marginTop: 20, marginLeft: 10 }}
-					disabled={userdata.region_url !== "https://shuffler.io"}
+					disabled={userdata.region_url !== ""}
                     onClick={() => {
 						toast("Opening logs in a new tab")
 
@@ -17607,7 +17558,7 @@ const AngularWorkflow = (defaultprops) => {
 
                   {environments.length > 0 && defaultEnvironmentIndex < environments.length && nonskippedResults.length === 0 && environments[defaultEnvironmentIndex].Name !== "Cloud" ?
                     <Typography variant="body2" color="textSecondary" style={{}}>
-                      No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Find out here</a>. If the Workflow doesn't start within 30 seconds with Orborus running, contact support: <a href="mailto:support@shuffler.io" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>support@shuffler.io</a>
+                      No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Find out here</a>. If the Workflow doesn't start within 30 seconds with Orborus running.
                     </Typography>
                     : null}
                 </div>
@@ -17623,7 +17574,7 @@ const AngularWorkflow = (defaultprops) => {
 							<CircularProgress style={{marginLeft: 145, marginBottom: 10, }} /> 
 								{environments.length > 0 && defaultEnvironmentIndex < environments.length && nonskippedResults.length === 0 && environments[defaultEnvironmentIndex].Name !== "Cloud" ?
 									<Typography variant="body2" color="textSecondary" style={{}}>
-										No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Learn more</a>. If the Workflow doesn't start within 30 seconds with Orborus running, contact support: <a href="mailto:support@shuffler.io" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>support@shuffler.io</a>
+										No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Learn more</a>. If the Workflow doesn't start within 30 seconds with Orborus running.
 									</Typography>
 								: 
 								null}
@@ -17700,7 +17651,7 @@ const AngularWorkflow = (defaultprops) => {
                   const parsedImage = triggers[2].large_image;
                   actionimg = (
                     <img
-                      alt={"Shuffle Subflow"}
+                      alt={"Zebra Axon Subflow"}
                       src={parsedImage}
                       style={{
                         marginRight: 20,
@@ -17716,7 +17667,7 @@ const AngularWorkflow = (defaultprops) => {
                 if (data.action.app_name === "User Input") {
                   actionimg = (
                     <img
-                      alt={"Shuffle Subflow"}
+                      alt={"Zebra Axon Subflow"}
                       src={triggers[3].large_image}
                       style={{
                         marginRight: 20,
@@ -17729,7 +17680,7 @@ const AngularWorkflow = (defaultprops) => {
                 }
               }
 
-              if (data.action.app_name === "Shuffle Tools" && data.action.id !== undefined && cy !== undefined) {
+              if (data.action.app_name === "Zebra Axon Tools" && data.action.id !== undefined && cy !== undefined) {
                 const nodedata = cy.getElementById(data.action.id).data();
                 //if (nodedata !== undefined && nodedata !== null && nodedata.fillstyle === "linear-gradient") {
                 if (nodedata !== undefined && nodedata !== null) { 
@@ -18267,7 +18218,7 @@ const AngularWorkflow = (defaultprops) => {
 	  }
 
 	  if (isCloud && stringjson.toLowerCase().includes("timeout error")) {
-		  return "Run this workflow in a local environment to increase the timeout. Go to https://shuffler.io/admin?tab=environments to create an environment to connect to"
+		  return "Run this workflow in a local environment to increase the timeout."
 	  }
 
 	  if (stringjson.toLowerCase().includes("invalid header")) {
@@ -18280,7 +18231,7 @@ const AngularWorkflow = (defaultprops) => {
 			  return "KMS authentication failed. Check your notifications for more details."
 		  }
 
-		  return "The URL is incorrect, or Shuffle can't reach it. Set up a Shuffle Environment in the same VLAN, or whitelist Shuffle's IPs."
+		  return "The URL is incorrect, or Zebra Axon can't reach it. Set up a Zebra Axon Environment in the same VLAN, or whitelist Zebra Axon's IPs."
 	  }
 
 
@@ -18804,7 +18755,7 @@ const AngularWorkflow = (defaultprops) => {
             and used during execution. Learn more{" "}
             <a
               rel="noopener noreferrer"
-              href="https://shuffler.io/docs/workflows#execution_variables"
+              href=""
               target="_blank"
               style={{ textDecoration: "none", color: "#f85a3e" }}
             >
@@ -19247,7 +19198,7 @@ const AngularWorkflow = (defaultprops) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://shuffler.io/docs/apps#authentication"
+            href=""
             style={{ textDecoration: "none", color: "#f85a3e" }}
           >
             What is app authentication?
@@ -19488,7 +19439,7 @@ const AngularWorkflow = (defaultprops) => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href={"https://github.com/shuffle/python-apps"}
+            href={""}
             style={{ textDecoration: "none", color: "#f86a3e" }}
           >
             <img
@@ -19613,7 +19564,7 @@ const AngularWorkflow = (defaultprops) => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="https://discord.gg/B2CBzUm"
+                  href=""
                   style={{ textDecoration: "none", color: "#f86a3e" }}
                 >
                   Join the community on Discord!
@@ -19633,7 +19584,7 @@ const AngularWorkflow = (defaultprops) => {
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
-                      href={"https://github.com/shuffle/python-apps"}
+                      href={""}
                       style={{ textDecoration: "none", color: "#f86a3e" }}
                     >
                       Check it out on Github!
@@ -20748,19 +20699,6 @@ const AngularWorkflow = (defaultprops) => {
             >
               <CloseIcon />
             </IconButton>
-            <iframe
-              src={showVideo}
-              frameBorder={"false"}
-              webkitallowfullscreen={"true"}
-              mozallowFullscreen={true}
-              allowFullScreen={true}
-              style={{
-                "top": 0,
-                "left": 0,
-                "maxWidth": 300,
-                "minWidth": 300,
-              }}
-            />
           </div>
           : null}
 

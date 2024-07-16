@@ -102,7 +102,7 @@ const WorkflowPaper = (props) => {
 		}
 
 		if (!isCloud) {
-			parsedUrl = `https://shuffler.io${parsedUrl}`
+			parsedUrl = ``
 		}
 
     return (
@@ -147,7 +147,7 @@ const WorkflowPaper = (props) => {
                   }}
                 >
                   <a
-                    href={parsedUrl}
+                    href={``}
 										rel="norefferer"
 										target="_blank"
                     style={{ textDecoration: "none", color: "inherit" }}

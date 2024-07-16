@@ -893,13 +893,13 @@ const CodeEditor = (props) => {
 			inputdata = JSON.stringify(inputdata)
 		}
 
-		// Shuffle Tools 1.2.0 (in most cases?)
+		// Zebra Axon Tools 1.2.0 (in most cases?)
 		const appid = toolsAppId !== undefined && toolsAppId !== null && toolsAppId.length > 0 ? toolsAppId : "3e2bdf9d5069fe3f4746c29d68785a6a"
 
 		const actionname = selectedAction.name === "execute_python" && !inputdata.replaceAll(" ", "").includes("{%python%}") ? "execute_python" : "repeat_back_to_me"
 		const params = actionname === "execute_python" ? [{"name": "code", "value":inputdata}] : [{"name":"call", "value": inputdata}]
 
-		const actiondata = {"description":"Repeats the call parameter","id":"","name":actionname,"label":"","node_type":"","environment":"","sharing":false,"private_id":"","public_id":"","app_id": appid,"tags":null,"authentication":[],"tested":false,"parameters": params, "execution_variable":{"description":"","id":"","name":"","value":""},"returns":{"description":"","example":"","id":"","schema":{"type":"string"}},"authentication_id":"","example":"","auth_not_required":false,"source_workflow":"","run_magic_output":false,"run_magic_input":false,"execution_delay":0,"app_name":"Shuffle Tools","app_version":"1.2.0","selectedAuthentication":{}}
+		const actiondata = {"description":"Repeats the call parameter","id":"","name":actionname,"label":"","node_type":"","environment":"","sharing":false,"private_id":"","public_id":"","app_id": appid,"tags":null,"authentication":[],"tested":false,"parameters": params, "execution_variable":{"description":"","id":"","name":"","value":""},"returns":{"description":"","example":"","id":"","schema":{"type":"string"}},"authentication_id":"","example":"","auth_not_required":false,"source_workflow":"","run_magic_output":false,"run_magic_input":false,"execution_delay":0,"app_name":"Zebra Axon Tools","app_version":"1.2.0","selectedAuthentication":{}}
 
 		setExecutionResult({
 			"valid": false,		
@@ -1435,7 +1435,7 @@ const CodeEditor = (props) => {
 									placement="top"
 								>
 									<a 
-										href="https://pwwang.github.io/liquidpy/playground/"
+										href=""
 										rel="norefferer"
       		          target="_blank"
 									>
@@ -1551,7 +1551,7 @@ const CodeEditor = (props) => {
 								</DialogTitle>
 							}
 							<div style={{position: "relative", }}>
-								<Tooltip title="Try it! This runs the Shuffle Tools 'repeat back to me' or 'execute python' action with what you see in the expected output window. Commonly used to test your Python scripts or Liquid filters, not requiring the full workflow to run again." placement="top">
+								<Tooltip title="Try it! This runs the Zebra Axon Tools 'repeat back to me' or 'execute python' action with what you see in the expected output window. Commonly used to test your Python scripts or Liquid filters, not requiring the full workflow to run again." placement="top">
 									<Button 
 										variant="outlined" 
 										disabled={executing} 
@@ -1718,7 +1718,7 @@ const CodeEditor = (props) => {
 						marginTop: 5,
 					}}
 					onClick={(event) => {
-						// Take localcodedata through the Shuffle JSON parser just in case
+						// Take localcodedata through the Zebra Axon JSON parser just in case
 						// This is to make it so we don't need to handle these fixes on the
 						// backend by itself
 						var fixedcodedata = localcodedata

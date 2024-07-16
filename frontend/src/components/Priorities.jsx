@@ -429,7 +429,7 @@ const Priorities = (props) => {
 
 			<h2 style={{ display: clickedFromOrgTab ? null:"inline", marginBottom: clickedFromOrgTab ? 8:null, marginTop: clickedFromOrgTab ?0:null, color: clickedFromOrgTab ? "#ffffff" : null }}>Suggestions</h2>
 			<span style={{ color: clickedFromOrgTab ?"#9E9E9E":null,marginLeft: clickedFromOrgTab ?null:25 }}>
-				Suggestions are tasks identified by Shuffle to help you discover ways to protect your and customers' company. <br/>These range from simple configurations in Shuffle to Usecases you may have missed.&nbsp;
+				Suggestions are tasks identified by Zebra Axon to help you discover ways to protect your and customers' company. <br/>These range from simple configurations in Zebra Axon to Usecases you may have missed.&nbsp;
 				<a
 					target="_blank"
 					rel="noopener noreferrer"

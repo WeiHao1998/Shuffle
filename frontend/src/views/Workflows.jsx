@@ -122,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-// Takes an action in Shuffle and
+// Takes an action in Zebra Axon and
 // Returns information about the icon, the color etc to be used
 // This can be used for actions of all types
 export const GetIconInfo = (action) => {
@@ -556,7 +556,7 @@ export const validateJson = (showResult) => {
 const Workflows = (props) => {
   const { globalUrl, isLoggedIn, isLoaded, userdata, checkLogin } = props;
 
-  document.title = "Shuffle - Workflows";
+  document.title = "Zebra Axon - Workflows";
 	let navigate = useNavigate();
 
   const classes = useStyles(theme);
@@ -576,7 +576,7 @@ const Workflows = (props) => {
 
   const [field1, setField1] = React.useState("");
   const [field2, setField2] = React.useState("");
-  const [downloadUrl, setDownloadUrl] = React.useState("https://github.com/shuffle/workflows")
+  const [downloadUrl, setDownloadUrl] = React.useState("")
   const [downloadBranch, setDownloadBranch] = React.useState("master");
   const [loadWorkflowsModalOpen, setLoadWorkflowsModalOpen] =
     React.useState(false);
@@ -1409,7 +1409,7 @@ const Workflows = (props) => {
       for (var key in data.triggers) {
         const trigger = data.triggers[key];
 				if (skip_sanitize !== true) {
-					if (trigger.app_name === "Shuffle Workflow") {
+					if (trigger.app_name === "Zebra Axon Workflow") {
 						if (trigger.parameters !== null && trigger.parameters !== undefined) {
 							if (trigger.parameters.length > 2) {
 								trigger.parameters[2].value = "";
@@ -1457,7 +1457,7 @@ const Workflows = (props) => {
           }
         }
 
-        trigger.environment = isCloud ? "cloud" : "Shuffle";
+        trigger.environment = isCloud ? "cloud" : "Zebra Axon";
         trigger.id = newId;
       }
     }
@@ -1599,7 +1599,7 @@ const Workflows = (props) => {
     data = sanitizeWorkflow(data);
     toast("Sanitizing and publishing " + data.name);
 
-    // This ALWAYS talks to Shuffle cloud
+    // This ALWAYS talks to Zebra Axon cloud
     fetch(globalUrl + "/api/v1/workflows/" + data.id + "/publish", {
       method: "POST",
       headers: {
@@ -1615,10 +1615,6 @@ const Workflows = (props) => {
 			} else {
 				if (isCloud) {
 					toast("Successfully published workflow");
-				} else {
-					toast(
-						"Successfully published workflow to https://shuffler.io"
-					);
 				}
 			}
 
@@ -1833,7 +1829,7 @@ const Workflows = (props) => {
 				continue
 			}
 
-			if (parsedAction.app_name === "Shuffle Tools" || parsedAction.app_id === "bc78f35c6c6351b07a09b7aed5d29652") {
+			if (parsedAction.app_name === "Zebra Axon Tools" || parsedAction.app_id === "bc78f35c6c6351b07a09b7aed5d29652") {
 				continue
 			}
 
@@ -2236,7 +2232,7 @@ const Workflows = (props) => {
                     var newWorkflows = [data];
                     for (var key in data.triggers) {
                       const trigger = data.triggers[key];
-                      if (trigger.app_name !== "Shuffle Workflow") {
+                      if (trigger.app_name !== "Zebra Axon Workflow") {
                         continue;
                       }
 
@@ -2540,7 +2536,7 @@ const Workflows = (props) => {
     ) {
       triggers = data.triggers.length;
       for (let key in data.triggers) {
-        if (data.triggers[key].app_name === "Shuffle Workflow") {
+        if (data.triggers[key].app_name === "Zebra Axon Workflow") {
           subflows += 1;
         }
       }
@@ -2749,7 +2745,7 @@ const Workflows = (props) => {
                         var newWorkflows = [data];
                         for (var key in data.triggers) {
                           const trigger = data.triggers[key];
-                          if (trigger.app_name !== "Shuffle Workflow") {
+                          if (trigger.app_name !== "Zebra Axon Workflow") {
                             continue;
                           }
 
@@ -3290,7 +3286,7 @@ const Workflows = (props) => {
         </Tooltip>
       ) : null}
       {isCloud ? null : (
-        <Tooltip color="primary" title={"Import workflows to Shuffle"} placement="top">
+        <Tooltip color="primary" title={"Import workflows to Zebra Axon"} placement="top">
           <Button
             color="secondary"
             style={{}}
@@ -3820,7 +3816,7 @@ const Workflows = (props) => {
             },
           }}
           onChange={(e) => setDownloadUrl(e.target.value)}
-          placeholder="https://github.com/shuffle/workflows"
+          placeholder=""
           fullWidth
         />
         <span style={{ marginTop: 10 }}>
@@ -4024,7 +4020,7 @@ const Workflows = (props) => {
 				}}
 			>
 				<DialogTitle>
-					Welcome to Shuffle!	
+					Welcome to Zebra Axon!	
 				</DialogTitle>
 
 				<Tooltip
@@ -4042,18 +4038,6 @@ const Workflows = (props) => {
 						<CloseIcon style={{ color: "white" }} />
 					</IconButton>
 				</Tooltip>
-
-				<iframe 
-					width="560"
-					height="315" 
-					style={{margin: "0px auto 0px auto", width: 560, height: 315,}}
-					src="https://www.youtube-nocookie.com/embed/rO7k9q3OgC0" 
-					title="Introduction video" 
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen
-				>
-				</iframe>
 			</Dialog>
 
   const loadedCheck =

@@ -164,19 +164,6 @@ export const CodeHandler = (props) => {
     const validate = validateJson(propvalue)
 
     var newprop = propvalue
-    if (validate.valid === false) {
-        // Check if https://shuffler.io in the url
-        // if so, then we change it for the current url	
-        if (propvalue.includes("https://shuffler.io")) {
-            newprop = propvalue.replace("https://shuffler.io", window.location.origin)
-        }
-
-        // Check if it contains Bearer APIKEY
-        // If so, replace apikey
-        //if (newprop.includes("Bearer APIKEY")) {
-        //	newprop = newprop.replace("Bearer APIKEY", "Bearer API
-        //}
-    }
 
     // Need to check if it's singletick or multi
     if (props.inline === true) {
@@ -671,9 +658,9 @@ const Docs = (defaultprops) => {
                         .replace(tocRegex, "");
                     setData(newdata);
                     if (docId === undefined) {
-                        document.title = "Shuffle documentation introduction";
+                        document.title = "Zebra Axon documentation introduction";
                     } else {
-                        document.title = "Shuffle " + docId + " documentation";
+                        document.title = "Zebra Axon " + docId + " documentation";
                     }
 
                     if (responseJson.reason !== undefined && responseJson.reason !== null && responseJson.reason.includes("404: Not Found")) {
@@ -923,24 +910,24 @@ const Docs = (defaultprops) => {
                 Documentation
             </Typography>
             <div style={{ display: "flex", marginTop: 25, }}>
-                <CustomButton title="Talk to Support" icon=<img src="/images/Shuffle_logo_new.png" style={{ height: 35, width: 35, border: "", borderRadius: theme.palette.borderRadius, }} /> />
-                <CustomButton title="Ask the community" icon=<img src="/images/social/discord.png" style={{ height: 35, width: 35, border: "", borderRadius: theme.palette.borderRadius, }} /> link="https://discord.gg/B2CBzUm" />
+                <CustomButton title="Talk to Support" icon=<img src="/images/Zebra_Axon_logo_new.png" style={{ height: 35, width: 35, border: "", borderRadius: theme.palette.borderRadius, }} /> />
+                <CustomButton title="Ask the community" icon=<img src="/images/social/discord.png" style={{ height: 35, width: 35, border: "", borderRadius: theme.palette.borderRadius, }} /> link="" />
             </div>
 
             <div style={{ textAlign: "left" }}>
                 <Typography variant="h6" style={headerStyle} >Tutorial</Typography>
                 <Typography variant="body1">
-                    <b>Dive in.</b> Hands-on is the best approach to see how Shuffle can transform your security operations. Our set of tutorials and videos teach you how to build your skills. Check out the <Link to="/docs/getting_started" style={hrefStyle2}>getting started</Link> section to give it a go!
+                    <b>Dive in.</b> Hands-on is the best approach to see how Zebra Axon can transform your security operations. Our set of tutorials and videos teach you how to build your skills. Check out the <Link to="/docs/getting_started" style={hrefStyle2}>getting started</Link> section to give it a go!
                 </Typography>
 
-                <Typography variant="h6" style={headerStyle}>Why Shuffle?</Typography>
+                <Typography variant="h6" style={headerStyle}>Why Zebra Axon?</Typography>
                 <Typography variant="body1">
-                    <b>Security first.</b> We incentivize trying before buying, and give you the full set of tools you need to automate your operations. What's more is we also help you <a href="https://shuffler.io/pricing?tag=docs" target="_blank" style={hrefStyle2}>find usecases</a> that fit your unique needs. Accessibility is key, and we intend to help every SOC globally use and share their usecases.
+                    <b>Security first.</b> We incentivize trying before buying, and give you the full set of tools you need to automate your operations. What's more is we also help you find usecases that fit your unique needs. Accessibility is key, and we intend to help every SOC globally use and share their usecases.
                 </Typography>
 
                 <Typography variant="h6" style={headerStyle}>Get help</Typography>
                 <Typography variant="body1">
-                    <b>Our promise</b> is to make it easier and easier to automate your operations. In some cases however, it may be good with a helping hand. That's where <a href="https://shuffler.io/pricing?tag=docs" target="_blank" style={hrefStyle2}>Shuffle's consultancy and support</a> services come in handy. We help you build and automate your operational processes to a level you haven't seen before with the help of our <a href="https://shuffler.io/usecases?tag=docs" target="_blank" style={hrefStyle2}>usecases</a>.
+                    <b>Our promise</b> is to make it easier and easier to automate your operations. In some cases however, it may be good with a helping hand. That's where Zebra Axon's consultancy and support services come in handy. We help you build and automate your operational processes to a level you haven't seen before with the help of our usecases.
                 </Typography>
 
                 <Typography variant="h6" style={headerStyle}>APIs</Typography>
@@ -953,9 +940,9 @@ const Docs = (defaultprops) => {
                     <b>Build.</b> Creating workflows has never been easier. Jump into things with our <Link to="/getting-started" style={hrefStyle2}>getting Started</Link> section and build to your hearts content. Workflows make it all come together, with an easy to use area.
                 </Typography>
 
-                <Typography variant="h6" style={headerStyle}>Managing Shuffle</Typography>
+                <Typography variant="h6" style={headerStyle}>Managing Zebra Axon</Typography>
                 <Typography variant="body1">
-                    <b>Organize.</b> Whether an organization of 1000 or 1, management tools are necessary. In Shuffle we offer full user management, MFA and single-signon options, multi-tenancy and a lot more - for free!
+                    <b>Organize.</b> Whether an organization of 1000 or 1, management tools are necessary. In Zebra Axon we offer full user management, MFA and single-signon options, multi-tenancy and a lot more - for free!
                 </Typography>
             </div>
         </div>

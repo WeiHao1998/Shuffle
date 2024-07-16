@@ -163,137 +163,6 @@ const AuthenticationOauth2 = (props) => {
 		// Admin consent also means to add refresh tokens
 		console.log("Inside oauth2 request for app: ", selectedApp.name)
 		selectedApp.name = selectedApp.name.replace(" ", "_").toLowerCase()
-
-		//console.log("APP: ", selectedApp)
-		if (selectedApp.name.toLowerCase() == "outlook_graph" || selectedApp.name.toLowerCase() == "outlook_office365") {
-			handleOauth2Request(
-				"efe4c3fe-84a1-4821-a84f-23a6cfe8e72d",
-				"",
-				"https://graph.microsoft.com",
-				["Mail.ReadWrite", "Mail.Send", "offline_access"],
-				admin_consent,
-			);
-		} else if (selectedApp.name.toLowerCase() == "gmail") {
-			handleOauth2Request(
-				"253565968129-6ke8086pkp0at16m8t95rdcsas69ngt1.apps.googleusercontent.com",
-				"",
-				"https://gmail.googleapis.com",
-				["https://www.googleapis.com/auth/gmail.modify",
-					"https://www.googleapis.com/auth/gmail.send",
-					"https://www.googleapis.com/auth/gmail.insert",
-					"https://www.googleapis.com/auth/gmail.compose",
-					],
-				admin_consent,
-				"select_account%20consent", 
-			)
-		} else if (selectedApp.name.toLowerCase() == "zoho_desk") {
-			handleOauth2Request(
-				"1000.ZR5MHUW6B0L6W1VUENFGIATFS0TOJT",
-				"",
-				"https://desk.zoho.com",
-				["Desk.tickets.READ",
-				"Desk.tickets.UPDATE",
-				"Desk.tickets.DELETE",
-				"Desk.tickets.CREATE",
-				"offline_access"],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase() == "slack") {
-			handleOauth2Request(
-				"5155508477298.5168162485601",
-				"",
-				"https://slack.com",
-				["chat:write:user", "im:read", "im:write", "search:read", "usergroups:read", "usergroups:write",],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase() == "webex") {
-			handleOauth2Request(
-				"Cab184f3d7271f540443c79b5b79845e3387abbbdb3db4233a87ea3a5432fb3d5",
-				"",
-				"https://webexapis.com",
-				["spark:all"],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase().includes("microsoft_teams")) {
-			handleOauth2Request(
-				"31cb4c84-658e-43d5-ae84-22c9142e967a",
-				"",
-				"https://graph.microsoft.com",
-				["ChannelMessage.Edit", "ChannelMessage.Read.All", "ChannelMessage.Send", "Chat.Create", "Chat.ReadWrite", "Chat.Read", "offline_access", "Team.ReadBasic.All"],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase().includes("todoist")) {
-			handleOauth2Request(
-				"35fa3a384040470db0c8527e90a3c2eb",
-				"",
-				"https://api.todoist.com",
-				["task:add",],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase().includes("microsoft_sentinel")) {
-			handleOauth2Request(
-				"4c16e8c4-3d34-4aa1-ac94-262ea170b7f7",
-				"",
-				"https://management.azure.com",
-				["https://management.azure.com/user_impersonation",],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase().includes("microsoft_365_defender")) {
-			handleOauth2Request(
-				"4c16e8c4-3d34-4aa1-ac94-262ea170b7f7",
-				"",
-				"https://graph.microsoft.com",
-				["SecurityEvents.ReadWrite.All",],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase().includes("google_sheets")) {
-			handleOauth2Request(
-				"253565968129-mppu17aciek8slr3kpgnb37hp86dmvmb.apps.googleusercontent.com",
-				"",
-				"https://sheets.googleapis.com",
-				["https://www.googleapis.com/auth/spreadsheets"],
-				admin_consent,
-				"consent",
-			)
-		} else if (selectedApp.name.toLowerCase().includes("google_drive") || selectedApp.name.toLowerCase().includes("google_disk")) {
-			handleOauth2Request(
-				"253565968129-6pij4g6ojim4gpum0h9m9u3bc357qsq7.apps.googleusercontent.com",
-				"",
-				"https://www.googleapis.com",
-				["https://www.googleapis.com/auth/drive",],
-				admin_consent,
-				"consent",
-			)
-		} else if (selectedApp.name.toLowerCase().includes("google_chat") || selectedApp.name.toLowerCase().includes("google_hangout")) {
-			handleOauth2Request(
-				"253565968129-6pij4g6ojim4gpum0h9m9u3bc357qsq7.apps.googleusercontent.com",
-				"",
-				"https://www.googleapis.com",
-				["https://www.googleapis.com/auth/chat.messages",],
-				admin_consent,
-				"consent",
-			)
-
-		} else if (selectedApp.name.toLowerCase().includes("jira_service_desk") || selectedApp.name.toLowerCase().includes("jira") || selectedApp.name.toLowerCase().includes("jira_service_management")) {
-			handleOauth2Request(
-				"AI02egeCQh1Zskm1QAJaaR6dzjR97V2F",
-				"",
-				"https://api.atlassian.com",
-				["read:jira-work", "write:jira-work", "read:servicedesk:jira-service-management", "write:servicedesk:jira-service-management", "read:request:jira-service-management", "write:request:jira-service-management",],
-				admin_consent,
-			)
-		} else if (selectedApp.name.toLowerCase().includes("github")) {
-			handleOauth2Request(
-				"3d272b1b782b100b1e61",
-				"",
-				"https://api.github.com",
-				["repo","user","project","notifications",],
-				admin_consent,
-			)
-		} else {
-			console.log("No match found for: ", selectedApp.name)
-		}
-		// write:request:jira-service-management
 	}
 
 
@@ -734,7 +603,7 @@ const AuthenticationOauth2 = (props) => {
             style={{ textDecoration: "none", color: "#f85a3e" }}
           >
             {" "}
-            Learn more about Oauth2 with Shuffle
+            Learn more about Oauth2 with Zebra Axon
           </a>
           <div />
         </span>

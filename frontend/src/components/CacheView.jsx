@@ -352,17 +352,9 @@ const CacheView = (props) => {
         <div style={{paddingBottom: isSelectedDataStore?null:250, width: isSelectedDataStore?1030:null, padding:isSelectedDataStore?27:null, height: isSelectedDataStore?"auto":null, color: isSelectedDataStore?'#ffffff':null, backgroundColor: isSelectedDataStore?'#212121':null, borderRadius: isSelectedDataStore?'16px':null, }}>
             {modalView}
             <div style={{ marginTop: isSelectedDataStore?null:20, marginBottom: 20 }}>
-                <h2 style={{ display: isSelectedDataStore?null: "inline" }}>Shuffle Datastore</h2>
+                <h2 style={{ display: isSelectedDataStore?null: "inline" }}>Zebra Axon Datastore</h2>
                 <span style={{ marginLeft: isSelectedDataStore?null:25, color:isSelectedDataStore?"#9E9E9E":null}}>
                     Datastore is a permanent key-value database for storing data that can be used cross-workflow. <br/>You can store anything from lists of IPs to complex configurations.&nbsp;
-                    <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/docs/organizations#datastore"
-                        style={{ textDecoration: isSelectedDataStore?null:"none", color: isSelectedDataStore?"#FF8444":"#f85a3e" }}
-                    >
-                        Learn more
-                    </a>
                 </span>
             </div>
             <Button

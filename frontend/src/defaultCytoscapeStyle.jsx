@@ -119,7 +119,7 @@ const data = [
     },
   },
   {
-    selector: `node[app_name="Shuffle Tools"]`,
+    selector: `node[app_name="Zebra Axon Tools"]`,
     css: {
       width: "30px",
       height: "30px",

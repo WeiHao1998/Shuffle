@@ -161,7 +161,7 @@ const SetAuthentication = (props) => {
 
 		var foundTab = params["error"];
 		if (foundTab !== null && foundTab !== undefined && foundTab.length > 0) {
-			console.log("Found error: ", foundTab, "! Skipping Shuffle requests to validate Oauth2")
+			console.log("Found error: ", foundTab, "! Skipping Zebra Axon requests to validate Oauth2")
 			var errorDesc = params["error_description"]
 			if (errorDesc !== null && errorDesc !== undefined && errorDesc.length > 0) {
 				foundTab += "\n\n"+errorDesc

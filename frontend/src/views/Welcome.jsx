@@ -448,7 +448,7 @@ const Welcome = (props) => {
 											<CardActionArea style={actionObject}>
 												<img src="/images/welcome-to-shuffle.png" style={imageStyle} />
 												<Typography variant="h4" style={{color: "#F1F1F1"}}> 
-													New to Shuffle 
+													New to Zebra Axon 
 												</Typography>
 												<Typography variant="body1" style={{marginTop: 10, color: "rgba(255,255,255,0.8)"}}>
 													Let us guide you for an easier experience
@@ -479,7 +479,7 @@ const Welcome = (props) => {
 												Experienced 
 											</Typography>										
 											<Typography variant="body1" style={{marginTop: 10, color: "rgba(255,255,255,0.8)"}}>
-												Head to Shuffle right away
+												Head to Zebra Axon right away
 											</Typography>
 										</CardActionArea>
 									</Card>

@@ -56,7 +56,7 @@ const CreatorGrid = props => {
 
 	const innerColor = "rgba(255,255,255,0.65)"
 	const borderRadius = 3
-	window.title = "Shuffle | Workflows | Discover your use-case"
+	window.title = "Zebra Axon | Workflows | Discover your use-case"
 
 	const submitContact = (email, message) => {
 		const data = {
@@ -161,7 +161,7 @@ const CreatorGrid = props => {
 					}
 
 					counted += 1
-					const creatorUrl = !isCloud ? `https://shuffler.io/creators/${data.username}` : `/creators/${data.username}`
+					const creatorUrl = !isCloud ? `` : `/creators/${data.username}`
 
 					return (
 						<Zoom key={index} in={true} style={{}}>
@@ -177,7 +177,7 @@ const CreatorGrid = props => {
 													</Typography>
 													<span style={{marginTop: "auto", marginBottom: "auto", marginLeft: 10, }}>
 														{data.verified === true ? 
-															<Tooltip title="Verified and earning from Shuffle contributions" placement="top">
+															<Tooltip title="Verified and earning from Zebra Axon contributions" placement="top">
 																<VerifiedUserIcon style={{}}/>
 															</Tooltip>
 														: 

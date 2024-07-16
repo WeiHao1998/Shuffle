@@ -348,7 +348,7 @@ const WorkflowTemplatePopup = (props) => {
 		}
 
 		setRequestSent(true)
-		const url = isCloud ? `${globalUrl}/api/v1/workflows/merge` : `https://shuffler.io/api/v1/workflows/merge`
+		const url = isCloud ? `${globalUrl}/api/v1/workflows/merge` : ``
 		fetch(url, {
 			method: "POST",
 			headers: {
@@ -381,7 +381,7 @@ const WorkflowTemplatePopup = (props) => {
 				//console.log("Error in workflow template: ", responseJson.error);
 				setRequestSent(false)
 
-				const defaultMessage = "Failed to generate workflow the workflow - the Shuffle team has been notified. Contact support@shuffler.io for further assistance."
+				const defaultMessage = "Failed to generate workflow the workflow - the Zebra Axon team has been notified. Contact support@shuffler.io for further assistance."
 				if (responseJson.reason !== undefined && responseJson.reason !== null && responseJson.reason !== "") {
 					setErrorMessage(defaultMessage + "\n\n" + responseJson.reason)
 				} else {

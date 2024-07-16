@@ -144,17 +144,17 @@ const Search = (props) => {
 
     setCurTab(newValue);
     if (newValue === 0) {
-      document.title = "Shuffle - search - apps";
+      document.title = "Zebra Axon - search - apps";
     } else if (newValue === 1) {
-      document.title = "Shuffle - search - workflows";
+      document.title = "Zebra Axon - search - workflows";
     } else if (newValue === 2) {
-      document.title = "Shuffle - search - documentation";
+      document.title = "Zebra Axon - search - documentation";
     } else if (newValue === 3) {
-      document.title = "Shuffle - search - creators";
+      document.title = "Zebra Axon - search - creators";
     } else if (newValue === 4) {
-      document.title = "Shuffle - search - Discord Chat";
+      document.title = "Zebra Axon - search - Discord Chat";
     } else {
-      document.title = "Shuffle - search";
+      document.title = "Zebra Axon - search";
     }
 
     const urlSearchParams = new URLSearchParams(window.location.search);

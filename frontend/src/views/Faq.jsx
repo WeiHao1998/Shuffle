@@ -20,14 +20,14 @@ const hrefStyle = {
  * How is support handled?
  * How big is the team EXACTLY?
  * What are requirements for everything?
- * What level of support does Fredrik/Shuffle provide to paying customers with enterprise license agreements?
+ * What level of support does Fredrik/Zebra_Axon provide to paying customers with enterprise license agreements?
  * What’s their guaranteed response time? 2 hours, 4 hours, next business day? Support 365/24/7, or just weekdays?
  * How can customers submit support requests? Email, phone, and/or web?
  * Is there a support team, or is Fredrik the only support person right now?
- * What’s the annual Shuffle release schedule / frequency? One major release once a year with minor releases quarterly?
- * The ability to run our own, private instance of Shuffle in a public or private cloud, as well as on virtualized or bare metal, standalone/isolated servers is very important.
+ * What’s the annual Zebra_Axon release schedule / frequency? One major release once a year with minor releases quarterly?
+ * The ability to run our own, private instance of Zebra_Axon in a public or private cloud, as well as on virtualized or bare metal, standalone/isolated servers is very important.
  * We were wondering how the shuffle environment handles a playbook in production(workflow editing and testing phase) vs. in operations (playbook/workflow is operational in a SOC).
- * Is Shuffle capable of pushing notifications/messages to REDPro if a playbook is Active, Inactive or in Error so it’s general status can be understood via the Playbook Library.
+ * Is Zebra_Axon capable of pushing notifications/messages to REDPro if a playbook is Active, Inactive or in Error so it’s general status can be understood via the Playbook Library.
  * Will cloud webhooks behave any differently from on premise webhooks if we are hosting our own cloud.
  * If we are hosting on our own cloud and the cloud is not connected to the open internet, will there a be a work around for delivering app updates.
  * What other maintenance and troubleshooting considerations should we be aware of in an isolated cloud environment

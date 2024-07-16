@@ -154,7 +154,7 @@ const SetAuthentication = (props) => {
 				:
 				<><div>
 					<Typography variant="h4" style={{ marginBottom: 20, }}>
-						A Shuffle Organization has invited you to: Configure <a href={appLink} target="_blank" style={{ color: '#FF8444', textDecoration: 'none' }}>{appname}</a> Authentication
+						A Zebra Axon Organization has invited you to: Configure <a href={appLink} target="_blank" style={{ color: '#FF8444', textDecoration: 'none' }}>{appname}</a> Authentication
 					</Typography>
 
 					{/* What does this mean box */}
@@ -162,7 +162,7 @@ const SetAuthentication = (props) => {
 						What does this mean?
 					</Typography>
 					<Typography variant="body1" style={{ marginBottom: 20, }}>
-						A Shuffle Organization has invited you to configure authentication for this app so that they can use this authentication in one of their workflows.
+						A Zebra Axon Organization has invited you to configure authentication for this app so that they can use this authentication in one of their workflows.
 					</Typography>
 
 					<Typography variant="h6">

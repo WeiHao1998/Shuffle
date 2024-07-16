@@ -89,7 +89,7 @@ const AppGrid = (props) => {
   };
   const innerColor = "rgba(255,255,255,0.65)";
   const borderRadius = 3;
-  window.title = "Shuffle | Apps | Find and integrate any app";
+  window.title = "Zebra Axon | Apps | Find and integrate any app";
   const noImage = "/public/no_image.png";
 
   const submitContact = (email, message) => {
@@ -207,7 +207,7 @@ const AppGrid = (props) => {
                   onClick={handleSearch}
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgb(248, 106, 62), rgb(243, 64, 121))",
+                      "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
                     color: "white",
                     border: "none",
                     padding: "10px 20px",
@@ -412,7 +412,7 @@ const AppGrid = (props) => {
                     const appUrl =
                       isCloud
                         ? `/apps/${data.objectID}?queryID=${data.__queryID}`
-                        : `https://shuffler.io/apps/${data.objectID}?queryID=${data.__queryID}`;
+                        : ``;
 
                     return (
                       <Zoom
@@ -844,7 +844,7 @@ const AppGrid = (props) => {
             <button
               style={{
                 cursor: "pointer",
-                color: "rgb(248, 103, 67)",
+                color: "rgb(97, 0,  255)",
                 border: "none",
                 backgroundColor: "transparent",
                 fontSize: 16,
@@ -972,7 +972,7 @@ const AppGrid = (props) => {
                   // onClick={handleSearch}
                   style={{
                     backgroundImage:
-                      "linear-gradient(to right, rgb(248, 106, 62), rgb(243, 64, 121))",
+                      "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
                     color: "white",
                     border: "none",
                     padding: "10px 20px",
@@ -1710,7 +1710,7 @@ const AppGrid = (props) => {
                             const appUrl =
                               isCloud === true
                                 ? `/apps/${data.id}`
-                                : `https://shuffler.io/apps/${data.id}`;
+                                : ``;
 
                             return (
                               <Zoom

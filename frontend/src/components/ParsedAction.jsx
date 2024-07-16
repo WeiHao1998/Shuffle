@@ -436,8 +436,8 @@ const ParsedAction = (props) => {
 
 		/*
         actionlist.push({
-          type: "Shuffle DB",
-          name: "Shuffle DB",
+          type: "Zebra_Axon DB",
+          name: "Zebra_Axon DB",
           value: "$shuffle_cache",
           highlight: "shuffle_cache",
           autocomplete: "shuffle_cache",
@@ -449,8 +449,8 @@ const ParsedAction = (props) => {
 		*/
 
 		var cachekey = {
-          type: "Shuffle DB",
-          name: "Shuffle DB",
+          type: "Zebra Axon DB",
+          name: "Zebra Axon DB",
           value: "$shuffle_cache",
           highlight: "shuffle_cache",
           autocomplete: "shuffle_cache",
@@ -847,11 +847,11 @@ const ParsedAction = (props) => {
       selectedAction.parameters[count].value = event.target.value;
 
 			var forceUpdate = false 
-			if (isCloud && (selectedAction.app_name === "Shuffle Tools" || selectedAction.app_name === "email") && (selectedAction.name === "send_email_shuffle" || selectedAction.name === "send_sms_shuffle") && data.name === "apikey") {
+			if (isCloud && (selectedAction.app_name === "Zebra Axon Tools" || selectedAction.app_name === "email") && (selectedAction.name === "send_email_shuffle" || selectedAction.name === "send_sms_shuffle") && data.name === "apikey") {
 				console.log("APIKEY - this shouldn't show up!")
 			}
 
-			if (selectedAction.app_name === "Shuffle Tools" && selectedAction.name === "filter_list" && data.name === "input_list") {
+			if (selectedAction.app_name === "Zebra Axon Tools" && selectedAction.name === "filter_list" && data.name === "input_list") {
 				//console.log("FILTER LIST!: ", event, count, data)
 				const parsedvalue = event.target.value
 				if (parsedvalue.includes("#")) {
@@ -1486,7 +1486,7 @@ const ParsedAction = (props) => {
             }
 
 			// Added autofill to make this ALOT simpler
-			if (isCloud && (selectedAction.app_name === "Shuffle Tools" || selectedAction.app_name === "email") && (selectedAction.name === "send_email_shuffle" || selectedAction.name === "send_sms_shuffle") && data.name === "apikey") {
+			if (isCloud && (selectedAction.app_name === "Zebra Axon Tools" || selectedAction.app_name === "email") && (selectedAction.name === "send_email_shuffle" || selectedAction.name === "send_sms_shuffle") && data.name === "apikey") {
 				if (selectedActionParameters[count].length === 0) {
 					selectedAction.parameters[count].value = "TMP: Will be replaced during execution if cloud"
 					setSelectedAction(selectedAction)
@@ -1592,7 +1592,7 @@ const ParsedAction = (props) => {
 
 
 			var showCacheConfig = false
-			if (data.name === "key" && selectedAction.name.includes("cache") && selectedAction.app_name === "Shuffle Tools") { 
+			if (data.name === "key" && selectedAction.name.includes("cache") && selectedAction.app_name === "Zebra Axon Tools") { 
 				// Show a key popout button
 				showCacheConfig = true
 			}
@@ -2720,7 +2720,7 @@ const ParsedAction = (props) => {
 				  {hasAutocomplete === true ? 
 				  	<Tooltip
 				  		color="primary"
-				  		title={"Field was autocompleted by Shuffle based on previous actions (same fields or parent nodes)"}
+				  		title={"Field was autocompleted by Zebra Axon based on previous actions (same fields or parent nodes)"}
 				  		placement="top"
 				  	>
 				  		<AutoFixHighIcon style={{ 
@@ -3729,7 +3729,7 @@ const ParsedAction = (props) => {
             value={
               selectedActionEnvironment === undefined || selectedActionEnvironment === null ||
               selectedActionEnvironment.Name === undefined || selectedActionEnvironment.Name === null 
-                ? isCloud ? "Cloud" : "Shuffle"
+                ? isCloud ? "Cloud" : "Zebra Axon"
                 : selectedActionEnvironment.Name
             }
             SelectDisplayProps={{

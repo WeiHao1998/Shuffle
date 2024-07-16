@@ -9,7 +9,7 @@ const Data = [
     description:
       "The Hive app allows for walkoff to generate or close cases in TheHive",
     environment: "cloud",
-    contact_info: { name: "FORGE Cyber", url: "https://github.com/" },
+    contact_info: { name: "FORGE Cyber", url: "" },
     actions: [
       {
         description: "creates a hive case",
@@ -169,7 +169,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {
@@ -368,7 +368,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {
@@ -420,7 +420,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {
@@ -711,7 +711,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {
@@ -930,7 +930,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {
@@ -974,7 +974,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {
@@ -1140,7 +1140,7 @@ const Data = [
     environment: "cloud",
     contact_info: {
       name: "Walkoff Team",
-      url: "https://github.com/nsacyber/walkoff",
+      url: "",
     },
     actions: [
       {

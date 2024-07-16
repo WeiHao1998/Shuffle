@@ -677,7 +677,6 @@ const AppFramework = (props) => {
 			"comms": 5, 
 		}
 		
-		// Based on apps recommended from repo https://github.com/Shuffle/app-recommender
 		//fetch("http://localhost:8080/app_recommendations", {
 		fetch("https://europe-west2-shuffler.cloudfunctions.net/app_recommendations", {
       method: "POST",
@@ -1479,7 +1478,7 @@ const AppFramework = (props) => {
 		//const svgSize = `${40*scale}px`
 		//const svgSize = `${40}px`
 	
-		const foundMiddleImage = userdata !== undefined && userdata !== null && userdata.active_org !== undefined && userdata.active_org.image !== undefined && userdata.active_org.image !== null && userdata.active_org.image !== "" ? userdata.active_org.image : '/images/Shuffle_logo.png'
+		const foundMiddleImage = userdata !== undefined && userdata !== null && userdata.active_org !== undefined && userdata.active_org.image !== undefined && userdata.active_org.image !== null && userdata.active_org.image !== "" ? userdata.active_org.image : '/images/Zebra_Axon_logo.png'
 		
 		const siemcheck = parsedFrameworkData.SIEM.large_image === undefined || (parsedFrameworkData.SIEM.name !== undefined && parsedFrameworkData.SIEM.name !== null && parsedFrameworkData.SIEM.name.includes(":default"))
 		const iamcheck = parsedFrameworkData.IAM.large_image === undefined || (parsedFrameworkData.IAM.name !== undefined && parsedFrameworkData.IAM.name !== null && parsedFrameworkData.IAM.name.includes(":default")) 

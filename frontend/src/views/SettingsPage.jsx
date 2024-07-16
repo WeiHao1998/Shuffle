@@ -953,7 +953,7 @@ const Settings = (props) => {
 			{isCloud ?
 					<span>
 						<Typography variant="body1" color="textSecondary">
-							By <a href="/creators" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>joining the Creator Incentive Program</a> and connecting your Github account, you agree to our <a href="/docs/terms_of_service" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>Terms of Service</a>, and acknowledge that your non-sensitive data will be turned into a <a target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}} href="https://shuffler.io/creators">creator account</a>. This enables you to earn a passive income from Shuffle. This IS reversible. Support: support@shuffler.io
+							By <a href="/creators" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>joining the Creator Incentive Program</a> and connecting your Github account, you agree to our <a href="/docs/terms_of_service" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>Terms of Service</a>, and acknowledge that your non-sensitive data will be turned into a <a target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}} href="">creator account</a>. This enables you to earn a passive income from Zebra Axon. This IS reversible. Support: support@shuffler.io
 						</Typography>
 						<Button
 							style={{ height: 40, marginTop: 10 }}
@@ -1117,16 +1117,6 @@ const Settings = (props) => {
 				`https%3A%2F%2F${window.location.host}%2Fset_authentication`
 
 		console.log("redirect: ", redirectUri)
-
-    const client_id = "3d272b1b782b100b1e61"
-    const username = userdata.id;
-    const scopes = "read:user";
-
-    const url = `https://github.com/login/oauth/authorize?access_type=offline&prompt=consent&client_id=${client_id}&redirect_uri=${redirectUri}&response_type=code&scope=${scopes}&state=username%3D${username}%26type%3Dgithub`
-
-    console.log("URL: ", url);
-
-    var newwin = window.open(url, "", "width=800,height=600");
 
     // Check whether we got a callback somewhere
     //var id = setInterval(function () {

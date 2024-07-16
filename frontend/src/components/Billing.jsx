@@ -72,7 +72,7 @@ const Billing = (props) => {
 
     if (orgId.length === 0) {
       toast(
-        "Organization ID not defined (get deals). Please contact us on https://shuffler.io if this persists logout."
+        "Organization ID not defined (get deals)."
       );
       return;
     }
@@ -498,7 +498,7 @@ const Billing = (props) => {
 								if (feature.includes("Documentation: ")) {
 									parsedFeature = 
 										<a 
-											href={feature.split("Documentation: ")[1]} 
+											href=''
 											target="_blank"
 											style={{ textDecoration: "none", color: "#f85a3e",}}
 										>
@@ -582,7 +582,7 @@ const Billing = (props) => {
 									: 
 
 									userdata.has_card_available === true ?
-										"While you have a card attached to your account, Shuffle will no longer prevent workflows from running. Billing will occur at the start of each month."
+										"While you have a card attached to your account, Zebra Axon will no longer prevent workflows from running. Billing will occur at the start of each month."
 										:
 										`You are not subscribed to any plan and are using the free plan with max 10,000 app runs per month. Upgrade to deactivate this limit.`
 								}
@@ -620,7 +620,6 @@ const Billing = (props) => {
 										handlePayasyougo(userdata)
 										//navigate("/pricing?tab=cloud&highlight=true")
 									} else {
-										//window.open("https://shuffler.io/pricing?tab=onprem&highlight=true", "_blank")
 										handlePayasyougo()
 									}
 								}}
@@ -648,8 +647,6 @@ const Billing = (props) => {
 									onClick={() => {
 										if (isCloud) {
 											navigate("/pricing?tab=cloud&highlight=true")
-										} else {
-											window.open("https://shuffler.io/pricing?tab=onprem&highlight=true", "_blank")
 										}
 									}}
 								>
@@ -979,43 +976,17 @@ const Billing = (props) => {
 			</Typography>}
 			{clickedFromOrgTab?
 			<span style={{ color: "#9E9E9E" }}>{isCloud ? 
-				"Get more out of Shuffle by adding your credit card, such as no App Run limitations, and priority support from our team. We use Stripe to manage subscriptions and do not store any of your billing information. You can manage your subscription and billing information below."
+				"Get more out of Zebra Axon by adding your credit card, such as no App Run limitations, and priority support from our team. We use Stripe to manage subscriptions and do not store any of your billing information. You can manage your subscription and billing information below."
 				:
-				"Shuffle is an Open Source automation platform, and no license is required. We do however offer a Scale license with HA guarantees, along with support hours. By buying a license on https://shuffler.io, you can get access to the license immediately, and if Cloud Syncronisation is enabled, the UI in your local instance will also update."
+				"Zebra Axon is an Open Source automation platform, and no license is required. We do however offer a Scale license with HA guarantees, along with support hours., you can get access to the license immediately, and if Cloud Syncronisation is enabled, the UI in your local instance will also update."
 			}</span>:
 			<Typography variant="body1" color="textSecondary" style={{ marginTop: 0, marginBottom: 10}}>
 				{isCloud ? 
-					"Get more out of Shuffle by adding your credit card, such as no App Run limitations, and priority support from our team. We use Stripe to manage subscriptions and do not store any of your billing information. You can manage your subscription and billing information below."
+					"Get more out of Zebra Axon by adding your credit card, such as no App Run limitations, and priority support from our team. We use Stripe to manage subscriptions and do not store any of your billing information. You can manage your subscription and billing information below."
 					:
-					"Shuffle is an Open Source automation platform, and no license is required. We do however offer a Scale license with HA guarantees, along with support hours. By buying a license on https://shuffler.io, you can get access to the license immediately, and if Cloud Syncronisation is enabled, the UI in your local instance will also update."
+					"Zebra Axon is an Open Source automation platform, and no license is required. We do however offer a Scale license with HA guarantees, along with support hours. you can get access to the license immediately, and if Cloud Syncronisation is enabled, the UI in your local instance will also update."
 				}
 			</Typography>}
-
-			{userdata.support === true ? 
-				<div style={{marginBottom: 10, marginTop:clickedFromOrgTab?16:null, color:clickedFromOrgTab?"#F1F1F1":null }}>
-					For sales: Create&nbsp;
-					<a href={"https://docs.google.com/document/d/1OeJSi42812EMg7fUAw1HAj1ymOG8rfp8Ma_DGJKvwgI/copy?usp=sharing&organization=" + selectedOrganization.id} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#f85a3e" }}>
-						New Cloud Contract
-					</a>
-					&nbsp;or&nbsp;
-					<a href={"https://docs.google.com/document/d/1IguxpeV4Wwwr9C0MPyUNhhajEu_PxjRfP7f0hYyRYOI/copy?usp=sharing&organization=" + selectedOrganization.id} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#f85a3e" }}>
-						New Onprem Contract
-					</a>
-					&nbsp; - &nbsp; 
-					<a href={"https://drive.google.com/drive/folders/1zVvwwkbQXW3p-DJYa0GBDzFo_ZnV_I_5"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#f85a3e" }}>
-						Google Drive Link
-					</a>
-					&nbsp; - &nbsp;
-					<a href={"https://github.com/Shuffle/Shuffle-docs/tree/master/handbook/Sales"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#f85a3e" }}>
-						Sales Process
-					</a>
-
-						
-				</div>
-				:
-				null
-			}
-
 
 				{isChildOrg ?
 					<Typography variant="h6" style={{marginBottom: 50, }}>

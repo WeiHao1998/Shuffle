@@ -38,7 +38,7 @@ export const typecost = 0.0018
 export const typecost_single = (typecost * 1.33).toFixed(4)
 
 export const handlePayasyougo = (userdata) => {
-	var billingurl = "https://billing.stripe.com/p/login/bIY5lo5bMbWs9Py5kk"
+	var billingurl = ""
 
 	if (userdata !== undefined && userdata !== null) {
 		if (userdata.org_email !== undefined && userdata.org_email !== null && userdata.org_email !== "") {
@@ -243,7 +243,7 @@ const PaymentField = (props) => {
 		"cloud": false,
 	},
 	{
-		"name": "Shuffle Datastore (cache)",
+		"name": "Zebra Axon Datastore (cache)",
 		"basic": "Max 1GB",
 		"community": "Yes",
 		"pro": "Yes",
@@ -252,7 +252,7 @@ const PaymentField = (props) => {
 		"onprem": false,
 	},
 	{
-		"name": "Shuffle Datastore (cache)",
+		"name": "Zebra Axon Datastore (cache)",
 		"basic": "Yes",
 		"community": "Yes",
 		"pro": "Yes",
@@ -315,7 +315,7 @@ const PaymentField = (props) => {
 		"cloud": false,
 	},
 	{
-		"name": "Shuffle SMS alerting",
+		"name": "Zebra Axon SMS alerting",
 		"basic": "30 / month",
 		"community": "Yes",
 		"pro": "300 / month",
@@ -323,7 +323,7 @@ const PaymentField = (props) => {
 		"active": true, 
 	},
 	{
-		"name": "Shuffle Email alerting",
+		"name": "Zebra Axon Email alerting",
 		"basic": "100 / month",
 		"community": "Yes",
 		"pro": "10.000 / month",
@@ -373,7 +373,7 @@ const PaymentField = (props) => {
 		"active": true, 
 	},
 	{
-		"name": "Shuffle Academy",
+		"name": "Zebra Axon Academy",
 		"basic": "Yes",
 		"community": "No",
 		"pro": "Yes",
@@ -495,7 +495,7 @@ const PaymentField = (props) => {
 	},
 
 	{
-		"name": "Shuffle creates integration",
+		"name": "Zebra Axon creates integration",
 		"basic": "No",
 		"community": "Yes",
 		"pro": "Yes",
@@ -679,7 +679,7 @@ const PaymentField = (props) => {
 		"active": false, 
 	},
 	{
-		"name": "Shuffle IoC search",
+		"name": "Zebra Axon IoC search",
 		"basic": "No",
 		"community": "No",
 		"pro": "Yes",
@@ -752,7 +752,7 @@ const PaymentField = (props) => {
 		"active": true, 
 	},
 	{
-		"name": "Shuffle Custom Modifications",
+		"name": "Zebra Axon Custom Modifications",
 		"basic": "Contact us",
 		"community": "No",
 		"pro": "Contact us",
@@ -911,7 +911,7 @@ const PaymentField = (props) => {
 				if (shuffleVariant === 0) {
 					navigate("/register?message=Get started for free")
 				} else {
-					window.location.href = "https://github.com/Shuffle/Shuffle/blob/master/.github/install-guide.md"
+					window.location.href = ""
 				}
 
 				//setMonthlyCost(2, paymentType)
@@ -978,7 +978,7 @@ const PaymentField = (props) => {
 									{shuffleVariant === 0 ? 
 										"shuffler.io / Cloud"
 									: 
-										<a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="https://github.com/shuffle/shuffle">Open Source</a> 
+										null
 									}
 								</Typography>
 								<Typography variant="h3" style={{marginTop: 48,}}>{paymentType === 0 ? "Free" : "Free"}</Typography>
@@ -1011,7 +1011,7 @@ const PaymentField = (props) => {
 											} else {
 												console.log("Couldn't find drift in window.drift and not .drift-open-chat with querySelector: ", window.drift)
 											}
-										}}>Free Support</span> & <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="https://github.com/shuffle/shuffle">Discord access</a>
+										}}>Free Support</span> & <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="">Discord access</a>
 									</Typography>
 								</span>
 								<div style={{height: 70}} />
@@ -1096,7 +1096,7 @@ const PaymentField = (props) => {
 										if (isLoggedIn) {
 											console.log("Redirecting to Stripe!")
 		
-											const priceItem = window.location.origin === "https://shuffler.io" ? "app_executions" : "price_1MROFrDzMUgUjxHShcSxgHO1"
+											const priceItem = window.location.origin === "" ? "app_executions" : "price_1MROFrDzMUgUjxHShcSxgHO1"
 
 											const successUrl = `${window.location.origin}/admin?admin_tab=billing&payment=success`
 											const failUrl = `${window.location.origin}/pricing?admin_tab=billing&payment=failure`
@@ -1182,7 +1182,7 @@ const PaymentField = (props) => {
 										- Sub-organization access
 									</Typography>
 									<Typography variant="body1">
-										- Build Shuffle into your product
+										- Build Zebra Axon into your product
 									</Typography>
 									<div style={{height: 10}} />
 									<Button fullWidth disabled={false} variant="contained" color="primary" style={{borderRadius: 25, height: 40, margin: "60px 0px 15px 0px", fontSize: 14, color: "white", backgroundImage: buttonBackground,}} onClick={() => {
@@ -1219,7 +1219,7 @@ const PaymentField = (props) => {
 				</Typography>
 				{/*
 				<Typography color="textSecondary" style={{marginTop: 25, textAlign: isMobile ? "left" : "center",}}>
-					Shuffle is an <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="https://github.com/shuffle/shuffle">Open Source</a> project. Gives access to support, development and features not otherwise available. This applies to both Open Source & Cloud/SaaS. After the transaction is finished, you will immediately have full access to our support team, and you organization will automatically get upgraded resources assigned. 
+					Zebra Axon is an <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="https://github.com/shuffle/shuffle">Open Source</a> project. Gives access to support, development and features not otherwise available. This applies to both Open Source & Cloud/SaaS. After the transaction is finished, you will immediately have full access to our support team, and you organization will automatically get upgraded resources assigned. 
 				</Typography>
 				*/}
 				<Grid container style={{marginTop: 50, marginBottom: 100, }} spacing={2}>
@@ -1396,9 +1396,9 @@ const PaymentField = (props) => {
 
 			<Typography variant={isMobile ? "h6" : "h4"} style={{margin: "auto", width: maxwidth/3*2, marginBottom: 10, }}>Cloud, Hybrid & Onprem</Typography>	
 			<Typography variant="body1" color="textSecondary" style={{margin: "auto", width: maxwidth/3*2, marginBottom: 25, }}>
-				Our support model is built for both the Cloud and Onpremises version of Shuffle, and can be managed between both. <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} to="/contact">Contact us </Link>for more info, or to get a quote from one of our <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} to="/partner">verified resellers.</Link>
+				Our support model is built for both the Cloud and Onpremises version of Zebra Axon, and can be managed between both. <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} to="/contact">Contact us </Link>for more info, or to get a quote from one of our <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} to="/partner">verified resellers.</Link>
 			</Typography>
-      <img src="images/partner/models.jpeg" alt="Shuffle MSSP and Open Source" style={{width: isMobile ? "100%" : 500, margin: "auto", borderRadius: theme.palette.borderRadius, }} />
+      <img src="images/partner/models.jpeg" alt="Zebra Axon MSSP and Open Source" style={{width: isMobile ? "100%" : 500, margin: "auto", borderRadius: theme.palette.borderRadius, }} />
 
 			<div style={{marginBottom: 100}} />
 			{removeAdditions === true ? null :
@@ -1412,7 +1412,7 @@ const PaymentField = (props) => {
 						<Typography variant="body1" color="textSecondary" style={{marginBottom: 200}}>
 							If you got more questions about our pricing and plans, please <Link to="/contact" style={{textDecoration: "none", color: theme.palette.primary.main}}>contact us</Link> so we can help	
 						</Typography>
-						<Newsletter globalUrl={"https://shuffler.io"} />
+						<Newsletter globalUrl={""} />
 					</div>
 				</span>
 			}
@@ -1457,7 +1457,7 @@ const PaymentField = (props) => {
 			}}
 		>
 			<FormControl>
-				<DialogTitle><div style={{color: "white"}}>Shuffle payments</div></DialogTitle>
+				<DialogTitle><div style={{color: "white"}}>Zebra Axon payments</div></DialogTitle>
 				<DialogContent>
 					<Typography variant="body1">
 						Choose recurrence
@@ -1489,7 +1489,7 @@ const PaymentField = (props) => {
 								Your plan:
 							</Typography>
 							<Typography color="textSecondary">
-								Shuffle <b>{variant === 0 ? "Community" : variant === 2 ? "Free" : "Pro"}</b> Edition
+								Zebra Axon <b>{variant === 0 ? "Community" : variant === 2 ? "Free" : "Pro"}</b> Edition
 							</Typography>
 							<Divider style={{marginTop: 15, marginBottom: 15}}/>
 							<div style={{display: "flex"}}>

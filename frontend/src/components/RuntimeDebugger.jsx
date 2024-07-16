@@ -379,7 +379,7 @@ const RuntimeDebugger = (props) => {
 				var extraItems = 0
 				if (params.row.workflow.triggers !== null) {
 					for (let key in params.row.workflow.triggers) {
-						if (params.row.workflow.triggers[key].app_name === "User Input" || params.row.workflow.triggers[key].app_name === "Shuffle Workflow") { 
+						if (params.row.workflow.triggers[key].app_name === "User Input" || params.row.workflow.triggers[key].app_name === "Zebra Axon Workflow") { 
 							extraItems += 1
 						}
 					}
@@ -577,7 +577,7 @@ const RuntimeDebugger = (props) => {
 						  </Link>
 						</span>
 						</Tooltip>
-						<Tooltip arrow title="Force continue workflow. Only workflows for workflows in EXECUTING state. This is NOT a rerun, but way for Shuffle to figure out the next steps automatically. If the execution doesn't finish even after trying this, please contact support@shuffler.io"> 
+						<Tooltip arrow title="Force continue workflow. Only workflows for workflows in EXECUTING state. This is NOT a rerun, but way for Zebra Axon to figure out the next steps automatically. If the execution doesn't finish even after trying this, please contact support@shuffler.io"> 
 						  <IconButton
 							style={{marginLeft: 5, }}
 							disabled={params.row.status !== "EXECUTING"}
@@ -595,7 +595,7 @@ const RuntimeDebugger = (props) => {
 							onClick={() => {
 								window.open(`${globalUrl}/api/v1/workflows/search/${params.row.id}`, "_blank")
 							}}
-							disabled={userdata.region_url !== "https://shuffler.io"}
+							disabled={userdata.region_url !== ""}
 						  >
 							<InsightsIcon fontSize="small" />
 						  </IconButton>
@@ -803,7 +803,7 @@ const RuntimeDebugger = (props) => {
 								type="button"
 								style={{
 									backgroundImage:
-									"linear-gradient(to right, rgb(248, 106, 62), rgb(243, 64, 121))",
+									"linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
 									color: "white",
 									border: "none",
 									padding: "10px 20px",

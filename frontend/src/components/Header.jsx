@@ -369,7 +369,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 						: null}
 					</div>
 					<Typography variant="body2">
-						Notifications are made by Shuffle to help you discover issues or improvements.
+						Notifications are made by Zebra Axon to help you discover issues or improvements.
 					</Typography >
 				</Paper>
 				{notifications.map((data, index) => {
@@ -432,13 +432,11 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 
 	const supportMenu = 
 		<span style={{marginTop: 0}}>
-      <a href="https://discord.gg/B2CBzUm" style={{ textDecoration: "none", color: "#f85a3e" }} rel="noopener noreferrer" target="_blank">
-				<Tooltip color="primary" title={"Join the community"} placement="left">
-					<IconButton color="primary" style={{}} aria-controls="simple-menu" aria-haspopup="true" onClick={(event) => {}}>
-						<img alt="Discord Community Join" src={"/images/social/resized/discord.png"} style={{height: 30, width: 30, }}/>
-					</IconButton>
-				</Tooltip>
-			</a>
+			<Tooltip color="primary" title={"Join the community"} placement="left">
+				<IconButton color="primary" style={{}} aria-controls="simple-menu" aria-haspopup="true" onClick={(event) => {}}>
+					<img alt="Discord Community Join" src={"/images/social/resized/discord.png"} style={{height: 30, width: 30, }}/>
+				</IconButton>
+			</Tooltip>
 		</span>
 
 	// Should be based on some path
@@ -549,8 +547,8 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 									})
 								}
 							}}>
-								<img src={"/images/logos/orange_logo.svg"} alt="shuffle logo" style={{height: 20, width: 20, }}/>
-								{/*<img alt="Logo Shuffle frontpage lockup" src={"/images/white_logo_new.png"} style={{margin: "auto", height: 22, }}/>*/}
+								<img src={"/images/logos/orange_logo.png"} alt="shuffle logo" style={{height: 20, width: 20, }}/>
+								{/*<img alt="Logo Zebra Axon frontpage lockup" src={"/images/white_logo_new.png"} style={{margin: "auto", height: 22, }}/>*/}
 							</Button>
 						</Link>
 					</ListItem>
@@ -693,7 +691,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 								<div onMouseOver={handleHomeHover} onMouseOut={handleHomeHoverOut} style={{color: HomeHoverColor, cursor: "pointer"}}> 
 									<Grid container direction="row" alignItems="center">
 										<Grid item>
-											<img src={"/images/logos/orange_logo.svg"} alt="logo" style={{height: 20, width: 20, marginTop: 10,}}/>
+											<img src={"/images/logos/orange_logo.png"} alt="logo" style={{height: 20, width: 20, marginTop: 10,}}/>
 											{/*
 											<HomeIcon style={{marginTop: 7, marginRight: 0}} />
 											*/}
@@ -934,7 +932,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 						{userdata === undefined || userdata.app_execution_limit === undefined || userdata.app_execution_usage === undefined || userdata.app_execution_usage < 1000 ? 
 							null
 							:
-							<Tooltip title={`Amount of executions left: ${userdata.app_execution_usage} / ${userdata.app_execution_limit}. When the limit is reached, you can still use Shuffle normally, but your Workflow triggers may stop working. Reach out to support@shuffler.io to extend this limit.`}>
+							<Tooltip title={`Amount of executions left: ${userdata.app_execution_usage} / ${userdata.app_execution_limit}. When the limit is reached, you can still use Zebra Axon normally, but your Workflow triggers may stop working. Reach out to support@shuffler.io to extend this limit.`}>
 								<div style={{maxHeight: 30, minHeight: 30, padding: 8, textAlign: "center", cursor: "pointer", borderRadius: theme.palette.borderRadius, marginRight: 10, marginTop: 12, backgroundColor: theme.palette.surfaceColor, minWidth: 60, maxWidth: 60, border: userdata.app_execution_usage/userdata.app_execution_limit >= 0.9 ? "#f86a3e" : null, }} onClick={() => {
 										console.log(userdata.appe_execution_usage/userdata.app_execution_limit)
 										if (window.drift !== undefined) {
@@ -971,7 +969,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 						<div onMouseOver={handleHomeHover} onMouseOut={handleHomeHoverOut} style={{color: HomeHoverColor, cursor: "pointer"}}> 
 							<Grid container direction="row" alignItems="center">
 								<Grid item>
-									<img src={"/images/logos/orange_logo.svg"} alt="logo" style={{height: 20, width: 20, marginTop: 3, marginRight: 5, }}/>
+									<img src={"/images/logos/orange_logo.png"} alt="logo" style={{height: 20, width: 20, marginTop: 3, marginRight: 5, }}/>
 									{/*<HomeIcon style={{marginTop: 3, marginRight: 5}} />*/}
 								</Grid>
 							</Grid>

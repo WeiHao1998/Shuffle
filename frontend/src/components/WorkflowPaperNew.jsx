@@ -89,7 +89,7 @@ const WorkflowPaper = (props) => {
 		}
 
     var image = data.creator_info !== undefined && data.creator_info !== null && data.creator_info.image !== undefined && data.creator_info.image !== null && data.creator_info.image.length > 0 ? <Avatar alt={data.creator} src={data.creator_info.image} style={imageStyle}/> : <Avatar alt={"shuffle_image"} src={theme.palette.defaultImage} style={imageStyle}/>
-		const creatorname = data.creator_info !== undefined && data.creator_info !== null && data.creator_info.username !== undefined && data.creator_info.username !== null && data.creator_info.username.length > 0 ? data.creator_info.username : "Shuffle"
+		const creatorname = data.creator_info !== undefined && data.creator_info !== null && data.creator_info.username !== undefined && data.creator_info.username !== null && data.creator_info.username.length > 0 ? data.creator_info.username : "Zebra Axon"
     var orgName = "";
     var orgId = "";
 		if ((data.objectID === undefined || data.objectID === null) && data.id !== undefined && data.id !== null) {

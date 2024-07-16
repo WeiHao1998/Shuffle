@@ -212,7 +212,7 @@ const RunWorkflow = (defaultprops) => {
 						//const parsedImage = triggers[2].large_image;
 						//actionimg = (
 						//	<img
-						//		alt={"Shuffle Subflow"}
+						//		alt={"Zebra Axon Subflow"}
 						//		src={parsedImage}
 						//		style={{
 						//			marginRight: 20,
@@ -227,7 +227,7 @@ const RunWorkflow = (defaultprops) => {
 					} else if (data.action.app_name === "User Input") {
 						//actionimg = (
 						//	<img
-						//		alt={"Shuffle Subflow"}
+						//		alt={"Zebra Axon Subflow"}
 						//		src={triggers[3].large_image}
 						//		style={{
 						//			marginRight: 20,

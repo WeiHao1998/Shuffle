@@ -67,10 +67,10 @@ const OrgHeaderexpanded = (props) => {
 
 	const [appDownloadUrl, setAppDownloadUrl] = React.useState(
 		selectedOrganization.defaults === undefined
-			? "https://github.com/frikky/shuffle-apps"
+			? ""
 			: selectedOrganization.defaults.app_download_repo === undefined ||
 				selectedOrganization.defaults.app_download_repo.length === 0
-				? "https://github.com/frikky/shuffle-apps"
+				? ""
 				: selectedOrganization.defaults.app_download_repo
 	);
 	const [appDownloadBranch, setAppDownloadBranch] = React.useState(
@@ -83,10 +83,10 @@ const OrgHeaderexpanded = (props) => {
 	);
 	const [workflowDownloadUrl, setWorkflowDownloadUrl] = React.useState(
 		selectedOrganization.defaults === undefined
-			? "https://github.com/frikky/shuffle-apps"
+			? ""
 			: selectedOrganization.defaults.workflow_download_repo === undefined ||
 				selectedOrganization.defaults.workflow_download_repo.length === 0
-				? "https://github.com/frikky/shuffle-workflows"
+				? ""
 				: selectedOrganization.defaults.workflow_download_repo
 	);
 	const [workflowDownloadBranch, setWorkflowDownloadBranch] = React.useState(
@@ -750,7 +750,7 @@ const OrgHeaderexpanded = (props) => {
 					</Grid>
 					{isCloud ?
 						<Typography variant="body2" style={{ textAlign: "left", }} color="textSecondary">
-							IdP URL for Shuffle: https://shuffler.io/api/v1/login_sso
+							IdP URL for Zebra Axon
 						</Typography>
 						: null}
 				</Grid>

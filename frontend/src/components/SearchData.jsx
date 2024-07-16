@@ -239,7 +239,7 @@ const SearchData = props => {
                             const avatar = baseImage
 
 
-                            var parsedUrl = isCloud ? `/workflows/${hit.objectID}` : `https://shuffler.io/workflows/${hit.objectID}`
+                            var parsedUrl = `/workflows/${hit.objectID}`
 
                             parsedUrl += `?queryID=${hit.__queryID}`
 							const validated = hit.validated !== undefined && hit.validate !== null ? hit.validated : false
@@ -279,7 +279,7 @@ const SearchData = props => {
                                     }}>
                                         <ListItemAvatar>
 											{validated === true ? 
-												<Tooltip title="The functionality of this workflow manually verified by the Shuffle automation team" placement="top">
+												<Tooltip title="The functionality of this workflow manually verified by the Zebra Axon automation team" placement="top">
 													<VerifiedUserIcon style={{marginLeft: 0, marginRight: 20, }} />
 												</Tooltip>
 										  		: 
@@ -492,7 +492,7 @@ const SearchData = props => {
                                 })
                             }
 
-                            var parsedUrl = isCloud ? `/apps/${hit.objectID}` : `https://shuffler.io/apps/${hit.objectID}`
+                            var parsedUrl = isCloud ? `/apps/${hit.objectID}` : ``
                             parsedUrl += `?queryID=${hit.__queryID}`
 
                             return (
@@ -752,8 +752,7 @@ const SearchData = props => {
         }
         const type = "Discord Text"
         const handleHitClick = (url) => {
-            const modifiedUrl = url.replace('https://ptb.discord.com/', 'https://discord.com/');
-            window.open(modifiedUrl, '_blank');
+            
         };
         return (
             <Card elevation={0} style={{ marginRight: 10, marginTop: 50, color: "white", zIndex: 1002, backgroundColor: theme.palette.inputColor, width: "100%", left: 470, boxShadows: "none", }}>
@@ -809,19 +808,12 @@ const SearchData = props => {
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <a
-                                href="https://github.com/Shuffle/Shuffle/blob/main/.github/install-guide.md"
-                                style={{
-                                    textDecoration: "none",
-                                    color: "var(--Paragraph-text, #C8C8C8)",
-                                    display: "flex"
-                                }}
-                            >
+                            <>
                                 <Typography variant="body1" style={{ fontSize: 16 }}>
                                     Onprem Installation
                                 </Typography>
                                 <KeyboardArrowRightIcon />
-                            </a>
+                            </>
                         </ListItem>
                         <ListItem>
                             <Link to="/usecases" onClick={handleLinkClick} style={{ textDecoration: "none", color: "var(--Paragraph-text, #C8C8C8)", display: "flex" }}>

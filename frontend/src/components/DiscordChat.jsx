@@ -116,7 +116,7 @@ const DiscordChat = props => {
 
     const Hits = ({ hits }) => {
         const handleHitClick = (url) => {
-            const modifiedUrl = url.replace('https://ptb.discord.com/', 'https://discord.com/');
+            const modifiedUrl = url.replace('', '');
             window.open(modifiedUrl, '_blank');
         };
         if (hits.length === 0) {
@@ -211,9 +211,7 @@ const DiscordChat = props => {
 					<Typography variant="body2" color="textSecondary" style={{}}>
 						Search by 
 					</Typography>
-					<a rel="noopener noreferrer" href="https://www.algolia.com/" target="_blank" style={{textDecoration: "none", color: "white"}}>
-						<img src={"/images/logo-algolia-nebula-blue-full.svg"} alt="Algolia logo" style={{height: 17, marginLeft: 5, marginTop: 3,}} />
-					</a>
+					<img src={"/images/logo-algolia-nebula-blue-full.svg"} alt="Algolia logo" style={{height: 17, marginLeft: 5, marginTop: 3,}} />
 				</span>
         </div>
     );

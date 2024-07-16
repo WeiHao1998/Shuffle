@@ -74,8 +74,8 @@ code {
 }
 
 .ais-RefinementList-checkbox:checked {
-  background-color: rgb(248, 103, 67) !important;
-  border-color: rgb(248, 103, 67) !important;
+  background-color: rgb(97, 0,  255) !important;
+  border-color: rgb(97, 0,  255) !important;
   width: 16px;
   height: 16px;
 }

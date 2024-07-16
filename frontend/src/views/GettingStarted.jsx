@@ -123,7 +123,7 @@ const chipStyle = {
 const GettingStarted = (props) => {
   const { globalUrl, isLoggedIn, isLoaded, userdata } = props;
 
-  document.title = "Getting Started with Shuffle";
+  document.title = "Getting Started with Zebra Axon";
   //const alert = useAlert();
   const classes = useStyles(theme);
 	let navigate = useNavigate();
@@ -143,7 +143,7 @@ const GettingStarted = (props) => {
   const [field1, setField1] = React.useState("");
   const [field2, setField2] = React.useState("");
   const [downloadUrl, setDownloadUrl] = React.useState(
-    "https://github.com/frikky/shuffle-workflows"
+    ""
   );
   const [videoViewOpen, setVideoViewOpen] = React.useState(false)
   const [downloadBranch, setDownloadBranch] = React.useState("master");
@@ -656,7 +656,7 @@ const GettingStarted = (props) => {
     if (data.triggers !== null && data.triggers !== undefined) {
       for (var key in data.triggers) {
         const trigger = data.triggers[key];
-        if (trigger.app_name === "Shuffle Workflow") {
+        if (trigger.app_name === "Zebra Axon Workflow") {
           if (trigger.parameters.length > 2) {
             trigger.parameters[2].value = "";
           }
@@ -701,7 +701,7 @@ const GettingStarted = (props) => {
           }
         }
 
-        trigger.environment = isCloud ? "cloud" : "Shuffle";
+        trigger.environment = isCloud ? "cloud" : "Zebra Axon";
         trigger.id = newId;
       }
     }
@@ -833,7 +833,7 @@ const GettingStarted = (props) => {
     data = sanitizeWorkflow(data);
     toast("Sanitizing and publishing " + data.name);
 
-    // This ALWAYS talks to Shuffle cloud
+    // This ALWAYS talks to Zebra Axon cloud
     fetch(globalUrl + "/api/v1/workflows/" + data.id + "/publish", {
       method: "POST",
       headers: {
@@ -849,10 +849,6 @@ const GettingStarted = (props) => {
         } else {
           if (isCloud) {
             toast("Successfully published workflow");
-          } else {
-            toast(
-              "Successfully published workflow to https://shuffler.io"
-            );
           }
         }
 
@@ -1280,7 +1276,7 @@ const GettingStarted = (props) => {
                     var newWorkflows = [data];
                     for (var key in data.triggers) {
                       const trigger = data.triggers[key];
-                      if (trigger.app_name !== "Shuffle Workflow") {
+                      if (trigger.app_name !== "Zebra Axon Workflow") {
                         continue;
                       }
 
@@ -1551,7 +1547,7 @@ const GettingStarted = (props) => {
     ) {
       triggers = data.triggers.length;
       for (let key in data.triggers) {
-        if (data.triggers[key].app_name === "Shuffle Workflow") {
+        if (data.triggers[key].app_name === "Zebra Axon Workflow") {
           subflows += 1;
         }
       }
@@ -1735,7 +1731,7 @@ const GettingStarted = (props) => {
                         var newWorkflows = [data];
                         for (var key in data.triggers) {
                           const trigger = data.triggers[key];
-                          if (trigger.app_name !== "Shuffle Workflow") {
+                          if (trigger.app_name !== "Zebra Axon Workflow") {
                             continue;
                           }
 
@@ -2197,7 +2193,7 @@ const GettingStarted = (props) => {
 							})
 						}
 					}}>
-						Learn to use Shuffle by&nbsp; 
+						Learn to use Zebra Axon by&nbsp; 
 						<span style={{cursor: "pointer", color: "#f86a3e",}} onClick={() => {setModalOpen(true)}}>
 							creating your first workflow 
 						</span> and <Link to="/docs/getting_started" style={{textDecoration: "none", color: "#f86a3e",}}>reading the docs.</Link>
@@ -2232,7 +2228,7 @@ const GettingStarted = (props) => {
 					}}
 				>
 					<DialogTitle>
-						Welcome to Shuffle!	
+						Welcome to Zebra Axon!	
 					</DialogTitle>
 
 					<Tooltip
@@ -2251,21 +2247,10 @@ const GettingStarted = (props) => {
 						</IconButton>
 					</Tooltip>
 
-					<iframe 
-						width="560"
-						height="315" 
-						style={{margin: "0px auto 0px auto", width: 560, height: 315,}}
-						src="https://www.youtube-nocookie.com/embed/rO7k9q3OgC0" 
-						title="Introduction video" 
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen
-					>
-					</iframe>
 				</Dialog>
         <div style={workflowViewStyle}>
 					<Typography variant="h1" style={{fontSize: 30, marginTop: 25, }}>
-						Getting Started with Shuffle
+						Getting Started with Zebra Axon
 					</Typography>
 					<Typography variant="body2" color="textSecondary" style={{marginTop: 25}}>
 						We provide everything you need to automate your operations - apps, default workflows, security dashboards and analytics that work well together.
@@ -2352,16 +2337,14 @@ const GettingStarted = (props) => {
 							<Typography color="textSecondary" variant="body2" style={{marginTop: 5,}} >
 								We help with automation, scaling, training and more. Get involved!
 							</Typography>
-							<a href="https://discord.gg/B2CBzUm" style={{textDecoration: "none",}}>
-								<Button
-									variant="outlined"
-									style={{marginTop: 10}}
-									onClick={() => {
-									}}
-								>
-									Join Discord community
-								</Button>
-							</a>
+              <Button
+                variant="outlined"
+                style={{marginTop: 10}}
+                onClick={() => {
+                }}
+              >
+                Join Discord community
+              </Button>
 						</div>
 						{/*
 						<div style={{position: "fixed", bottom: 110, right: 110, display: "flex", }}>
@@ -2684,7 +2667,7 @@ const GettingStarted = (props) => {
             },
           }}
           onChange={(e) => setDownloadUrl(e.target.value)}
-          placeholder="https://github.com/frikky/shuffle-apps"
+          placeholder=""
           fullWidth
         />
         <span style={{ marginTop: 10 }}>

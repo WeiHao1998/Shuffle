@@ -18,7 +18,7 @@ const HealthPage = (props) => {
     const [averageUptime, setAverageUptime] = useState(0);
 
     const isCloud = window.location.host === "localhost:3002" || window.location.host === "shuffler.io";
-    const globalUrl = `https://shuffler.io` 
+    const globalUrl = `` 
 
 	console.log("HEALTHPAGE 1")
 

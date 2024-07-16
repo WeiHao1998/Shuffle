@@ -281,7 +281,7 @@ const Apps = (props) => {
   const { globalUrl, isLoggedIn, isLoaded, userdata, serverside, } = props;
 
   //const [workflows, setWorkflows] = React.useState([]);
-  const baseRepository = "https://github.com/frikky/shuffle-apps";
+  const baseRepository = "";
   //const alert = useAlert();
 	let navigate = useNavigate();
 
@@ -370,7 +370,7 @@ const Apps = (props) => {
 
   useEffect(() => {
     if (apps.length <= 0 && firstrequest) {
-      document.title = "Shuffle - Apps";
+      document.title = "Zebra Axon - Apps";
 
       if (!isLoggedIn && isLoaded) {
 				if (isCloud) {
@@ -1184,7 +1184,7 @@ const Apps = (props) => {
           {isCloud ? (
             <a
               rel="noopener noreferrer"
-              href={"https://shuffler.io/apps/" + selectedApp.id}
+              href={""}
               style={{ textDecoration: "none", color: "#f85a3e" }}
               target="_blank"
             >
@@ -1983,7 +1983,7 @@ const Apps = (props) => {
                   })
                 }
 
-                var parsedUrl = isCloud ? `/apps/${hit.objectID}` : `https://shuffler.io/apps/${hit.objectID}`
+                var parsedUrl = isCloud ? `/apps/${hit.objectID}` : ``
                 parsedUrl += `?queryID=${hit.__queryID}`
 
                 return (
@@ -2269,7 +2269,7 @@ const Apps = (props) => {
                   If you're still not able to see any apps, please follow our{" "}
                   <a
                     href={
-                      "https://shuffler.io/docs/troubleshooting#load_all_apps_locally"
+                      ""
                     }
                     style={{ textDecoration: "none", color: "#f85a3e" }}
                     target="_blank"
@@ -2844,7 +2844,7 @@ const Apps = (props) => {
           style={{ backgroundColor: inputColor }}
           variant="outlined"
           margin="normal"
-          defaultValue={"https://github.com/frikky/shuffle-apps"}
+          defaultValue={""}
           InputProps={{
             style: {
               color: "white",
@@ -2853,7 +2853,7 @@ const Apps = (props) => {
             },
           }}
           onChange={(e) => setOpenApi(e.target.value)}
-          placeholder="https://github.com/frikky/shuffle-apps"
+          placeholder=""
           fullWidth
         />
         <span style={{ marginTop: 10 }}>
@@ -2977,7 +2977,7 @@ const Apps = (props) => {
         </DialogTitle>
         <DialogContent style={{ color: "rgba(255,255,255,0.65)" }}>
 		  <Typography variant="body1">
-		  	Paste in a URL, and we will make it into an app for you. This may take multiple minutes based on the size of the documentation. <b>{isCloud ? "" : "Uses Shuffle Cloud (https://shuffler.io) for processing (for now)."}</b> 
+		  	Paste in a URL, and we will make it into an app for you. This may take multiple minutes based on the size of the documentation. <b>{isCloud ? "" : "Uses Shuffle Cloud for processing (for now)."}</b> 
 		  </Typography>
 		  <TextField
             style={{ backgroundColor: inputColor }}

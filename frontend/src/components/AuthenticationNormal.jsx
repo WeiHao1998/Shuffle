@@ -210,7 +210,7 @@ const AuthenticationData = (props) => {
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
-					href="https://shuffler.io/docs/apps#authentication"
+					href=""
 					style={{ textDecoration: "none", color: "#f85a3e" }}
 				>
 					What is app authentication?

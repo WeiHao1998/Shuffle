@@ -510,7 +510,7 @@ const Admin = (props) => {
 
   // Basically just a simple way to get a generated email
   // This also may help understand how to communicate with users
-  // both inside and outside Shuffle
+  // both inside and outside Zebra Axon
   // This could also be generated on the backend
   const mailsendingButton = (org) => {
     if (org === undefined || org === null) {
@@ -734,7 +734,7 @@ const Admin = (props) => {
         ? "- Scale your onprem installation"
         : "";
 
-    var body = `Hey,%0D%0A%0D%0AI noticed you tried to use Shuffle${extra_timestamp_text}, and thought you may be interested in a POC. It looks like you have ${workflow_amount} workflows made, but it still doesn't look like you are getting what you wanted out of  Shuffle. If you're interested, I'd love to set up a quick call to see if we can help you get more out of Shuffle. %0D%0A%0D%0A
+    var body = `Hey,%0D%0A%0D%0AI noticed you tried to use Zebra Axon${extra_timestamp_text}, and thought you may be interested in a POC. It looks like you have ${workflow_amount} workflows made, but it still doesn't look like you are getting what you wanted out of  Zebra Axon. If you're interested, I'd love to set up a quick call to see if we can help you get more out of Zebra Axon. %0D%0A%0D%0A
 
 Some of the things we can help with:%0D%0A
 ${your_apps}
@@ -743,7 +743,7 @@ ${usecases}
 - Multi-Tenancy and creating special usecases%0D%0A
 ${cloudSyncInfo}%0D%0A
 
-If you're interested, please let me know a time that works for you, or set up a call here: https://drift.me/${username}`;
+If you're interested, please let me know a time that works for you`;
 
     return `mailto:${admins}?bcc=frikky@shuffler.io,binu@shuffler.io&subject=${subject}&body=${body}`;
   };
@@ -1466,7 +1466,7 @@ If you're interested, please let me know a time that works for you, or set up a 
 
     if (orgId.length === 0) {
       toast(
-        "Organization ID not defined. Please contact us on https://shuffler.io if this persists logout.",
+        "Organization ID not defined.",
       );
       return;
     }
@@ -1598,7 +1598,7 @@ If you're interested, please let me know a time that works for you, or set up a 
   const handleGetSubOrgs = (orgId) => {
     if (orgId.length === 0) {
       toast(
-        "Organization ID not defined. Please contact us on https://shuffler.io if this persists logout.",
+        "Organization ID not defined.",
       );
       return;
     }
@@ -2305,29 +2305,29 @@ If you're interested, please let me know a time that works for you, or set up a 
 
     setCurTab(newValue);
     if (newValue === 1) {
-      document.title = "Shuffle - admin - users";
+      document.title = "Zebra Axon - admin - users";
       getUsers();
     } else if (newValue === 2) {
-      document.title = "Shuffle - admin - app authentication";
+      document.title = "Zebra Axon - admin - app authentication";
       getAppAuthentication();
       getAppAuthenticationGroups();
     } else if (newValue === 3) {
-      document.title = "Shuffle - admin - Files";
+      document.title = "Zebra Axon - admin - Files";
     } else if (newValue === 4) {
-      document.title = "Shuffle - admin - Datastore";
+      document.title = "Zebra Axon - admin - Datastore";
 
       //listOrgCache("3fd181b9-fb29-41b7-b2f5-15292265d420");
     } else if (newValue === 5) {
-      document.title = "Shuffle - admin - schedules";
+      document.title = "Zebra Axon - admin - schedules";
       getSchedules();
     } else if (newValue === 6) {
-      document.title = "Shuffle - admin - environments";
+      document.title = "Zebra Axon - admin - environments";
       getEnvironments();
     } else if (newValue === 7) {
-      document.title = "Shuffle - admin - orgs";
+      document.title = "Zebra Axon - admin - orgs";
       getOrgs();
     } else {
-      document.title = "Shuffle - admin";
+      document.title = "Zebra Axon - admin";
     }
 
     if (newValue === 8) {
@@ -2340,7 +2340,7 @@ If you're interested, please let me know a time that works for you, or set up a 
 
   if (firstRequest) {
     setFirstRequest(false);
-    document.title = "Shuffle - admin";
+    document.title = "Zebra Axon - admin";
 
     getEnvironments();
     if (!isCloud) {
@@ -3724,7 +3724,7 @@ If you're interested, please let me know a time that works for you, or set up a 
                   cloud sync
                 </a>{" "}
                 do? Cloud syncronization is a way of getting more out of
-                Shuffle. Shuffle will <b>ALWAYS</b> make every option open
+                Zebra Axon. Zebra Axon will <b>ALWAYS</b> make every option open
                 source, but features relying on other users can't be done
                 without a collaborative approach.
                 {isCloud ? (
@@ -3875,7 +3875,7 @@ If you're interested, please let me know a time that works for you, or set up a 
                     </div>
                     {orgSyncResponse.length > 0 ? (
                       <Typography style={{ marginTop: 5, marginBottom: 10 }}>
-                        Message from Shuffle Cloud: <b>{orgSyncResponse}</b>
+                        Message from Zebra Axon Cloud: <b>{orgSyncResponse}</b>
                       </Typography>
                     ) : null}
                   </div>
@@ -3927,7 +3927,7 @@ If you're interested, please let me know a time that works for you, or set up a 
                           // Name rewrites as these are structs
                           var newname = "";
                           if (newkey.toLowerCase() === "shuffle gpt") {
-                            newname = "Shuffle AI";
+                            newname = "Zebra Axon AI";
                           }
 
                           const griditem = {
@@ -5076,7 +5076,7 @@ If you're interested, please let me know a time that works for you, or set up a 
         <div style={{ marginTop: 20, marginBottom: 20 }}>
           <h2 style={{ display: "inline" }}>Categories</h2>
           <span style={{ marginLeft: 25 }}>
-            Categories are the categories supported by Shuffle, which are mapped
+            Categories are the categories supported by Zebra Axon, which are mapped
             to apps and workflows
           </span>
         </div>
@@ -6081,11 +6081,7 @@ If you're interested, please let me know a time that works for you, or set up a 
                                   environment.auth === ""
                                     ? "cb5st3d3Z!3X3zaJ*Pc"
                                     : environment.auth;
-                                const newUrl =
-                                  globalUrl === "https://shuffler.io"
-                                    ? "https://shuffle-backend-stbuwivzoq-nw.a.run.app"
-                                    : globalUrl;
-
+                                const newUrl = globalUrl
                                 const commandData = `docker run --restart=always --volume "/var/run/docker.sock:/var/run/docker.sock" -e ENVIRONMENT_NAME="${environment.Name}" -e 'AUTH=${auth}' -e ORG="${props.userdata.active_org.id}" -e DOCKER_API_VERSION=1.40 -e BASE_URL="${newUrl}" --name="shuffle-orborus" -d ghcr.io/shuffle/shuffle-orborus:latest`;
                                 var copyText =
                                   document.getElementById(elementName);
@@ -6251,7 +6247,7 @@ If you're interested, please let me know a time that works for you, or set up a 
                         >
                           <div style={{ flex: 2, overflow: "hidden" }}>
                             <Typography variant="body1">
-                              90% CPU the server(s) hosting the Shuffle App
+                              90% CPU the server(s) hosting the Zebra Axon App
                               Runner (Orborus) was found.
                             </Typography>
                             <Typography variant="body2" color="textSecondary">
@@ -6269,7 +6265,7 @@ If you're interested, please let me know a time that works for you, or set up a 
                               </a>{" "}
                               and{" "}
                               <a
-                                href="https://shuffler.io/contact"
+                                href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{

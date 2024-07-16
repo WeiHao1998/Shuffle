@@ -127,8 +127,8 @@ const LandingpageUsecases = (props) => {
 						{/*<b>Security Automation <i>is Hard</i></b>*/}
 					</Typography>
 					<Typography variant="h6" style={{marginTop: isMobile ? 15 : 0,}}>
-						Connecting your everchanging environment is hard. We get it! That's why we built Shuffle, where you can use and share your security workflows to everyones benefit.
-						{/*Shuffle is an automation platform where you don't need to be an expert to automate. Get access to our large pool of security playbooks, apps and people.*/}
+						Connecting your everchanging environment is hard. We get it! That's why we built Zebra Axon, where you can use and share your security workflows to everyones benefit.
+						{/*Zebra Axon is an automation platform where you don't need to be an expert to automate. Get access to our large pool of security playbooks, apps and people.*/}
 					</Typography>
 					<div style={{display: "flex", textAlign: "center", itemAlign: "center",}}>
 						{isMobile ? null :

@@ -457,7 +457,7 @@ const Dashboard = (props) => {
       })
 		}
 
-  document.title = "Shuffle - Dashboard";
+  document.title = "Zebra Axon - Dashboard";
   var dayGraphLabels = [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130];
   var dayGraphData = [60, 80, 65, 130, 80, 105, 90, 130, 70, 115, 60, 130];
 

@@ -271,7 +271,7 @@ const LoginDialog = (props) => {
           }}
         >
           <img
-            src="images/Shuffle_logo.png"
+            src="images/Zebra_Axon_logo.png"
             style={{
               height: imgsize + 10,
               width: imgsize + 10,
@@ -287,7 +287,7 @@ const LoginDialog = (props) => {
               variant="body2"
               style={{ marginBottom: 20, color: "white" }}
             >
-              Waiting for the Shuffle database to become available. This may
+              Waiting for the Zebra Axon database to become available. This may
               take up to a minute.
             </Typography>
 
@@ -314,15 +314,8 @@ const LoginDialog = (props) => {
                 style={{ marginBottom: 20, color: "white" }}
               >
                 <b>
-                  Are you sure Shuffle is{" "}
-                  <a
-                    rel="norefferer"
-                    target="_blank"
-                    href="https://github.com/frikky/Shuffle/blob/master/.github/install-guide.md"
-                    style={{ textDecoration: "none", color: "#f86a3e" }}
-                  >
-                    installed correctly
-                  </a>
+                  Are you sure Zebra Axon is{" "}
+                  installed correctly
                   ?
                 </b>
               </Typography>
@@ -362,7 +355,7 @@ const LoginDialog = (props) => {
               <a
                 rel="norefferer"
                 target="_blank"
-                href="https://discord.gg/B2CBzUm"
+                href=""
                 style={{ textDecoration: "none", color: "#f86a3e" }}
               >
                 Join the Discord!

@@ -77,7 +77,7 @@ const Header = (props) => {
   const [subAnchorEl, setSubAnchorEl] = React.useState(null);
   const [upgradeHovered, setUpgradeHovered] = React.useState(false);
   const [showTopbar, setShowTopbar] = useState(false)
-  const stripeKey = typeof window === 'undefined' || window.location === undefined ? "" : window.location.origin === "https://shuffler.io" ? "pk_live_XAxwE2Fp9DEbEcNYw4UKmyby00vIlIPPRp" : "pk_test_EdxgKfqmQGXY5JLjdBqtuhCw00BHbiKJDB"
+  const stripeKey = typeof window === 'undefined' || window.location === undefined ? "" : window.location.origin === "/" ? "pk_live_XAxwE2Fp9DEbEcNYw4UKmyby00vIlIPPRp" : "pk_test_EdxgKfqmQGXY5JLjdBqtuhCw00BHbiKJDB"
   let navigate = useNavigate();
 
   const handleClick = (event) => {
@@ -445,7 +445,7 @@ const Header = (props) => {
             </ButtonGroup>
           </div>
           <Typography variant="body2" color="textSecondary" style={{ marginTop: 5, }}>
-            Notifications generated made by Shuffle to help you discover issues or
+            Notifications generated made by Zebra Axon to help you discover issues or
             improvements. <a href="/docs/organizations#notifications" target="_blank" rel="noopener noreferrer" style={{ color: "#f86a3e", textDecoration: "none", }}>
               Learn more</a>
           </Typography>
@@ -532,12 +532,12 @@ const Header = (props) => {
   const supportMenu = (
     <span style={{ marginTop: 0 }}>
       <a
-        href="https://discord.gg/B2CBzUm"
+        href=""
         style={{ textDecoration: "none", color: "#f85a3e" }}
         rel="noopener noreferrer"
         target="_blank"
       >
-        <Tooltip color="primary" title={"Join the Shuffle Automation Community"} placement="left">
+        <Tooltip color="primary" title={"Join the Zebra Axon Automation Community"} placement="left">
           <IconButton
             color="primary"
             style={{}}
@@ -779,7 +779,7 @@ const Header = (props) => {
               }}
             >
               <img
-                src={"/images/logos/topleft_logo.svg"}
+                src={"/images/logos/topleft_logo.png"}
                 alt="shuffle logo"
                 style={{ height: 25, }}
               />
@@ -968,7 +968,7 @@ const Header = (props) => {
                   <Grid container direction="row" alignItems="center">
                     <Grid item style={{}}>
                       <img
-                        src={"/images/logos/orange_logo.svg"}
+                        src={"/images/logos/orange_logo.png"}
                         alt="logo"
                         style={{ height: 20, width: 20, marginTop: 4 }}
                       />
@@ -1315,7 +1315,7 @@ const Header = (props) => {
               userdata.app_execution_usage === undefined ||
               userdata.app_execution_usage < 1000 ? null : (
               <Tooltip
-                title={`Amount of App Runs used: ${userdata.app_execution_usage} / ${userdata.app_execution_limit}. When the limit is reached, you can still use Shuffle normally, but your Workflow triggers will stop workflows from starting. Reach out to support@shuffler.io to extend this limit.`}
+                title={`Amount of App Runs used: ${userdata.app_execution_usage} / ${userdata.app_execution_limit}. When the limit is reached, you can still use Zebra Axon normally, but your Workflow triggers will stop workflows from starting. Reach out to support@shuffler.io to extend this limit.`}
               >
                 <div
                   style={{
@@ -1399,7 +1399,7 @@ const Header = (props) => {
               <Grid container direction="row" alignItems="center">
                 <Grid item>
                   <img
-                    src={"/images/logos/orange_logo.svg"}
+                    src={"/images/logos/orange_logo.png"}
                     alt="logo"
                     style={{
                       height: 20,
@@ -1540,8 +1540,8 @@ const Header = (props) => {
       <span style={{ zIndex: 50001, }}>
         <div style={{ position: "relative", height: topbarHeight, backgroundImage: "linear-gradient(to right, #f86a3e, #f34079)", overflow: "hidden", }}>
           <Typography variant="body1" style={{ paddingTop: 7, margin: "auto", textAlign: "center", color: "white", }}>
-            {/* Shuffle 1.4.0 is out! Read more about&nbsp; */}
-            Shuffle now offers&nbsp;
+            {/* Zebra Axon 1.4.0 is out! Read more about&nbsp; */}
+            Zebra Axon now offers&nbsp;
             {/* <u>
               <a href="https://github.com/Shuffle/Shuffle/releases/tag/v1.4.0" target="_blank" style={{ color: "inherit", }} onClick={() => {
                 ReactGA.event({
