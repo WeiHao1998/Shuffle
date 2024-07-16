@@ -529,33 +529,6 @@ const Header = (props) => {
       });
   };
 
-  const supportMenu = (
-    <span style={{ marginTop: 0 }}>
-      <a
-        href=""
-        style={{ textDecoration: "none", color: "#6100ff" }}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <Tooltip color="primary" title={"Join the Zebra Axon Automation Community"} placement="left">
-          <IconButton
-            color="primary"
-            style={{}}
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            onClick={(event) => { }}
-          >
-            <img
-              alt="Discord Community Join"
-              src={"/images/social/discord.png"}
-              style={{ height: 30, width: 30 }}
-            />
-          </IconButton>
-        </Tooltip>
-      </a>
-    </span>
-  );
-
   // Should be based on some path
   const parsedAvatar =
     userdata.avatar !== undefined &&
@@ -1070,7 +1043,6 @@ const Header = (props) => {
             >
               {avatarMenu}
               {/*notificationMenu*/}
-              {supportMenu}
               {logoCheck}
             </span>
 
