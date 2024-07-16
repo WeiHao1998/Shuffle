@@ -347,20 +347,6 @@ const LoginDialog = (props) => {
                 sudo docker restart shuffle-opensearch
               </Typography>
             </Paper>
-            <Typography
-              variant="body2"
-              style={{ marginBottom: 10, color: "white", marginTop: 20 }}
-            >
-              Need help?{" "}
-              <a
-                rel="norefferer"
-                target="_blank"
-                href=""
-                style={{ textDecoration: "none", color: "#6100ff" }}
-              >
-                Join the Discord!
-              </a>
-            </Typography>
           </div>
         ) : (
           <form

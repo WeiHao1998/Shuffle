@@ -51,6 +51,7 @@ var globalUrl = window.location.origin;
 // CORS used for testing purposes. Should only happen with specific port and http
 if (window.location.port === "3000") {
   globalUrl = "http://13.236.182.122:3011";
+  // globalUrl = "http://localhost:5001"
   //globalUrl = "http://localhost:5002"
 }
 
