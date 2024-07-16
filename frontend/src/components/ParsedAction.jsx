@@ -92,7 +92,7 @@ import {
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
   root: {
     "& .MuiAutocomplete-listbox": {
@@ -110,7 +110,7 @@ const useStyles = makeStyles({
   inputRoot: {
     color: "white",
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#f86a3e",
+      borderColor: "#6100ff",
     },
   },
 });
@@ -1827,7 +1827,7 @@ const ParsedAction = (props) => {
                   border:
                     selectedActionParameters[count].required ||
                     selectedActionParameters[count].configuration
-                      ? "2px solid #f85a3e"
+                      ? "2px solid #6100ff"
                       : "",
                   color: "white",
                   width: "100%",
@@ -2289,7 +2289,7 @@ const ParsedAction = (props) => {
                 </Select>
               );
             } else if (data.variant === "STATIC_VALUE") {
-              staticcolor = "#f85a3e";
+              staticcolor = "#6100ff";
             }
 
             if (data.field_active === false) {
@@ -2427,7 +2427,7 @@ const ParsedAction = (props) => {
                       );
                       if (exec_text_field !== null) {
                         if (inside) {
-                          exec_text_field.style.border = "2px solid #f85a3e";
+                          exec_text_field.style.border = "2px solid #6100ff";
                         } else {
                           exec_text_field.style.border = "";
                         }
@@ -2681,7 +2681,7 @@ const ParsedAction = (props) => {
               </span>
             );
 
-            //var itemColor = "#f85a3e"
+            //var itemColor = "#6100ff"
             //if (!data.required) {
             //	itemColor = "#ffeb3b"
             //}
@@ -2739,7 +2739,7 @@ const ParsedAction = (props) => {
 				  	>
 						<a href="/admin?tab=cache" target="_blank" style={{textDecoration: "none"}}>
 							<StorageIcon style={{ 
-								color: "#f85a3e",
+								color: "#6100ff",
 								marginRight: 10, 
 							}}/>
 					  </a>
@@ -3141,7 +3141,7 @@ const ParsedAction = (props) => {
                     href="https://shuffler.io/docs/workflows#nodes"
                     rel="norefferer"
                     target="_blank"
-                    style={{ textDecoration: "none", color: "#f85a3e" }}
+                    style={{ textDecoration: "none", color: "#6100ff" }}
                   >
                     <Tooltip
                       color="primary"
@@ -3185,7 +3185,7 @@ const ParsedAction = (props) => {
                     title={selectedAction.run_magic_output === undefined || selectedAction.run_magic_output === null || selectedAction.run_magic_output === false ? "Click to enable magic parsing" : "Click to disable magic parsing"}
                     placement="top"
                   >
-										<AutoFixHighIcon style={{ color: selectedAction.run_magic_output === undefined || selectedAction.run_magic_output === null || selectedAction.run_magic_output === false ? "rgba(255,255,255,0.7)" : "#f86a3e"}} />
+										<AutoFixHighIcon style={{ color: selectedAction.run_magic_output === undefined || selectedAction.run_magic_output === null || selectedAction.run_magic_output === false ? "rgba(255,255,255,0.7)" : "#6100ff"}} />
                   </Tooltip>
                 </IconButton>
 								*/}

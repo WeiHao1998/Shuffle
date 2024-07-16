@@ -585,7 +585,7 @@ const UsecaseSearch = (props) => {
         selectedApp.reference_info.github_url.length === 0 ? (
           <a
             href={""}
-            rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}
+            rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}
           >
             <img
               alt={`Documentation image for ${selectedApp.name}`}
@@ -607,7 +607,7 @@ const UsecaseSearch = (props) => {
             rel="noopener noreferrer"
             target="_blank"
             href=''
-            style={{ textDecoration: "none", color: "#f86a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             <img
               alt={`Documentation image for ${selectedApp.name}`}
@@ -725,7 +725,7 @@ const UsecaseSearch = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                   href=""
-                  style={{ textDecoration: "none", color: "#f86a3e" }}
+                  style={{ textDecoration: "none", color: "#6100ff" }}
                 >
                   Join the community on Discord!
                 </a>
@@ -745,7 +745,7 @@ const UsecaseSearch = (props) => {
                       rel="noopener noreferrer"
                       target="_blank"
                       href={""}
-                      style={{ textDecoration: "none", color: "#f86a3e" }}
+                      style={{ textDecoration: "none", color: "#6100ff" }}
                     >
                       Check it out on Github!
                     </a>
@@ -758,7 +758,7 @@ const UsecaseSearch = (props) => {
                       rel="noopener noreferrer"
                       target="_blank"
                       href={''}
-                      style={{ textDecoration: "none", color: "#f86a3e" }}
+                      style={{ textDecoration: "none", color: "#6100ff" }}
                     >
                       Check it out on Github!
                     </a>

@@ -269,7 +269,7 @@ const Priorities = (props) => {
     	      padding: 30,
     	      borderBottom: "1px solid rgba(255,255,255,0.4)",
 			  marginBottom: 20, 
-			  border: highlighted ? "2px solid #f85a3e" : null,
+			  border: highlighted ? "2px solid #6100ff" : null,
 			  borderRadius: theme.palette.borderRadius,
     	    }}
     	  >
@@ -384,7 +384,7 @@ const Priorities = (props) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					href="/docs/organizations#notifications"
-					style={{ textDecoration: clickedFromOrgTab?null:"none", color: clickedFromOrgTab?"#FF8444":"#f85a3e" }}
+					style={{ textDecoration: clickedFromOrgTab?null:"none", color: clickedFromOrgTab?"#6100ff":"#6100ff" }}
 				>
 					Learn more
 				</a>
@@ -434,7 +434,7 @@ const Priorities = (props) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					href="/docs/organizations#priorities"
-					style={{ textDecoration: clickedFromOrgTab ?null:"none", color: clickedFromOrgTab ?"#FF8444":"#f85a3e" }}
+					style={{ textDecoration: clickedFromOrgTab ?null:"none", color: clickedFromOrgTab ?"#6100ff":"#6100ff" }}
 				>
 					Learn more
 				</a>

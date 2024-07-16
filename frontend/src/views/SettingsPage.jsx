@@ -547,7 +547,7 @@ const Settings = (props) => {
 
     const currentOwner = checkOwner(data, userdata);
     if (currentOwner === true) {
-      innerPaperStyle.border = "3px solid #f86a3e";
+      innerPaperStyle.border = "3px solid #6100ff";
     }
 
     return (
@@ -690,7 +690,7 @@ const Settings = (props) => {
         <a
           target="_blank"
           href="/docs/API#authentication"
-          style={{ textDecoration: "none", color: "#f85a3e" }}
+          style={{ textDecoration: "none", color: "#6100ff" }}
         >
           What is the API key used for?
         </a>
@@ -953,7 +953,7 @@ const Settings = (props) => {
 			{isCloud ?
 					<span>
 						<Typography variant="body1" color="textSecondary">
-							By <a href="/creators" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>joining the Creator Incentive Program</a> and connecting your Github account, you agree to our <a href="/docs/terms_of_service" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>Terms of Service</a>, and acknowledge that your non-sensitive data will be turned into a <a target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}} href="">creator account</a>. This enables you to earn a passive income from Zebra Axon. This IS reversible. Support: support@shuffler.io
+							By <a href="/creators" target="_blank" style={{ textDecoration: "none", color: "#6100ff"}}>joining the Creator Incentive Program</a> and connecting your Github account, you agree to our <a href="/docs/terms_of_service" target="_blank" style={{ textDecoration: "none", color: "#6100ff"}}>Terms of Service</a>, and acknowledge that your non-sensitive data will be turned into a <a target="_blank" style={{ textDecoration: "none", color: "#6100ff"}} href="">creator account</a>. This enables you to earn a passive income from Zebra Axon. This IS reversible. Support: support@shuffler.io
 						</Typography>
 						<Button
 							style={{ height: 40, marginTop: 10 }}

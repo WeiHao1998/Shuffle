@@ -193,7 +193,7 @@ const EditWorkflow = (props) => {
 									target="_blank"
 									style={{
 										textDecoration: "none",
-										color: "#f85a3e",
+										color: "#6100ff",
 										marginLeft: 5,
 										marginTop: 10,
 									}}
@@ -205,7 +205,7 @@ const EditWorkflow = (props) => {
 					}
 				</div>
 				<Typography variant="body2" color="textSecondary" style={{marginTop: 20, maxWidth: 440,}}>
-					Workflows can be built from scratch, or from templates. <a href="/usecases" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Usecases</a> can help you discover next steps, and you can <a href="/search?tab=workflows" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>search</a> for them directly. <a href="/docs/workflows" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Learn more</a>
+					Workflows can be built from scratch, or from templates. <a href="/usecases" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>Usecases</a> can help you discover next steps, and you can <a href="/search?tab=workflows" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>search</a> for them directly. <a href="/docs/workflows" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>Learn more</a>
 				</Typography>
 				{showUpload === true ? 
 					<div style={{ float: "right" }}>
@@ -228,7 +228,7 @@ const EditWorkflow = (props) => {
 								Use a Template
 							</Typography>
 							<Typography variant="body2" color="textSecondary" style={{maxWidth: 440,}}>
-								Start your workflow from our templating system. This uses publied workflows from our <a href="/creators" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e"}}>Creators</a> to generate full Usecases or parts of your Workflow.
+								Start your workflow from our templating system. This uses publied workflows from our <a href="/creators" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff"}}>Creators</a> to generate full Usecases or parts of your Workflow.
 							</Typography>
 						</div>
 					: null*/}
@@ -657,7 +657,7 @@ const EditWorkflow = (props) => {
 										})}
 									</Select>
 								: 
-									<Link to={"/admin?tab=suborgs"} style={{textDecoration: "none", color: "#f86a3e"}} target="_blank">
+									<Link to={"/admin?tab=suborgs"} style={{textDecoration: "none", color: "#6100ff"}} target="_blank">
 										<Typography variant="body2" style={{marginTop: 10, }}>
 											Create a sub-org to distribute workflows to suborgs.
 										</Typography>
@@ -669,7 +669,7 @@ const EditWorkflow = (props) => {
 									Input fields
 								</Typography>
 								<Typography variant="body1" color="textSecondary" style={{marginBottom: 20, }}>
-									Input fields are fields that will be used during the startup of the workflow. These will be formatted in JSON and is most commonly used from the <a href={`/workflows/${workflow.id}/run`} rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>workflow run page</a>.
+									Input fields are fields that will be used during the startup of the workflow. These will be formatted in JSON and is most commonly used from the <a href={`/workflows/${workflow.id}/run`} rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>workflow run page</a>.
 								</Typography>
 
 

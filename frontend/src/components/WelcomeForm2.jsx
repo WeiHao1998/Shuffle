@@ -464,8 +464,8 @@ const WelcomeForm = (props) => {
     height: 51,
     width: 464,
     fontSize: 16,
-    // background: "linear-gradient(89.83deg, #FF8444 0.13%, #F2643B 99.84%)",
-    background: "linear-gradient(90deg, #F86744 0%, #F34475 100%)",
+    // background: "linear-gradient(89.83deg, #6100ff 0.13%, #F2643B 99.84%)",
+    background: "linear-gradient(90deg, rgb(97, 0, 255), rgb(74, 4, 186))",
     padding: "16px 24px",
     // top: 20,
     // margin: "auto",
@@ -545,7 +545,7 @@ const WelcomeForm = (props) => {
             >
               {/*isCloud ? null :
 												<Typography variant="body1" style={{marginLeft: 8, marginTop: 10, marginRight: 30, }} color="textSecondary">
-														This data will be used within the product and NOT be shared unless <a href="https://shuffler.io/docs/organizations#cloud_synchronization" target="_blank" rel="norefferer" style={{color: "#f86a3e", textDecoration: "none"}}>cloud synchronization</a> is configured.
+														This data will be used within the product and NOT be shared unless <a href="https://shuffler.io/docs/organizations#cloud_synchronization" target="_blank" rel="norefferer" style={{color: "#6100ff", textDecoration: "none"}}>cloud synchronization</a> is configured.
 													</Typography>
 											*/}
               <Typography
@@ -692,7 +692,7 @@ const WelcomeForm = (props) => {
             </script>
             <Button>
               <Link
-                style={{ color: "#f86a3e" }}
+                style={{ color: "#6100ff" }}
                 to="/workflows"
                 className="btn btn-primary"
               >

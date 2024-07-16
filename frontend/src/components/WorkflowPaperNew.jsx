@@ -105,7 +105,7 @@ const WorkflowPaper = (props) => {
 		const paperImgStyle = {
 			height: 150, 
 			width: "100%",
-			backgroundImage: "linear-gradient(to right, #f86a3e, #f34079)",
+			backgroundImage: "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
 			color: "white",
 			position: "relative",
 			borderRadius: "10px 10px 0% 0%",

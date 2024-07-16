@@ -43,7 +43,7 @@ import {
 
 const useStyles = makeStyles({
 	notchedOutline: {
-		borderColor: "#f85a3e !important",
+		borderColor: "#6100ff !important",
 	},
 })
 

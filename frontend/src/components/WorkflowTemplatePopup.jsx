@@ -627,7 +627,7 @@ const WorkflowTemplatePopup = (props) => {
 					borderRadius: 8,
 					textTransform: "none",
 					backgroundColor: isHomePage ? null : theme.palette.inputColor,
-					border:  isHomePage ? null : isActive ? errorMessage !== "" ? "1px solid red" : `2px solid ${theme.palette.green}` : isHovered ? "1px solid #f85a3e" : "1px solid rgba(33, 33, 33, 1)",
+					border:  isHomePage ? null : isActive ? errorMessage !== "" ? "1px solid red" : `2px solid ${theme.palette.green}` : isHovered ? "1px solid #6100ff" : "1px solid rgba(33, 33, 33, 1)",
 					cursor: isActive ? errorMessage !== "" ? "not-allowed" : "pointer" : "pointer",
 					padding: "10px 20px 10px 20px", 
 					position: "relative",

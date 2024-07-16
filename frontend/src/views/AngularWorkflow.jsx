@@ -17,7 +17,6 @@ import Markdown from "react-markdown";
 import { ToastContainer, toast } from "react-toastify" 
 import { isMobile } from "react-device-detect"
 import aa from 'search-insights'
-import Drift from "react-driftjs";
 import { CodeHandler, Img, OuterLink, } from "../views/Docs.jsx";
 
 import { InstantSearch, Configure, connectSearchBox, connectHits, Index } from 'react-instantsearch-dom';
@@ -348,11 +347,11 @@ export function removeParam(key, sourceURL) {
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
   root: {
     "& .MuiAutocomplete-listbox": {
-      border: "2px solid #f85a3e",
+      border: "2px solid #6100ff",
       color: "white",
       fontSize: 18,
       "& li:nth-child(even)": {
@@ -366,7 +365,7 @@ const useStyles = makeStyles({
   inputRoot: {
     color: "white",
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#f86a3e",
+      borderColor: "#6100ff",
     },
   },
 });
@@ -3973,7 +3972,7 @@ const AngularWorkflow = (defaultprops) => {
 
       const elementMouseIsOver = document.elementFromPoint(x, y);
       if (elementMouseIsOver !== undefined && elementMouseIsOver !== null) {
-        // Color for #f85a3e translated to rgb
+        // Color for #6100ff translated to rgb
         const newBorder = "3px solid rgb(248, 90, 62)";
         if (
           elementMouseIsOver.style.border !== newBorder &&
@@ -7956,7 +7955,7 @@ const AngularWorkflow = (defaultprops) => {
             rel="noopener noreferrer"
             href=""
             target="_blank"
-            style={{ textDecoration: "none", color: "#f85a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             Workflow variables?
           </a>
@@ -8006,7 +8005,7 @@ const AngularWorkflow = (defaultprops) => {
             rel="noopener noreferrer"
             href=""
             target="_blank"
-            style={{ textDecoration: "none", color: "#f85a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             Runtime variables?
           </a>
@@ -9974,7 +9973,7 @@ const AngularWorkflow = (defaultprops) => {
               width: "17px",
               height: "17px",
               borderRadius: 17 / 2,
-              backgroundColor: "#f85a3e",
+              backgroundColor: "#6100ff",
               marginRight: "10px",
             }}
           />
@@ -10011,7 +10010,7 @@ const AngularWorkflow = (defaultprops) => {
               open={showAutocomplete}
               fullWidth
               style={{
-                borderBottom: `1px solid #f85a3e`,
+                borderBottom: `1px solid #6100ff`,
                 color: "white",
                 height: 50,
                 marginTop: 2,
@@ -10041,7 +10040,7 @@ const AngularWorkflow = (defaultprops) => {
                   );
                   if (exec_text_field !== null) {
                     if (inside) {
-                      exec_text_field.style.border = "2px solid #f85a3e";
+                      exec_text_field.style.border = "2px solid #6100ff";
                     } else {
                       exec_text_field.style.border = "";
                     }
@@ -10322,7 +10321,7 @@ const AngularWorkflow = (defaultprops) => {
           href="/docs/workflows#conditions"
           style={{ 
 			  	textDecoration: "none", 
-				color: "#f85a3e",
+				color: "#6100ff",
 		  }}
         >
           Learn more
@@ -10806,7 +10805,7 @@ const AngularWorkflow = (defaultprops) => {
               rel="noopener noreferrer"
               target="_blank"
               href=""
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               What are conditions?
             </a>
@@ -11339,7 +11338,7 @@ const AngularWorkflow = (defaultprops) => {
                       width: 17,
                       height: 17,
                       borderRadius: 17 / 2,
-                      backgroundColor: "#f85a3e",
+                      backgroundColor: "#6100ff",
                       marginRight: 10,
                     }}
                   />
@@ -11350,7 +11349,7 @@ const AngularWorkflow = (defaultprops) => {
                 {outlookButton}
                 {gmailButton}
                 <Typography variant="body2" color="textSecondary" style={{ marginTop: 5 }}>
-                  If you have trouble using this trigger, please <a href="" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>contact us</a> to get access
+                  If you have trouble using this trigger, please <a href="" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>contact us</a> to get access
                 </Typography>
               </span>
             )}
@@ -11369,7 +11368,7 @@ const AngularWorkflow = (defaultprops) => {
                       width: "17px",
                       height: "17px",
                       borderRadius: 17 / 2,
-                      backgroundColor: "#f85a3e",
+                      backgroundColor: "#6100ff",
                       marginRight: "10px",
                     }}
                   />
@@ -11379,7 +11378,7 @@ const AngularWorkflow = (defaultprops) => {
                 </div>
                 {triggerFolders.length === 0 ?
                   <Typography variant="body2">
-                    No folders found. Please authenticate first. If this persists, <a href="" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>contact us</a>.
+                    No folders found. Please authenticate first. If this persists, <a href="" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>contact us</a>.
                   </Typography>
                   :
                   <Select
@@ -11464,7 +11463,7 @@ const AngularWorkflow = (defaultprops) => {
                 width: "17px",
                 height: "17px",
                 borderRadius: 17 / 2,
-                backgroundColor: "#f85a3e",
+                backgroundColor: "#6100ff",
                 marginRight: "10px",
               }}
             />
@@ -11475,7 +11474,7 @@ const AngularWorkflow = (defaultprops) => {
           {outlookButton}
           {gmailButton}
           <Typography variant="body2" color="textSecondary" style={{ marginTop: 5 }}>
-            If you have trouble using this trigger, please <span style={{ textDecoration: "none", color: "#f86a3e" }} onClick={() => {
+            If you have trouble using this trigger, please <span style={{ textDecoration: "none", color: "#6100ff" }} onClick={() => {
               if (window.drift !== undefined) {
                 window.drift.api.startInteraction({ interactionId: 340043 })
               } else {
@@ -11495,7 +11494,7 @@ const AngularWorkflow = (defaultprops) => {
 		  rel="noopener noreferrer"
 		  target="_blank"
 		  href=""
-		  style={{ textDecoration: "none", color: "#f85a3e" }}
+		  style={{ textDecoration: "none", color: "#6100ff" }}
 		>
 		  What are email triggers?
 		</a>
@@ -12014,7 +12013,7 @@ const AngularWorkflow = (defaultprops) => {
           }}
           open={!!menuPosition}
           style={{
-            border: `2px solid #f85a3e`,
+            border: `2px solid #6100ff`,
             color: "white",
             marginTop: 2,
           }}
@@ -12036,7 +12035,7 @@ const AngularWorkflow = (defaultprops) => {
               );
               if (exec_text_field !== null) {
                 if (inside) {
-                  exec_text_field.style.border = "2px solid #f85a3e";
+                  exec_text_field.style.border = "2px solid #6100ff";
                 } else {
                   exec_text_field.style.border = "";
                 }
@@ -12506,7 +12505,7 @@ const AngularWorkflow = (defaultprops) => {
 			rel="noopener noreferrer"
 			target="_blank"
 			href=""
-			style={{ textDecoration: "none", color: "#f85a3e" }}
+			style={{ textDecoration: "none", color: "#6100ff" }}
 		  >
 			What are subflows?
 		  </a>
@@ -12628,7 +12627,7 @@ const AngularWorkflow = (defaultprops) => {
                       target="_blank"
                       style={{
                         textDecoration: "none",
-                        color: "#f85a3e",
+                        color: "#6100ff",
                         marginLeft: 5,
                         marginTop: 10,
                       }}
@@ -13013,7 +13012,7 @@ const AngularWorkflow = (defaultprops) => {
 			rel="noopener noreferrer"
 			target="_blank"
 			href=""
-			style={{ textDecoration: "none", color: "#f85a3e" }}
+			style={{ textDecoration: "none", color: "#6100ff" }}
 		  >
 			What are comments?
 		  </a>
@@ -13239,7 +13238,7 @@ const AngularWorkflow = (defaultprops) => {
 			rel="noopener noreferrer"
 			target="_blank"
 			href=""
-			style={{ textDecoration: "none", color: "#f85a3e" }}
+			style={{ textDecoration: "none", color: "#6100ff" }}
 		  >
 			What are webhooks?
 		  </a>
@@ -13469,7 +13468,7 @@ const AngularWorkflow = (defaultprops) => {
                     width: "17px",
                     height: "17px",
                     borderRadius: 17 / 2,
-                    backgroundColor: "#f85a3e",
+                    backgroundColor: "#6100ff",
                     marginRight: "10px",
                   }}
                 />
@@ -14072,7 +14071,7 @@ const AngularWorkflow = (defaultprops) => {
 			rel="noopener noreferrer"
 			target="_blank"
 			href=""
-			style={{ textDecoration: "none", color: "#f85a3e" }}
+			style={{ textDecoration: "none", color: "#6100ff" }}
 		  >
 			What is the user input trigger?
 		  </a>
@@ -14415,7 +14414,7 @@ const AngularWorkflow = (defaultprops) => {
               rel="noopener noreferrer"
               target="_blank"
               href=""
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               What are pipelines?
             </a>
@@ -14683,7 +14682,7 @@ const AngularWorkflow = (defaultprops) => {
 			rel="noopener noreferrer"
 			target="_blank"
 			href=""
-			style={{ textDecoration: "none", color: "#f85a3e" }}
+			style={{ textDecoration: "none", color: "#6100ff" }}
 		  >
 			What are schedules?
 		  </a>
@@ -14787,7 +14786,7 @@ const AngularWorkflow = (defaultprops) => {
                     width: "17px",
                     height: "17px",
                     borderRadius: 17 / 2,
-                    backgroundColor: "#f85a3e",
+                    backgroundColor: "#6100ff",
                     marginRight: "10px",
                   }}
                 />
@@ -14837,7 +14836,7 @@ const AngularWorkflow = (defaultprops) => {
                     width: "17px",
                     height: "17px",
                     borderRadius: 17 / 2,
-                    backgroundColor: "#f85a3e",
+                    backgroundColor: "#6100ff",
                     marginRight: "10px",
                   }}
                 />
@@ -14978,7 +14977,7 @@ const AngularWorkflow = (defaultprops) => {
 		  {isCorrectOrg ? null :
 			<Typography variant="body1">
 				<b>Warning</b>: Change <span
-			  		style={{color: "#f85a3e", cursor: "pointer"}}
+			  		style={{color: "#6100ff", cursor: "pointer"}}
 			  		onClick={() => {
 						toast("Changing to correct organisation. Please wait a few seconds.")
 
@@ -15386,7 +15385,7 @@ const AngularWorkflow = (defaultprops) => {
 						colornext = false
 						return (
 							<span
-								style={{color: "#f85a3e", cursor: "pointer"}}
+								style={{color: "#6100ff", cursor: "pointer"}}
 								onClick={() => {
 									console.log("Clicked action: ", word)
 
@@ -15560,7 +15559,7 @@ const AngularWorkflow = (defaultprops) => {
 				top: "40%", 
 				width: 70, 
 				height: 235, 
-				border: "1px solid #f85a3e", 
+				border: "1px solid #6100ff", 
 				cursor: "pointer", 
 				borderRadius: theme.palette.borderRadius, 
 				padding: 10, 
@@ -16170,7 +16169,7 @@ const AngularWorkflow = (defaultprops) => {
 		  : null}
 	 </span>
       <Typography variant="body2" color="textSecondary">
-        This workflow is public	and <span style={{ color: "#f86a3e", cursor: "pointer", }} onClick={() => {
+        This workflow is public	and <span style={{ color: "#6100ff", cursor: "pointer", }} onClick={() => {
           saveWorkflow(workflow)
         }}>must be saved</span> or exported before use.
       </Typography>
@@ -16178,12 +16177,12 @@ const AngularWorkflow = (defaultprops) => {
         <div style={{ display: "flex", marginTop: 10, }}>
           <IconButton color="primary" style={{ padding: 0, marginRight: 10, }} aria-controls="simple-menu" aria-haspopup="true" onClick={(event) => {
           }}>
-            <Link to={`/creators/${creatorProfile.github_username}`} style={{ textDecoration: "none", color: "#f86a3e" }}>
+            <Link to={`/creators/${creatorProfile.github_username}`} style={{ textDecoration: "none", color: "#6100ff" }}>
               <Avatar style={{ height: 30, width: 30, }} alt={"Workflow creator"} src={creatorProfile.github_avatar} />
             </Link>
           </IconButton>
           <Typography variant="body1" color="textSecondary" style={{ color: "" }}>
-            Shared by <Link to={`/creators/${creatorProfile.github_username}`} style={{ textDecoration: "none", color: "#f86a3e" }}>{creatorProfile.github_username}</Link>
+            Shared by <Link to={`/creators/${creatorProfile.github_username}`} style={{ textDecoration: "none", color: "#6100ff" }}>{creatorProfile.github_username}</Link>
           </Typography>
         </div>
         : null}
@@ -16222,7 +16221,7 @@ const AngularWorkflow = (defaultprops) => {
           <Typography variant="body1">
             <a
               href={workflow.blogpost}
-              style={{ textDecoration: "none", color: "#f86a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -17240,7 +17239,7 @@ const AngularWorkflow = (defaultprops) => {
                             {lastExecution === data.execution_id ? (
                               <KeyboardArrowRightIcon
                                 style={{
-                                  color: "#f85a3e",
+                                  color: "#6100ff",
                                   marginTop: "auto",
                                   marginBottom: "auto",
                                 }}
@@ -17414,7 +17413,7 @@ const AngularWorkflow = (defaultprops) => {
                 <b>Env &nbsp;&nbsp;&nbsp;&nbsp;</b>
               </Typography>
 
-              <Typography variant="body1" color="textSecondary" style={{color: "#f85a3e", cursor: "pointer", }} onClick={() => {
+              <Typography variant="body1" color="textSecondary" style={{color: "#6100ff", cursor: "pointer", }} onClick={() => {
 				  window.open("/admin?tab=environments", "_blank")
 			  }}>
                 {executionData.workflow.actions[0].environment}
@@ -17447,7 +17446,7 @@ const AngularWorkflow = (defaultprops) => {
                   executionData.execution_parent.length > 0 ? (
                   executionData.execution_source === props.match.params.key ? (
                     <span
-                      style={{ cursor: "pointer", color: "#f85a3e" }}
+                      style={{ cursor: "pointer", color: "#6100ff" }}
                       onClick={(event) => {
                         getWorkflowExecution(
                           props.match.params.key,
@@ -17462,7 +17461,7 @@ const AngularWorkflow = (defaultprops) => {
                       rel="noopener noreferrer"
                       href={`/workflows/${executionData.execution_source}?view=executions&execution_id=${executionData.execution_parent}`}
                       target="_blank"
-                      style={{ textDecoration: "none", color: "#f85a3e" }}
+                      style={{ textDecoration: "none", color: "#6100ff" }}
                     >
                       Parent Workflow
                     </a>
@@ -17473,7 +17472,7 @@ const AngularWorkflow = (defaultprops) => {
                       rel="noopener noreferrer"
                       href={`/workflows/${executionData.workflow.id}/run`}
                       target="_blank"
-                      style={{ textDecoration: "none", color: "#f85a3e" }}
+                      style={{ textDecoration: "none", color: "#6100ff" }}
                     >
 						Questions
                     </a>
@@ -17558,7 +17557,7 @@ const AngularWorkflow = (defaultprops) => {
 
                   {environments.length > 0 && defaultEnvironmentIndex < environments.length && nonskippedResults.length === 0 && environments[defaultEnvironmentIndex].Name !== "Cloud" ?
                     <Typography variant="body2" color="textSecondary" style={{}}>
-                      No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Find out here</a>. If the Workflow doesn't start within 30 seconds with Orborus running.
+                      No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>Find out here</a>. If the Workflow doesn't start within 30 seconds with Orborus running.
                     </Typography>
                     : null}
                 </div>
@@ -17574,7 +17573,7 @@ const AngularWorkflow = (defaultprops) => {
 							<CircularProgress style={{marginLeft: 145, marginBottom: 10, }} /> 
 								{environments.length > 0 && defaultEnvironmentIndex < environments.length && nonskippedResults.length === 0 && environments[defaultEnvironmentIndex].Name !== "Cloud" ?
 									<Typography variant="body2" color="textSecondary" style={{}}>
-										No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#f86a3e" }}>Learn more</a>. If the Workflow doesn't start within 30 seconds with Orborus running.
+										No results yet. Is Orborus running for the "{environments[defaultEnvironmentIndex].Name}" environment? <a href="/admin?tab=environments" rel="noopener noreferrer" target="_blank" style={{ textDecoration: "none", color: "#6100ff" }}>Learn more</a>. If the Workflow doesn't start within 30 seconds with Orborus running.
 									</Typography>
 								: 
 								null}
@@ -17898,7 +17897,7 @@ const AngularWorkflow = (defaultprops) => {
                           data.action.parameters[0].value ===
                             props.match.params.key ? (
                             <span
-                              style={{ cursor: "pointer", color: "#f85a3e" }}
+                              style={{ cursor: "pointer", color: "#6100ff" }}
                               onClick={(event) => {
                                 getWorkflowExecution(
                                   props.match.params.key,
@@ -17915,7 +17914,7 @@ const AngularWorkflow = (defaultprops) => {
                               target="_blank"
                               style={{
                                 textDecoration: "none",
-                                color: "#f85a3e",
+                                color: "#6100ff",
                               }}
                               onClick={(event) => { }}
                             >
@@ -18757,7 +18756,7 @@ const AngularWorkflow = (defaultprops) => {
               rel="noopener noreferrer"
               href=""
               target="_blank"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               here
             </a>
@@ -19199,7 +19198,7 @@ const AngularWorkflow = (defaultprops) => {
             target="_blank"
             rel="noopener noreferrer"
             href=""
-            style={{ textDecoration: "none", color: "#f85a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             What is app authentication?
           </a>
@@ -19366,7 +19365,7 @@ const AngularWorkflow = (defaultprops) => {
         >
           <CloseIcon />
         </IconButton>
-		<div style={{height: 75, width: "100%", background: `linear-gradient(to right, #f86a3e, #fc3922)`, position: "relative",}} />
+		<div style={{height: 75, width: "100%", background: `linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))`, position: "relative",}} />
 		<div style={{ padding: "50px 0px 50px 0px", }}>
 			<ConfigureWorkflow
 			  workflow={workflow}
@@ -19440,7 +19439,7 @@ const AngularWorkflow = (defaultprops) => {
             rel="noopener noreferrer"
             target="_blank"
             href={""}
-            style={{ textDecoration: "none", color: "#f86a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             <img
               alt={`Documentation image for ${selectedApp.name}`}
@@ -19462,7 +19461,7 @@ const AngularWorkflow = (defaultprops) => {
             rel="noopener noreferrer"
             target="_blank"
             href={selectedApp.reference_info.github_url}
-            style={{ textDecoration: "none", color: "#f86a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             <img
               alt={`Documentation image for ${selectedApp.name}`}
@@ -19565,7 +19564,7 @@ const AngularWorkflow = (defaultprops) => {
                   rel="noopener noreferrer"
                   target="_blank"
                   href=""
-                  style={{ textDecoration: "none", color: "#f86a3e" }}
+                  style={{ textDecoration: "none", color: "#6100ff" }}
                 >
                   Join the community on Discord!
                 </a>
@@ -19585,7 +19584,7 @@ const AngularWorkflow = (defaultprops) => {
                       rel="noopener noreferrer"
                       target="_blank"
                       href={""}
-                      style={{ textDecoration: "none", color: "#f86a3e" }}
+                      style={{ textDecoration: "none", color: "#6100ff" }}
                     >
                       Check it out on Github!
                     </a>
@@ -19598,7 +19597,7 @@ const AngularWorkflow = (defaultprops) => {
                       rel="noopener noreferrer"
                       target="_blank"
                       href={selectedApp.reference_info.github_url}
-                      style={{ textDecoration: "none", color: "#f86a3e" }}
+                      style={{ textDecoration: "none", color: "#6100ff" }}
                     >
                       Check it out on Github!
                     </a>

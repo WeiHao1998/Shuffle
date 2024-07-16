@@ -91,7 +91,7 @@ import { display, style } from "@mui/system";
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
 });
 
@@ -3330,7 +3330,7 @@ If you're interested, please let me know a time that works for you`;
           href="/docs/organizations#cloud_sync"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ textDecoration: "none", color: "#f85a3e" }}
+          style={{ textDecoration: "none", color: "#6100ff" }}
         >
           cloud sync
         </a>{" "}
@@ -3441,7 +3441,7 @@ If you're interested, please let me know a time that works for you`;
               target="_blank"
               rel="noopener noreferrer"
               href="/docs/organizations#organization"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               Learn more
             </a>
@@ -3719,7 +3719,7 @@ If you're interested, please let me know a time that works for you`;
                   href="/docs/organizations#cloud_sync"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ textDecoration: "none", color: "#f85a3e" }}
+                  style={{ textDecoration: "none", color: "#6100ff" }}
                 >
                   cloud sync
                 </a>{" "}
@@ -4191,7 +4191,7 @@ If you're interested, please let me know a time that works for you`;
               target="_blank"
               rel="noopener noreferrer"
               href="/docs/organizations#user_management"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               Learn more
             </a>
@@ -4703,7 +4703,7 @@ If you're interested, please let me know a time that works for you`;
               target="_blank"
               rel="noopener noreferrer"
               href="/docs/organizations#schedules"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               Learn more
             </a>
@@ -4779,7 +4779,7 @@ If you're interested, please let me know a time that works for you`;
                     style={{ maxWidth: 315, minWidth: 315 }}
                     primary={
                       <a
-                        style={{ textDecoration: "none", color: "#f85a3e" }}
+                        style={{ textDecoration: "none", color: "#6100ff" }}
                         href={`/workflows/${schedule.workflow_id}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -4883,7 +4883,7 @@ If you're interested, please let me know a time that works for you`;
                     style={{ maxWidth: 315, minWidth: 315 }}
                     primary={
                       <a
-                        style={{ textDecoration: "none", color: "#f85a3e" }}
+                        style={{ textDecoration: "none", color: "#6100ff" }}
                         href={`/workflows/${webhook.workflows[0]}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -4971,7 +4971,7 @@ If you're interested, please let me know a time that works for you`;
               target="_blank"
               rel="noopener noreferrer"
               href="/docs/triggers#pipelines"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               Learn more
             </a>
@@ -5035,7 +5035,7 @@ If you're interested, please let me know a time that works for you`;
                     style={{ maxWidth: 315, minWidth: 315 }}
                     primary={
                       <a
-                        style={{ textDecoration: "none", color: "#f85a3e" }}
+                        style={{ textDecoration: "none", color: "#6100ff" }}
                         href={`/workflows/${pipeline.workflow_id}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -5318,7 +5318,7 @@ If you're interested, please let me know a time that works for you`;
             target="_blank"
             rel="noopener noreferrer"
             href="/docs/organizations#app_authentication"
-            style={{ textDecoration: "none", color: "#f85a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             Learn more about App Authentication
           </a>
@@ -5596,7 +5596,7 @@ If you're interested, please let me know a time that works for you`;
               target="_blank"
               rel="noopener noreferrer"
               href="/docs/organizations#app_authentication_groups"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
                 Learn more about App Authentication Groups  
             </a>
@@ -5820,7 +5820,7 @@ If you're interested, please let me know a time that works for you`;
               target="_blank"
               rel="noopener noreferrer"
               href="/docs/organizations#environments"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               Learn more
             </a>
@@ -6007,7 +6007,7 @@ If you're interested, please let me know a time that works for you`;
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                <CancelIcon style={{ color: "#f85a3e" }} />
+                                <CancelIcon style={{ color: "#6100ff" }} />
                               </a>
                             </Tooltip>
                           )
@@ -6233,7 +6233,7 @@ If you're interested, please let me know a time that works for you`;
                       >
                         <div
                           style={{
-                            border: "1px solid #f85a3e",
+                            border: "1px solid #6100ff",
                             borderRadius: theme.palette.borderRadius,
                             marginTop: 10,
                             marginBottom: 10,
@@ -6258,7 +6258,7 @@ If you're interested, please let me know a time that works for you`;
                                 rel="noopener noreferrer"
                                 style={{
                                   textDecoration: "none",
-                                  color: "#f85a3e",
+                                  color: "#6100ff",
                                 }}
                               >
                                 Read documentation
@@ -6270,7 +6270,7 @@ If you're interested, please let me know a time that works for you`;
                                 rel="noopener noreferrer"
                                 style={{
                                   textDecoration: "none",
-                                  color: "#f85a3e",
+                                  color: "#6100ff",
                                 }}
                               >
                                 Get in touch

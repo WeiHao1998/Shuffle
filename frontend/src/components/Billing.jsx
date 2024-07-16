@@ -294,13 +294,13 @@ const Billing = (props) => {
 		if (subscription.name === "Enterprise" && subscription.active === true) {
 			top_text = "Current Plan"
 
-			newPaperstyle.border = "1px solid #f85a3e"
+			newPaperstyle.border = "1px solid #6100ff"
 		}
 
 		var showSupport = false
 		if (subscription.name.includes("default")) {
 			top_text = "Custom Contract"
-			newPaperstyle.border = "1px solid #f85a3e"
+			newPaperstyle.border = "1px solid #6100ff"
 			showSupport = true 
 		}
 
@@ -320,7 +320,7 @@ const Billing = (props) => {
 
 		if (highlight === true) {
 			// Add an "Upgrade now" button
-			newPaperstyle.border = "1px solid #f85a3e"
+			newPaperstyle.border = "1px solid #6100ff"
 		}
 
 		if (hovered) {
@@ -419,7 +419,7 @@ const Billing = (props) => {
 					{top_text === "Base Cloud Access" && userdata.has_card_available === true ?
 						<Chip
 							style={{
-								  backgroundColor: "#f86a3e",
+								  backgroundColor: "#6100ff",
 								  paddingLeft: 5,
 								  paddingRight: 5,
 								  height: 28,
@@ -500,7 +500,7 @@ const Billing = (props) => {
 										<a 
 											href=''
 											target="_blank"
-											style={{ textDecoration: "none", color: "#f85a3e",}}
+											style={{ textDecoration: "none", color: "#6100ff",}}
 										>
 											Documentation to get started
 										</a>
@@ -612,7 +612,7 @@ const Billing = (props) => {
 									height: 40, 
 									fontSize: 14, 
 									color: "white",
-									backgroundImage: userdata.has_card_available ? null : "linear-gradient(to right, #f86a3e, #f34079)",
+									backgroundImage: userdata.has_card_available ? null : "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
 
 								}}
 								onClick={() => {
@@ -642,7 +642,7 @@ const Billing = (props) => {
 										height: 40, 
 										fontSize: 14, 
 										color: "white",
-										backgroundImage: "linear-gradient(to right, #f86a3e, #f34079)",
+										backgroundImage: "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
 									}}
 									onClick={() => {
 										if (isCloud) {

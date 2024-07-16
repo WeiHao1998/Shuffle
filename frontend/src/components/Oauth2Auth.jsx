@@ -567,7 +567,7 @@ const AuthenticationOauth2 = (props) => {
 				color="primary"
 			>
 				{buttonClicked ? (
-					<CircularProgress style={{ color: "#f86a3e", width: 45, height: 45, margin: "auto", }} />
+					<CircularProgress style={{ color: "#6100ff", width: 45, height: 45, margin: "auto", }} />
 				) : (
 					<span style={{display: "flex"}}>
 						<img
@@ -600,7 +600,7 @@ const AuthenticationOauth2 = (props) => {
             target="_blank"
             rel="norefferer"
             href="/docs/apps#authentication"
-            style={{ textDecoration: "none", color: "#f85a3e" }}
+            style={{ textDecoration: "none", color: "#6100ff" }}
           >
             {" "}
             Learn more about Oauth2 with Zebra Axon

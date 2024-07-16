@@ -65,11 +65,11 @@ import {
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
   root: {
     "& .MuiAutocomplete-listbox": {
-      border: "2px solid #f85a3e",
+      border: "2px solid #6100ff",
       color: "white",
       fontSize: 18,
       "& li:nth-child(even)": {
@@ -83,7 +83,7 @@ const useStyles = makeStyles({
   inputRoot: {
     color: "white",
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#f86a3e",
+      borderColor: "#6100ff",
     },
   },
 });
@@ -469,7 +469,7 @@ const UsecaseListComponent = (props) => {
 																	href={subcase.blogpost}
 																	rel="noopener noreferrer"
 																	target="_blank"
-                  								style={{ textDecoration: "none", color: "#f85a3e" }}
+                  								style={{ textDecoration: "none", color: "#6100ff" }}
 																>
 																	<Tooltip
 																		title="Click to visit the blogpost"
@@ -494,7 +494,7 @@ const UsecaseListComponent = (props) => {
 																	href={subcase.video}
 																	rel="noopener noreferrer"
 																	target="_blank"
-																	style={{ textDecoration: "none", color: "#f85a3e" }}
+																	style={{ textDecoration: "none", color: "#6100ff" }}
 																>
 																	<Tooltip
 																		title="Click to see a video for this usecase"
@@ -562,7 +562,7 @@ const UsecaseListComponent = (props) => {
 																	href={subcase.blogpost}
 																	rel="noopener noreferrer"
 																	target="_blank"
-                  								style={{ textDecoration: "none", color: "#f85a3e" }}
+                  								style={{ textDecoration: "none", color: "#6100ff" }}
 																>
 																	<Tooltip
 																		title="Click to visit the blogpost"
@@ -583,7 +583,7 @@ const UsecaseListComponent = (props) => {
 																	href={subcase.video}
 																	rel="noopener noreferrer"
 																	target="_blank"
-                  								style={{ textDecoration: "none", color: "#f85a3e" }}
+                  								style={{ textDecoration: "none", color: "#6100ff" }}
 																>
 																	<Tooltip
 																		title="See video for this use case"
@@ -718,7 +718,7 @@ const UsecaseListComponent = (props) => {
 																	<Button
 																		style={{
 																			color: "white",
-																			background: "#f85a3e",
+																			background: "#6100ff",
 																			border: "none",
 																			height: 35,
 																			flex: 1, 
@@ -757,7 +757,7 @@ const UsecaseListComponent = (props) => {
 															</Typography>
 															<a href={``} style={{textDecoration: "none", }} target="_blank" rel="noopener noreferrer">
 																<IconButton style={{paddingTop: 15, }}>
-																	<OpenInNewIcon   style={{color: "#f85a3e", }}/>
+																	<OpenInNewIcon   style={{color: "#6100ff", }}/>
 																</IconButton>
 															</a>
 														</span>
@@ -950,7 +950,7 @@ const UsecaseListComponent = (props) => {
 																							target="_blank"
 																							style={{ textDecoration: "none", color: "rgba(255,255,255,0.7)", marginRight: 5, }}
 																						>
-																							<div style={{width: 160, display: "flex", borderRadius: theme.palette.borderRadius, cursor: "pointer", border: highlight ? "2px solid #f86a3e" : "1px solid rgba(255,255,255,0.7)", backgroundColor: theme.palette.inputColor, padding: "0px 0px 15px 15px", overflow: "hidden",}}>
+																							<div style={{width: 160, display: "flex", borderRadius: theme.palette.borderRadius, cursor: "pointer", border: highlight ? "2px solid #6100ff" : "1px solid rgba(255,255,255,0.7)", backgroundColor: theme.palette.inputColor, padding: "0px 0px 15px 15px", overflow: "hidden",}}>
 																								<img src={subdata.image} style={{width: 40, height: 40, borderRadius: theme.palette.borderRadius, marginTop: 15, }} />
 																								<Typography variant="body1" style={{lineHeight: "95%", marginLeft: 12, marginTop: marginTop === 0 ? 19 : 25, maxHeight: 34, }}>
 																									{subdata.name}
@@ -1074,7 +1074,7 @@ const RadialChart = ({keys, setSelectedCategory}) => {
 					<RadialAreaSeries 
 						interpolation="smooth"
 						colorScheme={(colorInput) => {
-							return '#f86a3e'
+							return '#6100ff'
 						}}
 						animated={false}
 						id="workflow_series_id"

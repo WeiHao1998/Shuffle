@@ -1272,7 +1272,7 @@ const AppFramework = (props) => {
 
 			var parsedStyle = {
 				"ghost": "yes",
-				"border-color": "#f86a3e",
+				"border-color": "#6100ff",
 				"border-width": "10px",
 				"border-opacity": ".7",
 			}

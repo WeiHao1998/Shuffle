@@ -163,13 +163,13 @@ const LicencePopup = (props) => {
         if (subscription.name === "Enterprise" && subscription.active === true) {
             top_text = "Current Plan"
 
-            newPaperstyle.border = "1px solid #f85a3e"
+            newPaperstyle.border = "1px solid #6100ff"
         }
 
         var showSupport = false
         if (subscription.name.includes("default")) {
             top_text = "Custom Contract"
-            newPaperstyle.border = "1px solid #f85a3e"
+            newPaperstyle.border = "1px solid #6100ff"
             showSupport = true
         }
 
@@ -189,7 +189,7 @@ const LicencePopup = (props) => {
 
         if (highlight === true) {
             // Add an "Upgrade now" button
-            // newPaperstyle.border = "1px solid #f85a3e"
+            // newPaperstyle.border = "1px solid #6100ff"
         }
 
         return (
@@ -290,7 +290,7 @@ const LicencePopup = (props) => {
                             {top_text === "Base Cloud Access" && userdata.has_card_available === true ?
                                 <Chip
                                     style={{
-                                        backgroundColor: "#f86a3e",
+                                        backgroundColor: "#6100ff",
                                         paddingLeft: 5,
                                         paddingRight: 5,
                                         height: 28,
@@ -371,7 +371,7 @@ const LicencePopup = (props) => {
                                                 <a
                                                     href=''
                                                     target="_blank"
-                                                    style={{ textDecoration: "none", color: "#f85a3e", }}
+                                                    style={{ textDecoration: "none", color: "#6100ff", }}
                                                 >
                                                     Documentation to get started
                                                 </a>
@@ -477,7 +477,7 @@ const LicencePopup = (props) => {
                                 // }
                             }}
                         >
-							<span style={{color: "#f85a3e",}}>
+							<span style={{color: "#6100ff",}}>
                             	Book a call
 							</span>
                             <span
@@ -617,7 +617,7 @@ const LicencePopup = (props) => {
     const inActiveIcon = <ClearIcon style={{ color: "red" }} />
     const defaultTaskIcon = <AddTaskIcon style={{ marginRight: 10, marginTop: 5, }} />
 
-    const buttonBackground = "linear-gradient(to right, #f86a3e, #f34079)"
+    const buttonBackground = "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))"
     const level1Button =
         <Button fullWidth variant="contained" color="primary" style={{ borderRadius: 25, height: 40, margin: "15px 0px 15px 0px", fontSize: 14, color: "white", backgroundImage: buttonBackground, }} onClick={() => {
             setMonthlyCost(0, paymentType)
@@ -648,7 +648,7 @@ const LicencePopup = (props) => {
             })
 
             if (window.drift !== undefined) {
-                window.drift.api.startInteraction({ interactionId: 340045 })
+                // window.drift.api.startInteraction({ interactionId: 340045 })
             }
         }}>
             Get a demo
@@ -665,8 +665,6 @@ const LicencePopup = (props) => {
 
             if (shuffleVariant === 0) {
                 navigate("/register?message=Get started for free")
-            } else {
-                window.location.href = ""
             }
         }}>
             Start building!
@@ -821,10 +819,10 @@ const LicencePopup = (props) => {
                         <Card style={{
                             padding: 20,
                             borderRadius: theme.palette.borderRadius,
-                            border: "1px solid #f85a3e",
+                            border: "1px solid #6100ff",
                         }}>
                             <div>
-                                <Button style={{ backgroundColor: 'rgba(255, 132, 68, 0.2)', color: "#FF8444", textTransform: "capitalize", borderRadius: 200, boxShadow: 'none', }}
+                                <Button style={{ backgroundColor: 'rgba(255, 132, 68, 0.2)', color: "#6100ff", textTransform: "capitalize", borderRadius: 200, boxShadow: 'none', }}
                                     variant="contained"
                                     color="primary">Recommended </Button>
 
@@ -844,7 +842,7 @@ const LicencePopup = (props) => {
                                 if (calculatedCores === "Get A Quote") {
                                     console.log("Clicked on get a quote")
                                     if (window.drift !== undefined) {
-                                        window.drift.api.startInteraction({ interactionId: 340785 })
+                                        // window.drift.api.startInteraction({ interactionId: 340785 })
                                     }
                                 }
                             }}>{calculatedCost}</Typography>

@@ -230,10 +230,10 @@ const data = [
   {
     selector: "node[?canConnect]",
     css: {
-      "border-color": "#f86a3e",
+      "border-color": "#6100ff",
       "border-width": "10px",
       "z-index": "5002",
-      "background-color": "#f86a3e",
+      "background-color": "#6100ff",
     },
   },
   {
@@ -345,8 +345,8 @@ const data = [
   {
     selector: ".awaiting-data-highlight",
     css: {
-      "background-color": "#f4ad42",
-      "border-color": "#f4ad42",
+      "background-color": "#6100ff",
+      "border-color": "#6100ff",
       "border-width": "5px",
       "transition-property": "border-color",
       "transition-duration": "0.5s",
@@ -355,8 +355,8 @@ const data = [
   {
     selector: ".shuffle-hover-highlight",
     css: {
-      "background-color": "#f85a3e",
-      "border-color": "#f85a3e",
+      "background-color": "#6100ff",
+      "border-color": "#6100ff",
       "border-width": "12px",
       "transition-property": "border-width",
       "transition-duration": "0.25s",
@@ -445,7 +445,7 @@ const data = [
   {
     selector: "edge:selected",
     css: {
-      "target-arrow-color": "#f85a3e",
+      "target-arrow-color": "#6100ff",
     },
   },
   {
@@ -465,7 +465,7 @@ const data = [
 	{
 		selector: "node:selected",
 		css: {
-			"border-color": "#f86a3e",
+			"border-color": "#6100ff",
 			"border-width": "7px",
 		},
 	},

@@ -358,7 +358,7 @@ const CacheView = (props) => {
                 </span>
             </div>
             <Button
-                style={{backgroundColor: isSelectedDataStore?'rgba(255, 132, 68, 0.2)':null, boxShadow: isSelectedDataStore ? "none":null,textTransform: isSelectedDataStore ? 'capitalize':null, color:isSelectedDataStore?"#FF8444":null, borderRadius:isSelectedDataStore?200:null, width:isSelectedDataStore?162:null, height:isSelectedDataStore?40:null}}
+                style={{backgroundColor: isSelectedDataStore?'rgba(255, 132, 68, 0.2)':null, boxShadow: isSelectedDataStore ? "none":null,textTransform: isSelectedDataStore ? 'capitalize':null, color:isSelectedDataStore?"#6100ff":null, borderRadius:isSelectedDataStore?200:null, width:isSelectedDataStore?162:null, height:isSelectedDataStore?40:null}}
                 variant="contained"
                 color="primary"
                 onClick={() =>{ 

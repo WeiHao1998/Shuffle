@@ -571,11 +571,11 @@ const CodeEditor = (props) => {
 	}
 
 	const highlight_variables = (value) => {
-		// value.markText({line:0, ch:2}, {line:0, ch:8}, {"css": "background-color: #f85a3e; border-radius: 4px; color: white"})
-		// value.markText({line:0, ch:13}, {line:0, ch:15}, {"css": "background-color: #f85a3e; border-radius: 4px; color: white"})
-		// value.markText({line:0, ch:19}, {line:0, ch:26}, {"css": "background-color: #f85a3e; border-radius: 4px; color: white"})
-		// value.markText({line:0, ch:31}, {line:0, ch:35}, {"css": "background-color: #f85a3e; border-radius: 4px; color: white"})
-		// value.markText({line:0, ch:69}, {line:0, ch:73}, {"css": "background-color: #f85a3e; border-radius: 4px; color: white"})
+		// value.markText({line:0, ch:2}, {line:0, ch:8}, {"css": "background-color: #6100ff; border-radius: 4px; color: white"})
+		// value.markText({line:0, ch:13}, {line:0, ch:15}, {"css": "background-color: #6100ff; border-radius: 4px; color: white"})
+		// value.markText({line:0, ch:19}, {line:0, ch:26}, {"css": "background-color: #6100ff; border-radius: 4px; color: white"})
+		// value.markText({line:0, ch:31}, {line:0, ch:35}, {"css": "background-color: #6100ff; border-radius: 4px; color: white"})
+		// value.markText({line:0, ch:69}, {line:0, ch:73}, {"css": "background-color: #6100ff; border-radius: 4px; color: white"})
 
 		// var code_variables = value.getValue().match(/[$]{1}([a-zA-Z0-9_-]+\.?){1}([a-zA-Z0-9#_-]+\.?){0,}/g)
 		// console.log(code_variables)
@@ -653,7 +653,7 @@ const CodeEditor = (props) => {
 					const fixedVariable = fixVariable(variable_occurence[occ])
 					var correctVariable = availableVariables.includes(fixedVariable)
 					if(!correctVariable) {
-						value.markText({line:i, ch:dollar_occurence[occ]}, {line:i, ch:dollar_occurence_len[occ]+dollar_occurence[occ]}, {"css": "background-color: rgb(248, 106, 62, 0.9); padding-top: 2px; padding-bottom: 2px; color: white"})
+						value.markText({line:i, ch:dollar_occurence[occ]}, {line:i, ch:dollar_occurence_len[occ]+dollar_occurence[occ]}, {"css": "background-color: rgb(97, 0, 255, 0.9); padding-top: 2px; padding-bottom: 2px; color: white"})
 					} else {
 						value.markText({line:i, ch:dollar_occurence[occ]}, {line:i, ch:dollar_occurence_len[occ]+dollar_occurence[occ]}, {"css": "background-color: #8b8e26; padding-top: 2px; padding-bottom: 2px; color: white"})
 					}
@@ -1212,7 +1212,7 @@ const CodeEditor = (props) => {
 									);
 									if (exec_text_field !== null) {
 										if (inside) {
-											exec_text_field.style.border = "2px solid #f85a3e";
+											exec_text_field.style.border = "2px solid #6100ff";
 										} else {
 											exec_text_field.style.border = "";
 										}
@@ -1677,7 +1677,7 @@ const CodeEditor = (props) => {
 									</div>
 								}
 								{executionResult.errors !== undefined && executionResult.errors !== null && executionResult.errors.length > 0 ?
-									<Typography variant="body2" style={{maxHeight: 100, overflow: "auto", color: "#f85a3e",}}>
+									<Typography variant="body2" style={{maxHeight: 100, overflow: "auto", color: "#6100ff",}}>
 										Errors ({executionResult.errors.length}): {executionResult.errors.join("\n")}
 									</Typography> 
 								: null}

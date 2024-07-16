@@ -140,7 +140,7 @@ const SearchField = props => {
 					disableUnderline: true,
 					startAdornment: (
 						<InputAdornment position="start">
-							<SearchIcon style={{ color: "#f86a3e", }} />
+							<SearchIcon style={{ color: "#6100ff", }} />
 						</InputAdornment>
 					),
 					endAdornment: (

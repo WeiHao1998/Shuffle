@@ -429,7 +429,7 @@ const AppGrid = (props) => {
                             target="_blank"
                             style={{
                               textDecoration: "none",
-                              color: "#f85a3e",
+                              color: "#6100ff",
                             }}
                           >
                             <Paper
@@ -1726,7 +1726,7 @@ const AppGrid = (props) => {
                                     rel="noopener noreferrer"
                                     style={{
                                       textDecoration: "none",
-                                      color: "#f85a3e",
+                                      color: "#6100ff",
                                     }}
                                   >
                                     <Paper
@@ -1861,7 +1861,7 @@ const AppGrid = (props) => {
             <Tab
               label="All Apps"
               sx={{
-                color: currTab === 0 ? "#F86743" : "inherit",
+                color: currTab === 0 ? "#6100ff" : "inherit",
                 height: 44,
                 fontSize: 16,
                 textTransform: 'none',
@@ -1875,7 +1875,7 @@ const AppGrid = (props) => {
             <Tab
               label=<div style={{ display: 'flex', flexDirection: "row", gap: 8, whiteSpace: "nowrap", }}>{isAnyAppActivated && <Box sx={{ width: 8, height: 8, backgroundColor: "#02CB70", borderRadius: '50%', }} />}<span>Organization Apps</span></div>
               sx={{
-                color: currTab === 1 ? "#F86743" : "inherit",
+                color: currTab === 1 ? "#6100ff" : "inherit",
                 border: 'none',
                 height: 44,
                 fontSize: 16,
@@ -1889,7 +1889,7 @@ const AppGrid = (props) => {
             <Tab
               label="My Apps"
               sx={{
-                color: currTab === 2 ? "#F86743" : "inherit",
+                color: currTab === 2 ? "#6100ff" : "inherit",
                 height: 44,
                 fontSize: 16,
                 textTransform: 'none',

@@ -24,7 +24,6 @@ import {
 import theme from '../theme.jsx';
 import { useNavigate, Link } from "react-router-dom";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import Drift from "react-driftjs";
 
 const Welcome = (props) => {
     const { globalUrl, surfaceColor, newColor, mini, inputColor, userdata, isLoggedIn, isLoaded, serverside, checkLogin } = props;
@@ -325,8 +324,8 @@ const Welcome = (props) => {
 			height: 51, 
 			width: isMobile ? 300 : 464, 
 			fontSize: 16, 
-			// background: "linear-gradient(89.83deg, #FF8444 0.13%, #F2643B 99.84%)", 
-			background: "linear-gradient(90deg, #F86744 0%, #F34475 100%)",
+			// background: "linear-gradient(89.83deg, #6100ff 0.13%, #F2643B 99.84%)", 
+			background: "linear-gradient(90deg, rgb(97, 0, 255), rgb(74, 4, 186))",
 			padding: "16px 24px", 
 			top: 105, 
 			margin: "auto",

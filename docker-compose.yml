@@ -1,7 +1,7 @@
 version: '3'
 services:
   frontend:
-    build: 
+    build:
       context: ./frontend
       dockerfile: Dockerfile
     container_name: shuffle-frontend
@@ -17,7 +17,7 @@ services:
     depends_on:
       - backend
   backend:
-    build: 
+    build:
       context: ./backend
       dockerfile: Dockerfile
     container_name: shuffle-backend
@@ -84,16 +84,15 @@ services:
         soft: -1
         hard: -1
       nofile:
-        soft: 65536 
+        soft: 65536
         hard: 65536
     volumes:
       - ${DB_LOCATION}:/usr/share/opensearch/data:z
     ports:
-      - 9200:9200
+      - 9201:9200
     networks:
       - shuffle
     restart: unless-stopped
-
   #memcached:
   #  image: memcached:latest
   #  container_name: shuffle-cache
@@ -104,7 +103,7 @@ services:
   #    - MEMCACHED_MAX_CONNECTIONS=2500
   #  ports:
   #    - 11211:11211
-  
+
   #docker-socket-proxy:
   #  image: tecnativa/docker-socket-proxy
   #  container_name: docker-socket-proxy 
@@ -136,7 +135,6 @@ services:
 networks:
   shuffle:
     driver: bridge
-
     # uncomment to set MTU for swarm mode.
     # MTU should be whatever is your host's preferred MTU is.
     # Refer to this doc to figure out what your host's MTU is:

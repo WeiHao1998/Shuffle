@@ -668,7 +668,7 @@ const RunWorkflow = (defaultprops) => {
 
 
 
-	const buttonBackground = "linear-gradient(to right, #f86a3e, #f34079)"
+	const buttonBackground = "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))"
 	const buttonStyle = {borderRadius: 25, height: 50, fontSize: 18, backgroundImage: handleValidateForm(executionArgument) || executionLoading ? buttonBackground : "grey", color: "white"}
 	
 	//console.log("execdata: ", executionData)

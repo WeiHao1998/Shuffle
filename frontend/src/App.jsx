@@ -45,14 +45,12 @@ import RuntimeDebugger from "./components/RuntimeDebugger.jsx"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Drift from "react-driftjs";
-
 // Production - backend proxy forwarding in nginx
 var globalUrl = window.location.origin;
 
 // CORS used for testing purposes. Should only happen with specific port and http
 if (window.location.port === "3000") {
-  globalUrl = "http://localhost:5001";
+  globalUrl = "http://13.236.182.122:3011";
   //globalUrl = "http://localhost:5002"
 }
 
@@ -178,21 +176,6 @@ const App = (message, props) => {
 					curpath={curpath}
           setCurpath={setCurpath}
         />
-		{!isLoaded ? null : 
-			userdata.chat_disabled === true ? null : 
-				<Drift 
-					appId="zfk9i7w3yizf" 
-					attributes={{
-						name: userdata.username === undefined || userdata.username === null ? "OSS user" : `OSS ${userdata.username}`,
-					}}
-					eventHandlers={[
-						{ 
-							event: "conversation:firstInteraction", 
-							function: handleFirstInteraction 
-						},
-					]}
-				/>
-		}
 
 		<div style={{ minHeight: 68, maxHeight: 68, }}>
 			<Header

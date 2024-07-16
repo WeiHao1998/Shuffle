@@ -7,7 +7,7 @@ import {ExpandMore as ExpandMoreIcon, ExpandLess as ExpandLessIcon} from '@mui/i
 
 const hrefStyle = {
 	textDecoration: "none",
-	color: "#f85a3e"
+	color: "#6100ff"
 }
 
 

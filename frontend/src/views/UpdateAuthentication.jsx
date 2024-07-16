@@ -154,7 +154,7 @@ const SetAuthentication = (props) => {
 				:
 				<><div>
 					<Typography variant="h4" style={{ marginBottom: 20, }}>
-						A Zebra Axon Organization has invited you to: Configure <a href={appLink} target="_blank" style={{ color: '#FF8444', textDecoration: 'none' }}>{appname}</a> Authentication
+						A Zebra Axon Organization has invited you to: Configure <a href={appLink} target="_blank" style={{ color: '#6100ff', textDecoration: 'none' }}>{appname}</a> Authentication
 					</Typography>
 
 					{/* What does this mean box */}
@@ -200,7 +200,7 @@ const SetAuthentication = (props) => {
 					</Typography>
 
 					<Typography variant="body1" style={{ marginBottom: 20, }}>
-						You can check the actions they want to use <a href={appLink} target="_blank" style={{ color: '#FF8444', textDecoration: 'none' }}>here</a>.
+						You can check the actions they want to use <a href={appLink} target="_blank" style={{ color: '#6100ff', textDecoration: 'none' }}>here</a>.
 					</Typography>
 
 					<Typography variant="body1" style={{ marginBottom: 20, }}>

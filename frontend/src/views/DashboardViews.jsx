@@ -77,11 +77,11 @@ import {
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
   root: {
     "& .MuiAutocomplete-listbox": {
-      border: "2px solid #f85a3e",
+      border: "2px solid #6100ff",
       color: "white",
       fontSize: 18,
       "& li:nth-child(even)": {
@@ -95,7 +95,7 @@ const useStyles = makeStyles({
   inputRoot: {
     color: "white",
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#f86a3e",
+      borderColor: "#6100ff",
     },
   },
 });
@@ -263,7 +263,7 @@ const RadialChart = ({keys, setSelectedCategory}) => {
 					<RadialAreaSeries 
 						interpolation="smooth"
 						colorScheme={(colorInput) => {
-							return '#f86a3e'
+							return '#6100ff'
 						}}
 						animated={false}
 						id="workflow_series_id"

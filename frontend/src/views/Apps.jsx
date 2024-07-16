@@ -1185,7 +1185,7 @@ const Apps = (props) => {
             <a
               rel="noopener noreferrer"
               href={""}
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
               target="_blank"
             >
               <IconButton
@@ -1193,7 +1193,7 @@ const Apps = (props) => {
                   top: -10,
                   right: 0,
                   position: "absolute",
-                  color: "#f85a3e",
+                  color: "#6100ff",
                 }}
               >
                 <OpenInNewIcon style={{}} />
@@ -1341,7 +1341,7 @@ const Apps = (props) => {
           	        >
           	          <Link
           	            to={`/creators/${creatorProfile.github_username}`}
-          	            style={{ textDecoration: "none", color: "#f86a3e" }}
+          	            style={{ textDecoration: "none", color: "#6100ff" }}
           	          >
           	            <Avatar
           	              style={{ height: 30, width: 30 }}
@@ -1358,7 +1358,7 @@ const Apps = (props) => {
           	          Shared by{" "}
           	          <Link
           	            to={`/creators/${creatorProfile.github_username}`}
-          	            style={{ textDecoration: "none", color: "#f86a3e" }}
+          	            style={{ textDecoration: "none", color: "#6100ff" }}
           	          >
           	            {creatorProfile.github_username}
           	          </Link>
@@ -1463,7 +1463,7 @@ const Apps = (props) => {
               <div style={{ marginTop: 15, marginBottom: 15 }}>
                 <b>Parameters</b>
                 {selectedAction.parameters.map((data) => {
-                  var itemColor = "#f85a3e";
+                  var itemColor = "#6100ff";
                   if (!data.required) {
                     itemColor = "#ffeb3b";
                   }
@@ -1539,7 +1539,7 @@ const Apps = (props) => {
 					padding: 15, 
 					margin: 10, 
 					backgroundColor: hover ? theme.palette.surfaceColor : "transparent",
-					border: hover ? "1px solid #f85a3e" : "1px solid rgba(255,255,255,0.3)",
+					border: hover ? "1px solid #6100ff" : "1px solid rgba(255,255,255,0.3)",
 					cursor: hover ? "pointer" : "default",
 					textAlign: "center",
 					minHeight: 150, 
@@ -1584,7 +1584,7 @@ const Apps = (props) => {
 		      style={{
 		        marginLeft: 5,
 		        textDecoration: "none",
-		        color: "#f85a3e",
+		        color: "#6100ff",
 		      }}
 		    >
 		      <Button
@@ -1601,7 +1601,7 @@ const Apps = (props) => {
             <a
               rel="noopener noreferrer"
               href="https://shuffler.io/docs/apps"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
               target="_blank"
             >
               How it works
@@ -1610,7 +1610,7 @@ const Apps = (props) => {
             <a
               rel="noopener noreferrer"
               href="https://github.com/frikky/security-openapis"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
               target="_blank"
             >
               Security API's
@@ -1619,7 +1619,7 @@ const Apps = (props) => {
             <a
               rel="noopener noreferrer"
               href="https://github.com/APIs-guru/openapi-directory/tree/main/APIs"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
               target="_blank"
             >
               OpenAPI directory
@@ -1628,7 +1628,7 @@ const Apps = (props) => {
             <a
               rel="noopener noreferrer"
               href="https://editor.swagger.io/"
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
               target="_blank"
             >
               OpenAPI Validator
@@ -1667,7 +1667,7 @@ const Apps = (props) => {
                 style={{
                   marginLeft: 5,
                   textDecoration: "none",
-                  color: "#f85a3e",
+                  color: "#6100ff",
                 }}
               >
                 <Button
@@ -2271,7 +2271,7 @@ const Apps = (props) => {
                     href={
                       ""
                     }
-                    style={{ textDecoration: "none", color: "#f85a3e" }}
+                    style={{ textDecoration: "none", color: "#6100ff" }}
                     target="_blank"
                   >
                     troubleshooting guide for loading apps!

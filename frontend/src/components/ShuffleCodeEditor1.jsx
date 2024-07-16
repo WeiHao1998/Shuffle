@@ -1253,7 +1253,7 @@ const CodeEditor = (props) => {
 									);
 									if (exec_text_field !== null) {
 										if (inside) {
-											exec_text_field.style.border = "2px solid #f85a3e";
+											exec_text_field.style.border = "2px solid #6100ff";
 										} else {
 											exec_text_field.style.border = "";
 										}
@@ -1706,7 +1706,7 @@ const CodeEditor = (props) => {
 								}
 
 								{executionResult.errors !== undefined && executionResult.errors !== null && executionResult.errors.length > 0 ?
-									<Typography variant="body2" style={{maxHeight: 100, overflow: "auto", color: "#f85a3e",}}>
+									<Typography variant="body2" style={{maxHeight: 100, overflow: "auto", color: "#6100ff",}}>
 										Errors ({executionResult.errors.length}): {executionResult.errors.join("\n")}
 									</Typography> 
 								: null}

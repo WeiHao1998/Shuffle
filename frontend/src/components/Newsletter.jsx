@@ -16,7 +16,7 @@ const Newsletter = (props) => {
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
   const [buttonActive, setButtonActive] = useState(true);
-	const buttonStyle = {width: 176, marginTop:16, height: 45, paddingLeft: 24, paddingRight: 24, paddingTop: 16, paddingBottom: 16, background: 'linear-gradient(90deg, #FF8444 0%, #FB47A0 100%)', borderRadius: 200, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex', fontSize: 16, fontStyle: "normal", fontWeight: 600}
+	const buttonStyle = {width: 176, marginTop:16, height: 45, paddingLeft: 24, paddingRight: 24, paddingTop: 16, paddingBottom: 16, background: 'linear-gradient(90deg, #6100ff 0%, #FB47A0 100%)', borderRadius: 200, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex', fontSize: 16, fontStyle: "normal", fontWeight: 600}
 
 	const newsletterSignup = (inemail) => {
 		if (inemail.length < 4) {

@@ -211,7 +211,7 @@ const AuthenticationData = (props) => {
 					target="_blank"
 					rel="noopener noreferrer"
 					href=""
-					style={{ textDecoration: "none", color: "#f85a3e" }}
+					style={{ textDecoration: "none", color: "#6100ff" }}
 				>
 					What is app authentication?
 				</a>

@@ -27,7 +27,7 @@ const bodyDivStyle = {
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
 });
 
@@ -356,7 +356,7 @@ const LoginDialog = (props) => {
                 rel="norefferer"
                 target="_blank"
                 href=""
-                style={{ textDecoration: "none", color: "#f86a3e" }}
+                style={{ textDecoration: "none", color: "#6100ff" }}
               >
                 Join the Discord!
               </a>

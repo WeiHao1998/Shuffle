@@ -1,7 +1,7 @@
 import React from "react";
 
 const hrefStyle = {
-  color: "#f85a3e",
+  color: "#6100ff",
   textDecoration: "none",
 };
 

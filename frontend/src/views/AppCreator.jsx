@@ -105,7 +105,7 @@ const appIconStyle = {
 
 export const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
 });
 
@@ -2630,7 +2630,7 @@ const AppCreator = (defaultprops) => {
           <a
             target="_blank"
             href=""
-            style={{ textDecoriation: "none", color: "#f85a3e" }}
+            style={{ textDecoriation: "none", color: "#6100ff" }}
           >
             Bearer auth
           </a>
@@ -2648,7 +2648,7 @@ const AppCreator = (defaultprops) => {
           <a
             target="_blank"
             href=""
-            style={{ textDecoriation: "none", color: "#f85a3e" }}
+            style={{ textDecoriation: "none", color: "#6100ff" }}
           >
             Basic authentication
           </a>
@@ -3121,7 +3121,7 @@ const AppCreator = (defaultprops) => {
 		  Scopes for Oauth2
 		</Typography>
 		<MuiChipsInput
-		  style={{border: "2px solid #f86a3e", borderRadius: theme.palette.borderRadius,}}
+		  style={{border: "2px solid #6100ff", borderRadius: theme.palette.borderRadius,}}
 					required
 		  InputProps={{
 			style: {
@@ -3405,7 +3405,7 @@ const AppCreator = (defaultprops) => {
     		  <Tooltip title={chipRequired ? "Make not required" : "Make required"}>
     		    <Chip
     		      style={{
-    		        backgroundColor: chipRequired ? "#f86a3e" : "#3d3f43",
+    		        backgroundColor: chipRequired ? "#6100ff" : "#3d3f43",
     		        height: 30,
     		        margin: 3,
     		        paddingLeft: 5,
@@ -3549,7 +3549,7 @@ const AppCreator = (defaultprops) => {
                 </div>
               </div>
               <div
-                style={{ float: "right", color: "#f85a3e", cursor: "pointer" }}
+                style={{ float: "right", color: "#6100ff", cursor: "pointer" }}
                 onClick={() => {
                   deletePathQuery(queryIndex);
                 }}
@@ -3762,7 +3762,7 @@ const AppCreator = (defaultprops) => {
     		      <a
     		        target="_blank"
     		        href=""
-    		        style={{ textDecoration: "none", color: "#f85a3e" }}
+    		        style={{ textDecoration: "none", color: "#6100ff" }}
     		      >
     		        Learn more about actions
     		      </a>
@@ -4417,7 +4417,7 @@ const AppCreator = (defaultprops) => {
 				</Tooltip>
 				{/*
 			<Tooltip title="Test action" placement="bottom">
-				<div style={{color: "#f85a3e", cursor: "pointer", marginRight: "10px", }} onClick={() => {testAction(index)}}>
+				<div style={{color: "#6100ff", cursor: "pointer", marginRight: "10px", }} onClick={() => {testAction(index)}}>
 					Test
 				</div>
 			</Tooltip>
@@ -4478,7 +4478,7 @@ const AppCreator = (defaultprops) => {
 				>
 					<div
 						style={{
-							color: "#f85a3e",
+							color: "#6100ff",
 							cursor: "pointer",
 							marginRight: 15,
 						}}
@@ -4495,7 +4495,7 @@ const AppCreator = (defaultprops) => {
 					style={{ minWidth: 60 }}
 				>
 					<div
-						style={{ color: "#f85a3e", cursor: "pointer" }}
+						style={{ color: "#6100ff", cursor: "pointer" }}
 						onClick={() => {
 							deleteAction(index);
 						}}
@@ -5030,7 +5030,7 @@ const AppCreator = (defaultprops) => {
               target="_blank"
               rel="norefferer"
               href=""
-              style={{ textDecoration: "none", color: "#f85a3e" }}
+              style={{ textDecoration: "none", color: "#6100ff" }}
             >
               What is this?
             </a>
@@ -5187,7 +5187,7 @@ const AppCreator = (defaultprops) => {
                 key={index}
                 style={{
                   backgroundColor:
-                    tag === selectedCategory ? "#f86a3e" : "#3d3f43",
+                    tag === selectedCategory ? "#6100ff" : "#3d3f43",
                   height: 30,
                   margin: 3,
                   paddingLeft: 5,
@@ -5327,7 +5327,7 @@ const AppCreator = (defaultprops) => {
       <a
         target="_blank"
         href=""
-        style={{ textDecoration: "none", color: "#f85a3e" }}
+        style={{ textDecoration: "none", color: "#6100ff" }}
       >
         &nbsp;TBD: Click here to learn more about testing
       </a>
@@ -5795,8 +5795,8 @@ const AppCreator = (defaultprops) => {
 		</div>
         <a
           target="_blank"
-          href="
-          style={{ textDecoration: "none", color: "#f85a3e" }}
+          href=""
+          style={{ textDecoration: "none", color: "#6100ff" }}
         >
           Click here to learn more about app creation
         </a>
@@ -5813,7 +5813,7 @@ const AppCreator = (defaultprops) => {
               style={{
                 flex: "1",
                 margin: 10,
-                border: "1px solid #f85a3e",
+                border: "1px solid #6100ff",
                 cursor: "pointer",
                 backgroundColor: inputColor,
                 maxWidth: 174,
@@ -6000,7 +6000,7 @@ const AppCreator = (defaultprops) => {
 						<a
 							target="_blank"
 							href=""
-							style={{ textDecoration: "none", color: "#f85a3e" }}
+							style={{ textDecoration: "none", color: "#6100ff" }}
 						>
 							Learn more about app authentication
 						</a>

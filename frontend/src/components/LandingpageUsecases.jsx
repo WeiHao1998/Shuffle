@@ -58,7 +58,7 @@ export const securityFramework = [
 const LandingpageUsecases = (props) => {
 	const [selectedUsecase, setSelectedUsecase] = useState("Phishing")
 	const usecasekeys = usecases === undefined || usecases === null ? [] : Object.keys(usecases)
-	const buttonBackground = "linear-gradient(to right, #f86a3e, #f34079)"
+	const buttonBackground = "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))"
 	const buttonStyle = {borderRadius: 25, height: 50, width: 260, margin: isMobile ? "15px auto 15px auto" : 20, fontSize: 18, backgroundImage: buttonBackground}
 
 	const HandleTitle = (props) => {

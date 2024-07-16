@@ -1141,7 +1141,7 @@ const ConfigureWorkflow = (props) => {
     );
   }
 									
-	// Based on the color here. Default: #f86a3e
+	// Based on the color here. Default: #6100ff
 	//backgroundColor: selectedUsecaseCategory === usecase.name ? usecase.color : theme.palette.surfaceColor,
 
 	const BoxHighlight = (props) => {

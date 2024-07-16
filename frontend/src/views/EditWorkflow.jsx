@@ -115,7 +115,7 @@ const EditWorkflow = (props) => {
     {
       selector: ".awaiting-data-highlight",
       css: {
-        "background-color": "#f4ad42",
+        "background-color": "#6100ff",
         "transition-property": "background-color",
         "transition-duration": "0.5s",
       },

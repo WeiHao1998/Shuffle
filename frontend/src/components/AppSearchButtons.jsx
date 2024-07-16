@@ -273,7 +273,7 @@ const AppSearchButtons = (props) => {
                 </div>
             ) : null}
             <div style={{
-                display: "flex", height: 70, border: isHover ? "1px solid #f85a3e" : "var(--Container, #212121)", borderRadius: 8, background: isHover ? "var(--Container, #212121)" : "var(--Container, #212121)",
+                display: "flex", height: 70, border: isHover ? "1px solid #6100ff" : "var(--Container, #212121)", borderRadius: 8, background: isHover ? "var(--Container, #212121)" : "var(--Container, #212121)",
                 alignItems: "center", justifyContent: "center",
             }}
             >

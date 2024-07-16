@@ -47,7 +47,7 @@ import {
   ExpandMore as ExpandMoreIcon,
 } from "@mui/icons-material";
 
-const hoverColor = "#f85a3e";
+const hoverColor = "#6100ff";
 const hoverOutColor = "#e8eaf6";
 
 const Header = (props) => {
@@ -324,7 +324,7 @@ const Header = (props) => {
         }}
       >
         {data.reference_url !== undefined && data.reference_url !== null && data.reference_url.length > 0 ?
-          <Link to={data.reference_url} style={{ color: "#f86a3e", textDecoration: "none", }}>
+          <Link to={data.reference_url} style={{ color: "#6100ff", textDecoration: "none", }}>
             <Typography variant="body1">
               {data.title} ({data.amount})
             </Typography >
@@ -446,7 +446,7 @@ const Header = (props) => {
           </div>
           <Typography variant="body2" color="textSecondary" style={{ marginTop: 5, }}>
             Notifications generated made by Zebra Axon to help you discover issues or
-            improvements. <a href="/docs/organizations#notifications" target="_blank" rel="noopener noreferrer" style={{ color: "#f86a3e", textDecoration: "none", }}>
+            improvements. <a href="/docs/organizations#notifications" target="_blank" rel="noopener noreferrer" style={{ color: "#6100ff", textDecoration: "none", }}>
               Learn more</a>
           </Typography>
         </Paper>
@@ -533,7 +533,7 @@ const Header = (props) => {
     <span style={{ marginTop: 0 }}>
       <a
         href=""
-        style={{ textDecoration: "none", color: "#f85a3e" }}
+        style={{ textDecoration: "none", color: "#6100ff" }}
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -781,7 +781,7 @@ const Header = (props) => {
               <img
                 src={"/images/logos/topleft_logo.png"}
                 alt="shuffle logo"
-                style={{ height: 25, }}
+                style={{ height: 35 }}
               />
             </Grid>
           </Link>
@@ -890,7 +890,7 @@ const Header = (props) => {
               padding: "7px 14px 7px 14px",
               borderRadius: 25,
               textTransform: "none",
-              backgroundImage: "linear-gradient(to right, #f86a3e, #f34079)",
+              backgroundImage: "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))",
               color: "white",
             }}
             onClick={() => {
@@ -1333,7 +1333,7 @@ const Header = (props) => {
                       userdata.app_execution_usage /
                         userdata.app_execution_limit >=
                         0.9
-                        ? "2px solid #f86a3e"
+                        ? "2px solid #6100ff"
                         : null,
                   }}
                   onClick={() => {
@@ -1357,7 +1357,7 @@ const Header = (props) => {
                   <Typography
                     variant="body2"
                     color="textSecondary"
-                    style={{ fontSize: 12, color: "#f86a3e" }}
+                    style={{ fontSize: 12, color: "#6100ff" }}
                   >
                     <b>
                       {(
@@ -1538,7 +1538,7 @@ const Header = (props) => {
   const topbar = !isCloud || !showTopbar ? null :
     curpath === "/" || curpath.includes("/docs") || curpath === "/pricing" || curpath === "/contact" || curpath === "/search" || curpath === "/usecases" || curpath === "/training" ?
       <span style={{ zIndex: 50001, }}>
-        <div style={{ position: "relative", height: topbarHeight, backgroundImage: "linear-gradient(to right, #f86a3e, #f34079)", overflow: "hidden", }}>
+        <div style={{ position: "relative", height: topbarHeight, backgroundImage: "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))", overflow: "hidden", }}>
           <Typography variant="body1" style={{ paddingTop: 7, margin: "auto", textAlign: "center", color: "white", }}>
             {/* Zebra Axon 1.4.0 is out! Read more about&nbsp; */}
             Zebra Axon now offers&nbsp;

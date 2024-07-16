@@ -20,7 +20,7 @@ import {
 
 const useStyles = makeStyles({
   notchedOutline: {
-    borderColor: "#f85a3e !important",
+    borderColor: "#6100ff !important",
   },
 });
 
@@ -162,7 +162,7 @@ const OrgHeader = (props) => {
               border:
                 imageData !== undefined && imageData.length > 0
                   ? null
-                  : "1px solid #f85a3e",
+                  : "1px solid #6100ff",
               cursor: "pointer",
               maxWidth: 174,
               maxHeight: 174,

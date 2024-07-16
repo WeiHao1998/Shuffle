@@ -68,7 +68,7 @@ const hrefStyleToc2 = {
 };
 
 const hrefStyle2 = {
-    color: "#f86a3e",
+    color: "#6100ff",
     textDecoration: "none",
 };
 
@@ -136,7 +136,7 @@ export const OuterLink = (props) => {
         return (
             <a
                 href={props.href}
-                style={{ color: "#f85a3e", textDecoration: "none" }}
+                style={{ color: "#6100ff", textDecoration: "none" }}
             >
                 {props.children}
             </a>
@@ -146,7 +146,7 @@ export const OuterLink = (props) => {
     return (
         <Link
             to={props.href}
-            style={{ color: "#f85a3e", textDecoration: "none" }}
+            style={{ color: "#6100ff", textDecoration: "none" }}
         >
             {props.children}
         </Link>
@@ -323,7 +323,7 @@ const Docs = (defaultprops) => {
                     currentPoint.style.color = "white";
                     if (`#${visibleHeadings[0].target.id}`
                         === currentPoint.hash) {
-                        currentPoint.style.color = "#f86a3e";
+                        currentPoint.style.color = "#6100ff";
                     }
                 }
             }
@@ -486,7 +486,7 @@ const Docs = (defaultprops) => {
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     href={selectedMeta.link}
-                                    style={{ textDecoration: "none", color: "#f85a3e" }}
+                                    style={{ textDecoration: "none", color: "#6100ff" }}
                                 >
                                     <Button style={{ color: "white", }} variant="outlined" color="secondary">
                                         <EditIcon /> &nbsp;&nbsp;Edit
@@ -524,7 +524,7 @@ const Docs = (defaultprops) => {
                                             rel="noopener noreferrer"
                                             target="_blank"
                                             href={data.url}
-                                            style={{ textDecoration: "none", color: "#f85a3e" }}
+                                            style={{ textDecoration: "none", color: "#6100ff" }}
                                         >
                                             <Tooltip title={data.url} placement="bottom">
                                                 <img
@@ -989,7 +989,7 @@ const Docs = (defaultprops) => {
                                             to={path}
                                         >
                                             <ListItemText
-                                                style={{ color: itemMatching ? "#f86a3e" : "inherit" }}
+                                                style={{ color: itemMatching ? "#6100ff" : "inherit" }}
                                                 variant="body1"
                                             >
                                                 {newname}
@@ -1034,7 +1034,7 @@ const Docs = (defaultprops) => {
                                         key={data.text}
                                         href={`#${data.id}`}
                                         style={{
-                                            color: activeId === data.id ? "#f86a3e" : "inherit",
+                                            color: activeId === data.id ? "#6100ff" : "inherit",
                                             textDecoration: "none",
                                             fontSize: "14px",
                                             fontWeight: 400,

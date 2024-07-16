@@ -651,7 +651,7 @@ const Files = (props) => {
 					onClick={() => {
 						upload.click();
 					}}
-					style={{backgroundColor: isSelectedFiles?'rgba(255, 132, 68, 0.2)':null, color:isSelectedFiles?"#FF8444":null, borderRadius:isSelectedFiles?200:null, width:isSelectedFiles?162:null, height:isSelectedFiles?40:null, boxShadow: isSelectedFiles?'none':null,}}
+					style={{backgroundColor: isSelectedFiles?'rgba(255, 132, 68, 0.2)':null, color:isSelectedFiles?"#6100ff":null, borderRadius:isSelectedFiles?200:null, width:isSelectedFiles?162:null, height:isSelectedFiles?40:null, boxShadow: isSelectedFiles?'none':null,}}
 				>
 					<PublishIcon /> Upload files
 				</Button>
@@ -888,7 +888,7 @@ const Files = (props) => {
 															rel="noopener noreferrer"
 															style={{
 																textDecoration: "none",
-																color: "#f85a3e",
+																color: "#6100ff",
 															}}
 															href={`/workflows/${file.workflow_id}`}
 															target="_blank"

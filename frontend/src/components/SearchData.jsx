@@ -126,12 +126,12 @@ const SearchData = props => {
                         disableUnderline: true,
                         startAdornment: (
                             <InputAdornment position="start">
-                                <SearchIcon style={{ marginLeft: 5, marginRight: 10, color: "#f86a3e", }} />
+                                <SearchIcon style={{ marginLeft: 5, marginRight: 10, color: "#6100ff", }} />
                             </InputAdornment>
                         ),
                         endAdornment: (
                             <InputAdornment position="start">
-                                <Typography position="end" style={{ fontSize: 18, color: "#f86a3e", marginLeft: 10, textTransform: "lowercase", width: 30 }}>
+                                <Typography position="end" style={{ fontSize: 18, color: "#6100ff", marginLeft: 10, textTransform: "lowercase", width: 30 }}>
                                     esc
                                 </Typography>
                             </InputAdornment>
@@ -197,7 +197,7 @@ const SearchData = props => {
 
         return (
             <Card elevation={0} style={{ marginRight: 10, marginTop: 50, color: "white", zIndex: 1002, backgroundColor: theme.palette.inputColor, width: "100%", left: 75, boxShadows: "none", }}>
-                <Typography variant="h6" style={{ margin: "10px 10px 0px 20px", color: "#FF8444", borderBottom: "1px solid", width: 105 }}>
+                <Typography variant="h6" style={{ margin: "10px 10px 0px 20px", color: "#6100ff", borderBottom: "1px solid", width: 105 }}>
                     Workflows
                 </Typography>
 
@@ -331,7 +331,7 @@ const SearchData = props => {
                 </List>
                 {/*
 				<span style={{display: "flex", textAlign: "left", float: "left", position: "absolute", left: 15, bottom: 10, }}>
-					<Link to="/search" style={{textDecoration: "none", color: "#f85a3e"}}>
+					<Link to="/search" style={{textDecoration: "none", color: "#6100ff"}}>
 						<Typography variant="body2" style={{}}>
 							See all workflows 
 						</Typography>
@@ -423,7 +423,7 @@ const SearchData = props => {
                 }}>
                     <CloseIcon />
                 </IconButton> */}
-                <Typography variant="h6" style={{ margin: "40px 10px 0px 20px", color: "#FF8444", borderBottom: "1px solid", width: 50 }}>
+                <Typography variant="h6" style={{ margin: "40px 10px 0px 20px", color: "#6100ff", borderBottom: "1px solid", width: 50 }}>
                     Apps
                 </Typography>
 
@@ -570,7 +570,7 @@ const SearchData = props => {
                     }
                 </List>
                 {/* <span style={{ display: "flex", textAlign: "left", float: "left", position: "absolute", left: 15, bottom: 10, }}>
-                    <Link to="/search" style={{ textDecoration: "none", color: "#f85a3e" }}>
+                    <Link to="/search" style={{ textDecoration: "none", color: "#6100ff" }}>
                         <Typography variant="body1" style={{}}>
                             See more
                         </Typography>
@@ -613,7 +613,7 @@ const SearchData = props => {
                 }}>
                     <CloseIcon />
                 </IconButton> */}
-                <Typography variant="h6" style={{ margin: "10px 10px 0px 20px", color: "#FF8444", borderBottom: "1px solid", width: 152 }}>
+                <Typography variant="h6" style={{ margin: "10px 10px 0px 20px", color: "#6100ff", borderBottom: "1px solid", width: 152 }}>
                     Documentation
                 </Typography>
                 {/*
@@ -756,7 +756,7 @@ const SearchData = props => {
         };
         return (
             <Card elevation={0} style={{ marginRight: 10, marginTop: 50, color: "white", zIndex: 1002, backgroundColor: theme.palette.inputColor, width: "100%", left: 470, boxShadows: "none", }}>
-                <Typography variant="h6" style={{ margin: "10px 10px 0px 20px", color: "#FF8444", borderBottom: "1px solid", width: 152 }}>
+                <Typography variant="h6" style={{ margin: "10px 10px 0px 20px", color: "#6100ff", borderBottom: "1px solid", width: 152 }}>
                     Discord Chat
                 </Typography>
                 <List style={{ backgroundColor: theme.palette.inputColor, }}>

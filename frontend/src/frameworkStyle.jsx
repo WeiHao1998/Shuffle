@@ -9,7 +9,7 @@ const data = [{
 				'text-algin': 'center',
 				'border-width': '3px',
 				'border-color': '#8a8a8a',
-				'color': '#f85a3e',
+				'color': '#6100ff',
 				'text-margin-x': '0px',
 				'text-margin-y': 'data(text_margin_y)',
 				'background-color': '#27292d',
@@ -103,7 +103,7 @@ const data = [{
   	{
 			selector: "node:selected",
 			css: {
-				"border-color": "#f86a3e",
+				"border-color": "#6100ff",
 				"border-width": "3px",
 			},
 		},

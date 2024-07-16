@@ -297,7 +297,7 @@ const AppSelection = props => {
         height: 51,
         width: isMobile ? 250 : 500,
         fontSize: 16,
-        background: "linear-gradient(90deg, #F86744 0%, #F34475 100%)",
+        background: "linear-gradient(90deg, rgb(97, 0, 255), rgb(74, 4, 186))",
         padding: "16px 24px",
         textTransform: 'capitalize',
         itemAlign: "center",
@@ -489,7 +489,7 @@ const AppSelection = props => {
             </div>
             {!moreButton ? (
                 <div style={{ width: "100%", marginLeft: isMobile ? 80 : 200, marginBottom: 20, textAlign: isMobile ? "center" : null }}>
-                    <Link style={{ color: "#FF8444" }} onClick={() => {
+                    <Link style={{ color: "#6100ff" }} onClick={() => {
                         setMoreButton(true)
 
                         setTimeout(() => {

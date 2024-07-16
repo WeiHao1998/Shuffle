@@ -45,7 +45,7 @@ import {
 
 import SearchField from '../components/Searchfield.jsx'
 
-const hoverColor = "#f85a3e"
+const hoverColor = "#6100ff"
 const hoverOutColor = "#e8eaf6"
 
 const Header = props => {
@@ -273,7 +273,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 					{new Date(data.updated_at).toISOString()}
 				</Typography >*/}
 				{data.reference_url !== undefined && data.reference_url !== null && data.reference_url.length > 0 ?
-					<Link to={data.reference_url} style={{color: "#f86a3e", textDecoration: "none",}}>
+					<Link to={data.reference_url} style={{color: "#6100ff", textDecoration: "none",}}>
 						<Typography variant="body1">
 							{data.title} ({data.amount})
 						</Typography >
@@ -646,7 +646,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 					{isCloud ? 
 						<ListItem style={{flextextAlign: "center", marginRight: 10, }}>
 							<Link to="/register" style={hrefStyle}>
-								<Button variant="contained" color="primary" style={{minWidth: 100, maxWidth: 100, padding: "7px 14px 7px 14px", borderRadius: 25, textTransform: "none", backgroundImage: "linear-gradient(to right, #f86a3e, #f34079)", color: "white",}} onClick={() => {
+								<Button variant="contained" color="primary" style={{minWidth: 100, maxWidth: 100, padding: "7px 14px 7px 14px", borderRadius: 25, textTransform: "none", backgroundImage: "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))", color: "white",}} onClick={() => {
 									ReactGA.event({
 										category: "header",
 										action: "register_click",
@@ -933,7 +933,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 							null
 							:
 							<Tooltip title={`Amount of executions left: ${userdata.app_execution_usage} / ${userdata.app_execution_limit}. When the limit is reached, you can still use Zebra Axon normally, but your Workflow triggers may stop working. Reach out to support@shuffler.io to extend this limit.`}>
-								<div style={{maxHeight: 30, minHeight: 30, padding: 8, textAlign: "center", cursor: "pointer", borderRadius: theme.palette.borderRadius, marginRight: 10, marginTop: 12, backgroundColor: theme.palette.surfaceColor, minWidth: 60, maxWidth: 60, border: userdata.app_execution_usage/userdata.app_execution_limit >= 0.9 ? "#f86a3e" : null, }} onClick={() => {
+								<div style={{maxHeight: 30, minHeight: 30, padding: 8, textAlign: "center", cursor: "pointer", borderRadius: theme.palette.borderRadius, marginRight: 10, marginTop: 12, backgroundColor: theme.palette.surfaceColor, minWidth: 60, maxWidth: 60, border: userdata.app_execution_usage/userdata.app_execution_limit >= 0.9 ? "#6100ff" : null, }} onClick={() => {
 										console.log(userdata.appe_execution_usage/userdata.app_execution_limit)
 										if (window.drift !== undefined) {
 											window.drift.api.startInteraction({ interactionId: 326905 })
@@ -942,7 +942,7 @@ const { globalUrl, setNotifications, notifications, isLoggedIn, removeCookie, ho
 											console.log("Couldn't find drift in window.drift and not .drift-open-chat with querySelector: ", window.drift)
 										}
 								}}>
-										<Typography variant="body2" color="textSecondary" style={{fontSize: 12, color: '#f86a3e' }}>
+										<Typography variant="body2" color="textSecondary" style={{fontSize: 12, color: '#6100ff' }}>
 											<b>
 												{(userdata.app_execution_usage/userdata.app_execution_limit*100).toFixed(0)}%
 											</b>

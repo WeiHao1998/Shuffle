@@ -1782,7 +1782,7 @@ const Workflows = (props) => {
       display: "flex",
       boxSizing: "border-box",
       position: "relative",
-      border: hasWorkflows ? `2px solid #f85a3e` : `2px solid ${innerColor}`,
+      border: hasWorkflows ? `2px solid #6100ff` : `2px solid ${innerColor}`,
       cursor: "pointer",
       backgroundColor: hover ? "rgba(39,41,45,0.5)" : "rgba(39,41,45,1)",
       borderRadius: paperAppStyle.borderRadius,
@@ -1852,7 +1852,7 @@ const Workflows = (props) => {
     }
 
     if (!data.previously_saved) {
-      boxColor = "#f86a3e";
+      boxColor = "#6100ff";
     }
 
     const menuClick = (event) => {
@@ -2563,7 +2563,7 @@ const Workflows = (props) => {
             }
 
             if (!data.previously_saved) {
-              boxColor = "#f85a3e";
+              boxColor = "#6100ff";
             }
 
             var image = "";
@@ -3419,7 +3419,7 @@ const Workflows = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://shuffler.io/docs/workflows"
-                  style={{ textDecoration: "none", color: "#f85a3e" }}
+                  style={{ textDecoration: "none", color: "#6100ff" }}
                 >
                   Learn more about Workflows
                 </a>
@@ -3956,7 +3956,7 @@ const Workflows = (props) => {
         },
       }}
     >
-			<div style={{backgroundColor: "#f86a3e", display: "flex", }}>
+			<div style={{backgroundColor: "#6100ff", display: "flex", }}>
 				<Typography variant="h6" style={{flex: 5, marginTop: 20, marginLeft: 20, marginBottom: 20, }}>
 					Getting Started
 				</Typography>
@@ -3988,7 +3988,7 @@ const Workflows = (props) => {
 					Follow these steps to get you up and running!
 				</Typography>
 				<Divider style={{marginTop: 20, }} />
-				<Typography variant="body2" style={{color: "#f86a3e", marginTop: 20, cursor: "pointer", }} onClick={() => {
+				<Typography variant="body2" style={{color: "#6100ff", marginTop: 20, cursor: "pointer", }} onClick={() => {
 					setVideoViewOpen(true)
 				}}>
 					<b>Watch 2-min introduction video</b>

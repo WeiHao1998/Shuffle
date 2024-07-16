@@ -379,7 +379,7 @@ const ExploreWorkflow = (props) => {
 											padding: "16px 24px",
 											margin: "auto",
 											itemAlign: "center",
-											background: activeUsecases === 0 ? "rgba(47, 47, 47, 1)" : "linear-gradient(90deg, #F86744 0%, #F34475 100%)",
+											background: activeUsecases === 0 ? "rgba(47, 47, 47, 1)" : "linear-gradient(90deg, rgb(97, 0, 255), rgb(74, 4, 186))",
 											color: activeUsecases === 0? "rgba(158, 158, 158, 1)" : "rgba(241, 241, 241, 1)",
 											border: activeUsecases === 0 ? "1px solid rgba(158, 158, 158, 1)" : "none",
 										}}
@@ -391,7 +391,7 @@ const ExploreWorkflow = (props) => {
 								</Typography>
 							</div>
                             <Typography variant="body2" style={{ fontSize: 16, marginTop: 24 }} color="rgba(158, 158, 158, 1)">
-                                <Link style={{ color: "#f86a3e", marginLeft: isMobile ? null : 145 }} to="/usecases" className="btn btn-primary">
+                                <Link style={{ color: "#6100ff", marginLeft: isMobile ? null : 145 }} to="/usecases" className="btn btn-primary">
 									Explore usecases 
                                 </Link>
                             </Typography>

@@ -984,7 +984,7 @@ const GettingStarted = (props) => {
     }
 
     if (!data.previously_saved) {
-      boxColor = "#f85a3e";
+      boxColor = "#6100ff";
     }
 
     const menuClick = (event) => {
@@ -1574,7 +1574,7 @@ const GettingStarted = (props) => {
             }
 
             if (!data.previously_saved) {
-              boxColor = "#f85a3e";
+              boxColor = "#6100ff";
             }
 
             var image = "";
@@ -2133,7 +2133,7 @@ const GettingStarted = (props) => {
 		const textSpacingDiff = 8
 		const textType = "body2"
 						
-		// Discover <a target="_blank" href="https://shuffler.io/search?tab=workflows" style={{textDecoration: "none", color: "#f86a3e",}}>use-cases made by us and other creators</a>!
+		// Discover <a target="_blank" href="https://shuffler.io/search?tab=workflows" style={{textDecoration: "none", color: "#6100ff",}}>use-cases made by us and other creators</a>!
 		const steps = [
 			{
 				html: (
@@ -2145,7 +2145,7 @@ const GettingStarted = (props) => {
 							})
 						}
 					}}>
-						<Link to="/welcome?tab=2" style={{textDecoration: "none", color: "#f86a3e",}}>Find relevant apps</Link> and start your automation journey
+						<Link to="/welcome?tab=2" style={{textDecoration: "none", color: "#6100ff",}}>Find relevant apps</Link> and start your automation journey
 					</Typography>
 				), 
 				tutorial: "find_integrations",
@@ -2153,8 +2153,8 @@ const GettingStarted = (props) => {
 			{
 				html: 
 					<Typography variant={textType} style={{marginTop: textSpacingDiff, textAlign: "left",}}>
-							Discover <Link to="/welcome?tab=3" style={{cursor: "pointer", textDecoration: "none", color: "#f86a3e",}}>Use-Case ideas</Link> and&nbsp;
-							<span style={{cursor: "pointer", textDecoration: "none", color: "#f86a3e",}} onClick={() => {
+							Discover <Link to="/welcome?tab=3" style={{cursor: "pointer", textDecoration: "none", color: "#6100ff",}}>Use-Case ideas</Link> and&nbsp;
+							<span style={{cursor: "pointer", textDecoration: "none", color: "#6100ff",}} onClick={() => {
     
   						if (isCloud) {
 								navigate(`/search?tab=workflows`)
@@ -2172,7 +2172,7 @@ const GettingStarted = (props) => {
 							if (ele !== undefined && ele !== null) {
 								console.log("Found ele: ", ele)
 								ele.focus()
-								ele.style.borderColor = "#f86a3e"
+								ele.style.borderColor = "#6100ff"
 								ele.style.borderWidth = "2px"
 
 							} else {
@@ -2194,9 +2194,9 @@ const GettingStarted = (props) => {
 						}
 					}}>
 						Learn to use Zebra Axon by&nbsp; 
-						<span style={{cursor: "pointer", color: "#f86a3e",}} onClick={() => {setModalOpen(true)}}>
+						<span style={{cursor: "pointer", color: "#6100ff",}} onClick={() => {setModalOpen(true)}}>
 							creating your first workflow 
-						</span> and <Link to="/docs/getting_started" style={{textDecoration: "none", color: "#f86a3e",}}>reading the docs.</Link>
+						</span> and <Link to="/docs/getting_started" style={{textDecoration: "none", color: "#6100ff",}}>reading the docs.</Link>
 					</Typography>
 				),
 				tutorial: "learn_shuffle",
@@ -2204,7 +2204,7 @@ const GettingStarted = (props) => {
 			{
 				html: 
 					<Typography variant={textType} style={{marginTop: textSpacingDiff, textAlign: "left",}}>
-						Configure your organization name <Link to="/admin" style={{textDecoration: "none", color: "#f86a3e",}}>in the admin panel</Link> and <Link to="/admin?tab=users" style={{textDecoration: "none", color: "#f86a3e",}}>invite your team</Link>
+						Configure your organization name <Link to="/admin" style={{textDecoration: "none", color: "#6100ff",}}>in the admin panel</Link> and <Link to="/admin?tab=users" style={{textDecoration: "none", color: "#6100ff",}}>invite your team</Link>
 					</Typography>,
 				tutorial: "configure_organization",
 			}
@@ -2410,7 +2410,7 @@ const GettingStarted = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://shuffler.io/docs/workflows"
-                  style={{ textDecoration: "none", color: "#f85a3e" }}
+                  style={{ textDecoration: "none", color: "#6100ff" }}
                 >
                   Learn more about Workflows
                 </a>

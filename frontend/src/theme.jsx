@@ -5,9 +5,9 @@ import { createTheme, adaptV4Theme } from "@mui/material/styles";
 const theme = createTheme(adaptV4Theme({
   palette: {
 	theme: "dark",
-    main: "#F86743",
+    main: "#6100ff",
     primary: {
-      main: "#F86743",
+      main: "#6100ff",
   	  contrastText: "#ffffff",
     },
     secondary: {

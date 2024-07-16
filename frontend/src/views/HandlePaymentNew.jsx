@@ -51,7 +51,7 @@ export const handlePayasyougo = (userdata) => {
 
 	toast("Redirecting in 2 seconds. Use the organization owner email.") 
 	setTimeout(() => {
-		window.location = billingurl 
+		// window.location = billingurl 
 	}, 2500)
 }
 
@@ -860,7 +860,7 @@ const PaymentField = (props) => {
 		console.log("Done with payment!")
 	}
 
-	const buttonBackground = "linear-gradient(to right, #f86a3e, #f34079)"
+	const buttonBackground = "linear-gradient(to right, rgb(97, 0, 255), rgb(74, 4, 186))"
 	const level1Button = 
 			<Button fullWidth variant="contained" color="primary" style={{borderRadius: 25, height: 40, margin: "15px 0px 15px 0px", fontSize: 14, color: "white", backgroundImage: buttonBackground,}}onClick={() => {
 				setMonthlyCost(0, paymentType)
@@ -893,7 +893,7 @@ const PaymentField = (props) => {
 			})
 
 			if (window.drift !== undefined) {
-				window.drift.api.startInteraction({ interactionId: 340045 })
+				// window.drift.api.startInteraction({ interactionId: 340045 })
 			}
 		}}>
 			Get a demo 
@@ -1005,13 +1005,13 @@ const PaymentField = (props) => {
 									<Divider />
 									<Divider />
 									<Typography variant="body1">
-										{defaultTaskIcon} <span style={{cursor: "pointer", color: "#f86a3e",}} onClick={() => {
+										{defaultTaskIcon} <span style={{cursor: "pointer", color: "#6100ff",}} onClick={() => {
 											if (window.drift !== undefined) {
-												window.drift.api.startInteraction({ interactionId: 340043, })
+												// window.drift.api.startInteraction({ interactionId: 340043, })
 											} else {
 												console.log("Couldn't find drift in window.drift and not .drift-open-chat with querySelector: ", window.drift)
 											}
-										}}>Free Support</span> & <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="">Discord access</a>
+										}}>Free Support</span> & <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#6100ff",}} href="">Discord access</a>
 									</Typography>
 								</span>
 								<div style={{height: 70}} />
@@ -1149,7 +1149,7 @@ const PaymentField = (props) => {
 
 								{/*
 								<Typography variant="body2" color="textSecondary" style={{marginTop: 10, textAlign: isMobile ? "left" : "center", cursor: "pointer", }}>
-									<span rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e", cursor: "pointer",}} onClick={() => {
+									<span rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#6100ff", cursor: "pointer",}} onClick={() => {
 										if (window.drift !== undefined) {
 											window.drift.api.startInteraction({ interactionId: 340785 })
 										} else {
@@ -1219,7 +1219,7 @@ const PaymentField = (props) => {
 				</Typography>
 				{/*
 				<Typography color="textSecondary" style={{marginTop: 25, textAlign: isMobile ? "left" : "center",}}>
-					Zebra Axon is an <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} href="https://github.com/shuffle/shuffle">Open Source</a> project. Gives access to support, development and features not otherwise available. This applies to both Open Source & Cloud/SaaS. After the transaction is finished, you will immediately have full access to our support team, and you organization will automatically get upgraded resources assigned. 
+					Zebra Axon is an <a rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#6100ff",}} href="https://github.com/shuffle/shuffle">Open Source</a> project. Gives access to support, development and features not otherwise available. This applies to both Open Source & Cloud/SaaS. After the transaction is finished, you will immediately have full access to our support team, and you organization will automatically get upgraded resources assigned. 
 				</Typography>
 				*/}
 				<Grid container style={{marginTop: 50, marginBottom: 100, }} spacing={2}>
@@ -1396,7 +1396,7 @@ const PaymentField = (props) => {
 
 			<Typography variant={isMobile ? "h6" : "h4"} style={{margin: "auto", width: maxwidth/3*2, marginBottom: 10, }}>Cloud, Hybrid & Onprem</Typography>	
 			<Typography variant="body1" color="textSecondary" style={{margin: "auto", width: maxwidth/3*2, marginBottom: 25, }}>
-				Our support model is built for both the Cloud and Onpremises version of Zebra Axon, and can be managed between both. <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} to="/contact">Contact us </Link>for more info, or to get a quote from one of our <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#f85a3e",}} to="/partner">verified resellers.</Link>
+				Our support model is built for both the Cloud and Onpremises version of Zebra Axon, and can be managed between both. <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#6100ff",}} to="/contact">Contact us </Link>for more info, or to get a quote from one of our <Link rel="noreferrer noopener" target="_blank" style={{textDecoration: "none", color: "#6100ff",}} to="/partner">verified resellers.</Link>
 			</Typography>
       <img src="images/partner/models.jpeg" alt="Zebra Axon MSSP and Open Source" style={{width: isMobile ? "100%" : 500, margin: "auto", borderRadius: theme.palette.borderRadius, }} />
 

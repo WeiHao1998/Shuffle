@@ -95,7 +95,7 @@ const Appsearch = props => {
 					const paperStyle = {
 						backgroundColor: index === mouseHoverIndex ? "rgba(255,255,255,0.8)" : "#2F2F2F",
 						color: index === mouseHoverIndex ? theme.palette.inputColor : "rgba(255,255,255,0.8)", 
-						// border: newSelectedApp.objectID !== data.objectID ? `1px solid rgba(255,255,255,0.2)` : "2px solid #f86a3e", 
+						// border: newSelectedApp.objectID !== data.objectID ? `1px solid rgba(255,255,255,0.2)` : "2px solid #6100ff", 
 						textAlign: "left",
 						padding: 10,
 						cursor: "pointer",
